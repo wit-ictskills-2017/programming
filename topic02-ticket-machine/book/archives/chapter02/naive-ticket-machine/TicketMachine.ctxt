@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=ticketCost
+comment0.target=TicketMachine(int)
+comment0.text=\r\n\ Create\ a\ machine\ that\ issues\ tickets\ of\ the\ given\ price.\r\n\ Note\ that\ the\ price\ must\ be\ greater\ than\ zero,\ and\ there\r\n\ are\ no\ checks\ to\ ensure\ this.\r\n
+comment1.params=
+comment1.target=int\ getPrice()
+comment1.text=\r\n\ Return\ the\ price\ of\ a\ ticket.\r\n
+comment2.params=
+comment2.target=int\ getBalance()
+comment3.params=amount
+comment3.target=void\ insertMoney(int)
+comment4.params=
+comment4.target=void\ printTicket()
+numComments=5
