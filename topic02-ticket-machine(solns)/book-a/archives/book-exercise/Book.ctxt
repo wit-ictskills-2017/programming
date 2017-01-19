@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=author\ title
+comment0.target=Book(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Set\ the\ author\ and\ title\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
+comment1.params=author\ title\ ISBN\ cost
+comment1.target=Book(java.lang.String,\ java.lang.String,\ java.lang.String,\ double)
+comment1.text=\r\n\ Set\ the\ author,\ title,\ ISBN\ and\ cost\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getAuthor()
+comment3.params=
+comment3.target=java.lang.String\ getTitle()
+comment4.params=
+comment4.target=java.lang.String\ getISBN()
+comment5.params=
+comment5.target=double\ getCost()
+comment6.params=author
+comment6.target=void\ setAuthor(java.lang.String)
+comment7.params=title
+comment7.target=void\ setTitle(java.lang.String)
+comment8.params=ISBN
+comment8.target=void\ setISBN(java.lang.String)
+comment9.params=cost
+comment9.target=void\ setCost(double)
+numComments=10
