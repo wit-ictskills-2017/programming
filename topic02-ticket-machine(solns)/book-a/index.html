@@ -118,6 +118,10 @@ h3
       05
     </a>
     
+    <a class="item" data-tab="06">
+      06
+    </a>
+    
     <a class="item" href="../../index.html">
       <i class="home icon"></i>
     </a>
@@ -520,6 +524,154 @@ class Book
 <li><p>Test both of the constructors by calling each one in turn.  When each object is created, double click on it to display the object state.  Did each value that you passed as an argument get successfully updated in the object state?  If any of the fields did not get updated correctly, return to your code and see if you can spot the problem and fix it.  NOTE: remember to test the check in the <em>cost</em> field...enter a value of 1 (a postitive test - the value should be accepted) and a value of 0 (a negative test - the value should produce a message).</p>
 </li>
 <li><p>Now that you have created objects, you can test your getter and setter methods.  The easiest way to do this is to take each field in turn, call the setter method for it to update the field contents, then check the update worked correctly by calling the getter for the specific field.  If you notice a problem with any field, return to your code and see if you can spot the problem and fix it.  NOTE:  remember to test the if statement for the <em>cost</em> field.</p>
+</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>Exercise 6</h1>
+<p>The object of this exercise is to write a complete <em>USBDrive</em> class based on the following instructions:</p>
+<ul>
+<li>Create a new <em>bluej</em> project called <em>USBDrive</em> in your <em>labs/session02</em> folder. </li>
+<li>In this project, create a new class called <em>USBDrive</em>.</li>
+<li>This class should have four instance fields:<ul>
+<li>make: String      //no validation</li>
+<li>capacity: int     //must be greater than zero</li>
+<li>colour: String    //no validation</li>
+<li>usedSpace: int    //must be set to zero upon object creation</li>
+</ul>
+</li>
+<li>This class should have the following constructors:<ul>
+<li>USBDrive()</li>
+<li>USBDrive(String, int, String)</li>
+</ul>
+</li>
+<li>This class should have the folloiwing methods:<ul>
+<li>getMake()</li>
+<li>getCapacity()</li>
+<li>getColour()</li>
+<li>getUsedSpace()</li>
+<li>setUsedSpace() //must be greater than zero; don&#39;t default a value.</li>
+</ul>
+</li>
+</ul>
+<h2>Solution - Code</h2>
+<pre><code class="lang-java">/**
+ * A class that maintains information on a USBDrive.
+ *
+ * @author (Siobhan Drohan)
+ * @version (24/01/2017)
+ */
+class USBDrive
+{
+    // The instance fields for a USBDrive object
+    private String make;  
+    private int capacity;   //measured in MB
+    private String colour;
+    private int usedSpace;
+
+    /**
+     * Set the fields to a default value when a USBDrive object
+     * is constructed.
+     */
+    public USBDrive()
+    {
+        this.make = &quot;unknown&quot;;
+        this.capacity = 2000;
+        this.colour = &quot;unknown&quot;;
+        this.usedSpace = 0;
+    }
+
+    /**
+     * Set the make, capacity, colour fields when this object
+     * is constructed.
+     * 
+     * @param make      The make of the USB Drive
+     * @param capacity  The capacity, measured in MB, of the USB Drive
+     * @param colour    The colour of the USB Drive
+     */
+    public USBDrive(String make, int capacity, String colour)
+    {
+        this.make = make;
+        this.colour = colour;
+        this.usedSpace = 0;
+
+        if (capacity &gt; 0)
+        {
+           this.capacity = capacity;
+        }
+        else
+        {
+          System.out.println (&quot;Capacity must be greater than zero.  Defaulting to 2000 MB&quot;);
+          this.capacity = 2000;
+        }
+    }
+
+    /**
+     *  The getter method for the instance field, make.
+     *  
+     *  @return the make of the USBDrive
+     */
+    public String getMake()
+    {
+        return make;
+    }
+
+    /**
+     *  The getter method for the instance field, colour.
+     *  
+     *  @return the colour of the USBDrive
+     */
+    public String getColour()
+    {
+        return colour;
+    }
+
+    /**
+     *  The getter method for the instance field, capacity.
+     *  
+     *  @return the capacity of the USBDrive
+     */
+    public int getCapacity()
+    {
+        return capacity;
+    }
+
+    /**
+     *  The getter method for the instance field, usedSpace.
+     *  
+     *  @return the usedSpace of the USBDrive
+     */
+    public int getUsedSpace()
+    {
+        return usedSpace;
+    }
+
+    /**
+     *  The setter method for the instance field, usedSpace.
+     *  
+     *  @param usedSpace The new value for the usedSpace field of the USBDrive; it must be greater than zero.
+     */
+    public void setUsedSpace(int usedSpace)
+    {
+        if (usedSpace &gt; 0)
+        {
+          this.usedSpace = usedSpace;
+        }
+        else
+        {
+          System.out.println (&quot;Used space must be greater than zero.  You entered: &quot; + usedSpace);
+        }        
+    }
+}</code></pre>
+<h2>Solution - Test</h2>
+<ul>
+<li><p>Test both of the constructors by calling each one in turn.  When each object is created, double click on it to display the object state.  Did each value that you passed as an argument get successfully updated in the object state?  If any of the fields did not get updated correctly, return to your code and see if you can spot the problem and fix it.  NOTE: remember to test the check in the <em>usedSpace</em> field...enter a value of 1 (a postitive test - the value should be accepted) and a value of 0 (a negative test - the value should produce a message).</p>
+</li>
+<li><p>Now that you have created objects, you can test your getter methods for each field...compare the returned value against the value in the object state window (right click and select the <em>inspect</em> field to display this window).</p>
+</li>
+<li><p>Test the setter method for usedSpace.  Remember to test the check in the <em>usedSpace</em> field...enter a value of 1 (a postitive test - the value should be accepted) and a value of 0 (a negative test - the value should produce a message). </p>
 </li>
 </ul>
 

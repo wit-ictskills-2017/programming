@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=USBDrive()
+comment0.text=\r\n\ Set\ the\ fields\ to\ a\ default\ value\ when\ a\ USBDrive\ object\r\n\ is\ constructed.\r\n
+comment1.params=make\ capacity\ colour
+comment1.target=USBDrive(java.lang.String,\ int,\ java.lang.String)
+comment1.text=\r\n\ Set\ the\ make,\ capacity,\ colour\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n\ \r\n\ @param\ make\ \ \ \ \ \ The\ make\ of\ the\ USB\ Drive\r\n\ @param\ capacity\ \ The\ capacity,\ measured\ in\ MB,\ of\ the\ USB\ Drive\r\n\ @param\ colour\ \ \ \ The\ colour\ of\ the\ USB\ Drive\r\n
+comment2.params=
+comment2.target=java.lang.String\ getMake()
+comment2.text=\r\n\ \ The\ getter\ method\ for\ the\ instance\ field,\ make.\r\n\ \ \r\n\ \ @return\ the\ make\ of\ the\ USBDrive\r\n
+comment3.params=
+comment3.target=java.lang.String\ getColour()
+comment3.text=\r\n\ \ The\ getter\ method\ for\ the\ instance\ field,\ colour.\r\n\ \ \r\n\ \ @return\ the\ colour\ of\ the\ USBDrive\r\n
+comment4.params=
+comment4.target=int\ getCapacity()
+comment4.text=\r\n\ \ The\ getter\ method\ for\ the\ instance\ field,\ capacity.\r\n\ \ \r\n\ \ @return\ the\ capacity\ of\ the\ USBDrive\r\n
+comment5.params=
+comment5.target=int\ getUsedSpace()
+comment5.text=\r\n\ \ The\ getter\ method\ for\ the\ instance\ field,\ usedSpace.\r\n\ \ \r\n\ \ @return\ the\ usedSpace\ of\ the\ USBDrive\r\n
+comment6.params=usedSpace
+comment6.target=void\ setUsedSpace(int)
+comment6.text=\r\n\ \ The\ setter\ method\ for\ the\ instance\ field,\ usedSpace.\r\n\ \ \r\n\ \ @param\ usedSpace\ The\ new\ value\ for\ the\ usedSpace\ field\ of\ the\ USBDrive;\ it\ must\ be\ greater\ than\ zero.\r\n
+numComments=7
