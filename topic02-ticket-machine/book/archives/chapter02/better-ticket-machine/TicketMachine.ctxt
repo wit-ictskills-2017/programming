@@ -13,6 +13,7 @@ comment3.target=void\ insertMoney(int)
 comment3.text=\r\n\ Receive\ an\ amount\ of\ money\ in\ cents\ from\ a\ customer.\r\n\ Check\ that\ the\ amount\ is\ sensible.\r\n
 comment4.params=
 comment4.target=void\ printTicket()
+comment4.text=\r\n\ Print\ a\ ticket.\r\n\ Update\ the\ total\ collected\ and\r\n\ reduce\ the\ balance\ to\ zero.\r\n
 comment5.params=
 comment5.target=int\ refundBalance()
 comment5.text=\r\n\ Return\ the\ money\ in\ the\ balance.\r\n\ The\ balance\ is\ cleared.\r\n
