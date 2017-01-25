@@ -122,6 +122,10 @@ h3
       06
     </a>
     
+    <a class="item" data-tab="07">
+      07
+    </a>
+    
     <a class="item" href="../../index.html">
       <i class="home icon"></i>
     </a>
@@ -563,7 +567,7 @@ class Book
  * @author (Siobhan Drohan)
  * @version (24/01/2017)
  */
-class USBDrive
+public class USBDrive
 {
     // The instance fields for a USBDrive object
     private String make;  
@@ -672,6 +676,192 @@ class USBDrive
 <li><p>Now that you have created objects, you can test your getter methods for each field...compare the returned value against the value in the object state window (right click and select the <em>inspect</em> field to display this window).</p>
 </li>
 <li><p>Test the setter method for usedSpace.  Remember to test the check in the <em>usedSpace</em> field...enter a value of 1 (a postitive test - the value should be accepted) and a value of 0 (a negative test - the value should produce a message). </p>
+</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="07">
+        <h1>Exercise 7</h1>
+<p>The object of this exercise is to write a complete <em>Product</em> class based on the following instructions:</p>
+<ul>
+<li>Create a new <em>bluej</em> project called <em>Store</em> in your <em>labs/session02</em> folder. </li>
+<li><p>In this project, create a new class called <em>Product</em>.</p>
+</li>
+<li><p>This class should have four instance fields:</p>
+<ul>
+<li>productName:  String   //no validation</li>
+<li>productCode:  int   //must be between 1000 and 9999 </li>
+<li>unitCost:     double  // must be greater than 0</li>
+<li>inCurrentProductLine:  boolean  //no validation</li>
+</ul>
+</li>
+<li><p>This class should have one constructor taking in values for each of the four instance fields. </p>
+</li>
+<li><p>This class should have accessor and mutator methods for each instance field.</p>
+</li>
+<li><p>Enter Javadoc comments for the class.  Make sure to use @author and @version.</p>
+</li>
+<li><p>Enter Javadoc comments for each method.  Make sure to use @param and @return, where appropriate.</p>
+</li>
+</ul>
+<h2>Solution - Code</h2>
+<pre><code class="lang-java">/**
+ * Represents a Product.  Stores the product name, product code,
+ * unitCost and whether the product is in the current product
+ * line or not.
+ *  
+ * @author Siobhan Drohan
+ * @version 1.0 (25th Jan 2017)
+ */
+public class Product
+{
+    //instance fields
+    private String productName;
+    private int productCode;
+    private double unitCost;
+    private boolean inCurrentProductLine;
+
+    /**
+     * Constructor for objects of class Product
+     * 
+     * @param productName Name of the product
+     * @param productCode Code of the product (between 1000 and 9999)
+     * @param unitCost Unit cost of the product (greater than zero)
+     * @param inCurrentProductLine indicates whether the 
+     *        product is in the current product line or not
+     */
+    public Product(String productName, int productCode, 
+                   double unitCost, boolean inCurrentProductLine)
+    {
+        this.productName = productName;
+
+        if ((productCode &gt;= 1000) &amp;&amp; (productCode &lt;= 9999))
+        {
+            this.productCode = productCode;
+        }
+        else
+        {
+            System.out.println(&quot;Product code is not between 1000 and 9999.&quot;
+                             + &quot;  Setting a default code of 1.&quot;);
+            this.productCode = 1;
+        }
+
+        if (unitCost &gt; 0)
+        {
+            this.unitCost = unitCost;
+        }
+        else
+        {
+            System.out.println(&quot;Unit cost must be greater than zero.&quot;);
+        }
+
+        this.inCurrentProductLine = inCurrentProductLine;
+    }
+
+    //-------
+    //getters
+    //-------
+    /**
+     * Returns the product name for the specified object
+     * 
+     * @return The Product Name 
+     */
+    public String getProductName(){
+        return productName;
+    }
+
+    /**
+     * Returns the unit cost for the specified object
+     * 
+     * @return The Unit Cost 
+     */
+    public double getUnitCost(){
+        return unitCost;
+    }
+
+    /**
+     * Returns the product code for the specified object
+     * 
+     * @return The Product Code 
+     */
+    public int getProductCode() {
+        return productCode;
+    }
+
+    /**
+     * Returns a boolean indicating if the product is in 
+     * the current product line 
+     * 
+     * @return Is the product in the current product line
+     */
+    public boolean isInCurrentProductLine() {
+        return inCurrentProductLine;
+    }
+
+    //-------
+    //setters
+    //-------
+    /**
+     * Updates the Product Code to the value passed as 
+     * a parameter (must be between 1000 and 9999).
+     * 
+     * @param productCode The new Product Code
+     */
+    public void setProductCode(int productCode) {
+        if ((productCode &gt;= 1000) &amp;&amp; (productCode &lt;= 9999))
+        {
+            this.productCode = productCode;
+        }
+        else
+        {
+            System.out.println(&quot;Product code is not between 1000 and 9999.&quot;
+                             + &quot;  You entered: &quot; + productCode);
+        }    }
+
+    /**
+     * Updates the Product Name to the value passed as a parameter 
+     * 
+     * @param productName The new Product Name
+     */
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    /**
+     * Updates the Unit Cost to the value passed as a 
+     * parameter (must be greater than zero).
+     * 
+     * @param unitCost The new unit cost for the product
+     */
+    public void setUnitCost(double unitCost) {
+        if (unitCost &gt; 0)
+        {
+            this.unitCost = unitCost;
+        }
+        else
+        {
+            System.out.println(&quot;Unit cost must be greater than zero.&quot;);
+        }
+    }
+
+    /**
+     * Updates the boolean indicating whether the product 
+     * is in the current product line or not.  
+     * 
+     * @param inCurrentProductLine Indicator that determines if 
+     *        the product is in the current product line or not.
+     */
+    public void setInCurrentProductLine(boolean inCurrentProductLine) {
+        this.inCurrentProductLine = inCurrentProductLine;
+    }
+
+}</code></pre>
+<h2>Solution - Test</h2>
+<ul>
+<li><p>Test your code by creating numerous objects and verifying that the methods behave as expected.  Make sure to <em>boundary</em> test the code that has validations associated with it.</p>
+</li>
+<li><p>View your generated Javadoc...how does it look?  Could you improve it or have you provided sufficient information.</p>
 </li>
 </ul>
 
