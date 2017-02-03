@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MenuController()
+comment1.params=
+comment1.target=int\ mainMenu()
+comment1.text=\r\n\ mainMenu()\ -\ This\ method\ displays\ the\ menu\ for\ the\ application,\ \r\n\ reads\ the\ menu\ option\ that\ the\ user\ entered\ and\ returns\ it.\r\n\ \r\n\ @return\ \ \ \ \ the\ users\ menu\ choice\r\n
+comment2.params=
+comment2.target=void\ runMenu()
+comment2.text=\r\n\ This\ is\ the\ method\ that\ controls\ the\ loop.\r\n
+comment3.params=
+comment3.target=void\ addProduct()
+numComments=4

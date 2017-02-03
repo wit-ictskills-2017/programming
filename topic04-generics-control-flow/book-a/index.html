@@ -1,0 +1,1006 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      4: Grouping Objects
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Generics-Control-flow">
+      Generics-Control-flow
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="06">
+      06
+    </a>
+    
+    <a class="item" data-tab="07">
+      07
+    </a>
+    
+    <a class="item" data-tab="08">
+      08
+    </a>
+    
+    <a class="item" data-tab="09">
+      09
+    </a>
+    
+    <a class="item" data-tab="10">
+      10
+    </a>
+    
+    <a class="item" data-tab="Exercises">
+      Exercises
+    </a>
+    
+    <a class="item" data-tab="Shop">
+      Shop
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-a/index.html">
+          Classes-objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-b/index.html">
+          Class-components
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects(solns)/book-solutions/index.html">
+          Class-components-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine/book/index.html">
+          Ticket-Machine
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine(solns)/book-a/index.html">
+          Ticket-Machine-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-a/index.html">
+          Abstraction-modularization[1]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-b/index.html">
+          Abstraction-modularization[2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-c/index.html">
+          Abstraction-modularization[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+          Abstraction-modularization-Solutions-[1-2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+          Abstraction-modularization-Solutions-[3]
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic04-generics-control-flow/book-a/index.html">
+          Generics-Control-flow
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+          Notebook_solutions-[1-3]
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Generics-Control-flow">
+        <h1>Objectives</h1>
+<p>Use BlueJ Notebook class to gain basic experience with the ArrayList collection class. Explore some of its methods by generating and manipulating test data. Gain experience in looping using <em>for</em>, <em>enhanced for</em>, <em>while</em>, <em>do-while</em> and <em>iterators</em>.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Notebook project</h1>
+<p>Download the BlueJ examples chapter04 available <a href="archives/chapter04.zip">here</a> into <em>workspaceBlueJ/blueJ</em> folder and uncompress.</p>
+<p>Check your directory structure correct:</p>
+<p><em>workspaceBlueJ/blueJ/chapter04</em></p>
+<p>Launch BlueJ and open the project notebook1</p>
+<p>Select Notebook in the <em>BlueJ: notebook1</em> window, right click and open the editor to view the source code. See Figure 1</p>
+<p><img src="img/notebookEditor.png" alt="Figure 1: Open editor to view Notebook source"></p>
+<p>Here, without comments, is the code:</p>
+<pre><code>public class Notebook
+{
+    private ArrayList&lt;String&gt; notes;
+
+    public Notebook()
+    {
+        notes = new ArrayList&lt;String&gt;();
+    }
+    public void storeNote(String note)
+    {
+        notes.add(note);
+    }
+
+    public int numberOfNotes()
+    {
+        return notes.size();
+    }
+
+    public void showNote(int noteNumber)
+    {
+        if(noteNumber &lt; 0) 
+        {
+
+        }
+        else if(noteNumber &lt; numberOfNotes()) {
+            System.out.println(notes.get(noteNumber));
+        }
+        else 
+        {
+
+        }
+    }
+}</code></pre>
+<p>In the following steps we shall discuss the key statements in this code</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Notebook source code</h1>
+<pre><code>import java.util.ArrayList;</code></pre>
+<p>Makes the ArrayList class available.</p>
+<p>The ArrayList class is a member of the Java package <em>java.util</em>.</p>
+<pre><code>public class Notebook 
+{
+
+}</code></pre>
+<p>This is the outer wrapper for the Notebook class. It is declared <em>public</em> so that it has global visibility, i.e. there is no restriction on who can use the class.</p>
+<p>Declares a private variable <em>notes</em>.</p>
+<pre><code>private ArrayList&lt;String&gt; notes;</code></pre>
+<p><em>private</em> means the variable is visible only within the Notebook object in which the variable was created.</p>
+<p>ArrayList<String> defines the type of the variable notes, namely and ArrayList of String objects.</p>
+<pre><code>public Notebook()
+{
+
+}</code></pre>
+<p>This is the Notebook default constructor.</p>
+<p>The constructor is declared public and is thus globally accessible.</p>
+<p>Within the constructor, the notes Array list is instantiated:</p>
+<pre><code>public Notebook()
+{
+    notes = new ArrayList&lt;String&gt;();  
+}</code></pre>
+<p>Since Java 7, this may also been written as:</p>
+<pre><code>notes = new ArrayList&lt;&gt;();</code></pre>
+<p>The public method</p>
+<pre><code>public void storeNote(String note) 
+{
+    notes.add(note);
+}</code></pre>
+<p>adds a new note to the notes array. </p>
+<p>The new note is made available as an actual parameter (String note) and added to the <em>notes</em> instance variable using the ArrayList method <em>add</em>. </p>
+<p>This ArrayList method <em>add</em> is one of three used in the present Notes source code. </p>
+<p>The other two are <em>size</em> and <em>get</em> that return the number of elements in an ArrayList and a specific element, respectively.</p>
+<p>We can disover the number of notes in the array by invoking the method <em>numberOfNotes</em></p>
+<pre><code>public int numberOfNotes()
+{
+    return notes.size();
+}</code></pre>
+<p>This method invokes the ArrayList method <em>size</em> which returns the number of elements in the array and this number is in turn returned back to the caller of the method as an integer value by <em>numberOfNotes</em>.</p>
+<p>The final method prints a specific note (an element of the <em>notes</em> variable) to the output window:</p>
+<pre><code>   public void showNote(int noteNumber)
+    {
+        if(noteNumber &lt; 0) 
+        {
+            //Invalid note number: do nothing
+        }
+        else if(noteNumber &lt; numberOfNotes()) 
+        {
+            System.out.println(notes.get(noteNumber));
+        }
+        else 
+        {
+            //Invalid note number: do nothing
+        }
+    }</code></pre>
+<p>We will refactor this method later in the lab.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Adding elements to ArrayList</h1>
+<p>Create a new Notebook object named <em>notebook1</em> on the BlueJ workbench.</p>
+<p>Select the object and from the drop-down menu invoke <em>storeNote</em> (Figure 1).</p>
+<p><img src="img/storeNote.png" alt="Figure 1: Storing a new note"></p>
+<p>Add a note &quot;Lab at 9am&quot;.</p>
+<p>Check that the note has been saved to the array by invoking <em>showNote</em> using 0 as the actual parameter (Figure 2 and Figure 3).</p>
+<p><img src="img/showNote.png" alt="Figure 2: Invoke showNote method"></p>
+<p><img src="img/showNote0.png" alt="Figure 3: Show first note"></p>
+<p>The note should be displayed as illustrated in Figure 4.</p>
+<p><img src="img/note0Displayed.png" alt="Figure 4: First note displayed"></p>
+<p>Add the following notes in order:</p>
+<p>&quot;Lecture at 10am&quot;</p>
+<p>&quot;Break at 11.15am&quot;</p>
+<p>&quot;Library at 11.30 till lunch&quot;</p>
+<p>&quot;Lunch at 1pm&quot;</p>
+<p>Now verify the number of notes saved to date is correct by invoking <em>numberOfNotes</em> (Figure 5 and Figure 6).</p>
+<p><img src="img/numberNotesMethod.png" alt="Figure 5: Invoke numberOfNotes method">
+<img src="img/numberNotes5.png" alt="Figure 6: Number notes saved to date"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Accessing ArrayList element</h1>
+<p>We shall now refactor the <em>showNote</em> method. Here it is again:</p>
+<pre><code>public void showNote(int noteNumber)
+    {
+        if(noteNumber &lt; 0) 
+        {
+
+        }
+        else if(noteNumber &lt; numberOfNotes()) 
+        {
+            System.out.println(notes.get(noteNumber));
+        }
+        else 
+        {
+
+        }
+    }</code></pre>
+<p>Here are the first and third code blocks from the above with added comments:</p>
+<pre><code>/*
+ * The note number cannot be less than zero
+ */
+if(noteNumber &lt; 0) 
+{
+
+}</code></pre>
+<p>and</p>
+<pre><code>/*
+ * This block routes execution code where the note number is 
+ * neither less than zero nor less than the number of notes. 
+ * In other words, the note number is either equal or greater than the number of notes.
+ */
+else 
+{
+
+}</code></pre>
+<p>What this long-winded code is attempting to ensure is that only a valid note number is processed.</p>
+<p>Since a valid note number range is between zero and the number of notes -1, we can refactor this code as follows:</p>
+<pre><code>public void showNote(int noteNumber)
+{
+    if(noteNumber &gt;= 0 &amp;&amp; noteNumber &lt; numberOfNotes())
+    {
+        System.out.println(notes.get(noteNumber));
+    }
+    else 
+    {
+        System.out.println(&quot;Please enter valid note number&quot;);
+    }
+}</code></pre>
+<p>Open the Notebook source code as before and substitute this refactored method for the existing (Figure 1).</p>
+<p><img src="img/refactShowNote.png" alt="Figure 1: Refactored showNote method added"></p>
+<p>Compile the project and test the method by entering, first valid data (e.g. 0) and then invalid data (e.g. 100).</p>
+<p>For example, see Figure 2 where valid data (0) is being input. </p>
+<p><img src="img/showValidNote.jpg" alt="Figure 2: Valid array index input"></p>
+<p>See Figure 3 for an outcome of entering an invalid note number.</p>
+<p><img src="img/showInvalid.png" alt="Figure 3: Invalid note number accessed"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Initializing ArrayList</h1>
+<p>Each time we compile the project, all objects are removed from the object bench and any data we might have entered, such as the notes in an earlier step, would be lost.</p>
+<p>To avoid the tedious repetition of rentering data following each recompilation,we shall write a simple method to programmatically initialise the <em>notes</em> collection.</p>
+<p>Here is the code:</p>
+<pre><code>public void initializeTestData()
+{
+
+    notes = new ArrayList&lt;String&gt;() {{
+            add(&quot;lab at 9am&quot;);
+            add(&quot;Lecture at 10am&quot;);
+            add(&quot;Break at 11.15am&quot;);
+            add(&quot;Library at 11.30 till lunch&quot;);
+            add(&quot;Lunch at 1pm&quot;);
+    }};
+
+}</code></pre>
+<p>This code is shorhand for</p>
+<pre><code>public void initializeTestData()
+{
+
+    notes = new ArrayList&lt;String&gt;();
+    notes.add(&quot;lab at 9am&quot;);
+    notes.add(&quot;Lecture at 10am&quot;);
+    notes.add(&quot;Break at 11.15am&quot;);
+    notes.add(&quot;Library at 11.30 till lunch&quot;);
+    notes.add(&quot;Lunch at 1pm&quot;);
+}</code></pre>
+<p>Now, following recompilation and creation of a new <em>Notebook</em> object, we can invoke this method to restore data in the <em>notes</em> instance variable.</p>
+<ul>
+<li><p>Open the source code for Notebook in the editor and insert this method immediately following the constructor.</p>
+</li>
+<li><p>The location for the code is not relevent to the running of the program but placing it following the constructor is a reasonable decision.</p>
+</li>
+<li><p>Compile the code.</p>
+</li>
+<li><p>Create a new Notebook object.</p>
+</li>
+<li><p>Test the <em>initializeTestData</em> method by</p>
+<ul>
+<li>Invoking this newly written method <em>initializeTestData</em>.</li>
+<li>invoking <em>numberOfNotes</em> and verifying the number is 5.</li>
+<li>invoking the <em>showNote</em> method with note numbers from 0 to 4 and verifying the notes are correct.</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>Access ArrayList using for-each</h1>
+<p>Here is the general format of the <em>for-each</em> statement:</p>
+<pre><code>for(Object o : collection)
+{
+statement(s)
+}</code></pre>
+<p><em>Object o</em> is an element of the collection in question. </p>
+<p>For example in the case of <em>ArrayList<String\> notes</em>, <em>Object o</em> represents <em>String note</em> where <em>note</em> is an individual element of <em>notes</em> and <em>collection</em> represents <em>notes</em>.</p>
+<pre><code>ArrayList&lt;Object&gt;  collection     Object o                         
+ArrayList&lt;String&gt;  notes          String note</code></pre>
+<p>Here, then, is a method to list all the elements of <em>notes</em> using a <em>for-each</em> loop. </p>
+<pre><code>public void listNotesForEach()
+{
+    for(String note: notes)
+    {
+        System.out.println(note);
+    }
+}</code></pre>
+<p>Our choice of method name, <em>listNotesForEach</em> is made because we will shortly be writing methods to achieve the same goal but using different looping techniques. This approach is being adopted in this, an educational, environment. In a commercial environment one would likely use one looping method and name the method something along the lines of <em>listNotes</em> or <em>listAllNotes</em> without giving any indication of how the method is implemented.</p>
+<p>To implement and test this method:</p>
+<ul>
+<li>Open the Notebook editor</li>
+<li>Add this code for <em>listNodesForEach</em> at the end of the Notebook source.</li>
+<li>Compile and execute this new method.</li>
+<li>Invoke the <em>initializeTestData</em> to recreate the sample notes.</li>
+</ul>
+<p>You should generate output as shwon in Figure 1.</p>
+<p><img src="img/listNotesForEach.png" alt="Figure 1: Using for-each to list all arraylist notes"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="07">
+        <h1>Access ArrayList using while</h1>
+<p>Here is the general format of the <em>while</em> statement:</p>
+<pre><code>while (expression)
+{
+    statement(s)
+}</code></pre>
+<p>Here is a method to list all the elements of <em>notes</em> using a <em>while</em> loop. </p>
+<pre><code>public void listNotesWhile()
+{
+    int index = 0;
+    while(index &lt; notes.size())
+    {
+        System.out.println(notes.get(index));
+        index = index + 1;
+    }
+}</code></pre>
+<p>To implement and test this method follow steps similar to those for the method <em>listNotesForEach</em>:</p>
+<ul>
+<li>Open the Notebook editor</li>
+<li>Add this code for <em>listNodesWhile</em> at the end of the Notebook source.</li>
+<li>Compile and execute this new method.</li>
+<li>Invoke the <em>initializeTestData</em> to recreate the sample notes.</li>
+</ul>
+<p>You should generate output similar to that shown in in Figure 1.</p>
+<p><img src="img/listNotesWhile.png" alt="Figure 1: Using while to list all arraylist notes"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="08">
+        <h1>Access ArrayList using Iterator</h1>
+<p>Here is the general format of the source required to use an iterator over a collection:</p>
+<pre><code>ArrayList&lt;Object&gt; collection;
+Iterator&lt;Object&gt; it = collection.iterator();
+while(it.hasNext())
+{
+    Object o = it.next();
+}</code></pre>
+<p><em>Object o</em> is an element of the collection in question. </p>
+<p>For example in the case of <em>ArrayList<String\> notes</em>, <em>Object o</em> represents <em>String note</em> where <em>note</em> is an individual element of <em>notes</em> and <em>collection</em> represents <em>notes</em>.</p>
+<pre><code>ArrayList&lt;Object&gt;  collection     Object o                         
+ArrayList&lt;String&gt;  notes          String note</code></pre>
+<p>Here is a method to list all the elements of <em>notes</em> by iterating over the collection:</p>
+<pre><code>//Insert this statement at the top of the source code file
+import java.util.Iterator;
+
+//Here is the method code
+public void listNotesIterator()
+{
+    Iterator&lt;String&gt; it = notes.iterator();
+    while(it.hasNext())
+    {
+        System.out.println(it.next());
+    }
+}</code></pre>
+<p>To implement and test this method follow steps similar to those for the method <em>listNotesForEach</em>:</p>
+<ul>
+<li>Open the Notebook editor</li>
+<li>Add this code for <em>listNodesIterator</em> at the end of the Notebook source.</li>
+<li>Compile and execute this new method.</li>
+<li>Invoke the <em>initializeTestData</em> to recreate the sample notes.</li>
+</ul>
+<p>You should generate output similar to that shown in in Figure 1.</p>
+<p><img src="img/listNotesIterator.png" alt="Figure 1: Using while to list all arraylist notes"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="09">
+        <h1>Method to search Notebook object for specific string occurrence</h1>
+<p>We will name the method <em>search</em> and give it the following header:</p>
+<pre><code>public boolean search(String searchString)</code></pre>
+<p>The method </p>
+<ul>
+<li>Searches for the first occurrence of the String <em>searchString</em>.</li>
+<li>On the first occurrence of <em>searchString</em>, the method immediately returns <em>true</em>.</li>
+<li>If the string is not found, the method returns <em>false</em>.</li>
+</ul>
+<p>Here is the code:</p>
+<pre><code>public boolean search(String searchString)
+{
+    Iterator&lt;String&gt; it = notes.iterator();
+    while (it.hasNext())
+    {
+        String string = it.next();
+        if (string.contains(searchString))
+        {
+            return true;
+        }
+    }
+    return false;
+}</code></pre>
+<p>Observe that we are using the <em>contains</em> method that is a member of the String class: <em>contains</em>, essentially, returns <em>true</em> if and only if the <em>string</em> contains the specified <em>searchString</em>.</p>
+<p>For example:
+- If we search for &quot;Lab&quot; in <em>notes</em> then the method will return true because &quot;Lab&quot; is a substring of the first note &quot;Lab at 9am&quot;
+- However, a search for &quot;Lab at 9am in 4A&quot; will return <em>false</em>. The entire search string must be contained, not just part of it.</p>
+<p>To implement and test this method follow steps similar to those for the method <em>listNotesForEach</em>:</p>
+<ul>
+<li>Open the Notebook editor</li>
+<li>Add this code for <em>searchString</em> at the end of the Notebook source.</li>
+<li>Compile and execute this new method.</li>
+<li>Invoke the <em>initializeTestData</em> to recreate the sample notes.</li>
+<li>Search for the string &quot;Lab&quot; by invoking <em>searchString</em>.</li>
+<li>The <em>boolean</em> <em>true</em> should be returned.</li>
+<li>The outcome should be as illustrated in Figure 1.</li>
+</ul>
+<p>You should generate output similar to that shown in in Figure 1.</p>
+<p><img src="img/searchTrue.png" alt="Figure 1: Using while to list all arraylist notes"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="10">
+        <h1>Remove elements from Notebook ArrayList</h1>
+<p><strong>Remove individual element</strong></p>
+<p>We shall first write a method to remove an individual element from the  Notebook field <em>notes</em> followed by a method to remove all the elements.</p>
+<pre><code>public void remove(int index) 
+{
+    if(index &gt;= 0 &amp;&amp; index &lt; notes.size()) 
+    { 
+        notes.remove(index);
+    } 
+    else
+    {
+        System.out.println(&quot;You requested removal of a non-existant note. Please enter a valid index&quot;);
+    }
+}</code></pre>
+<p>Initializing the Notebook object with the standard test data, test the method by entering </p>
+<ul>
+<li>A valid index, such as 0.<ul>
+<li>Check the number of elements using <em>numberOfNotes</em>.</li>
+<li>List all the elements using, for example, <em>listNotesForEach</em>, and verify correct.</li>
+</ul>
+</li>
+<li>An invalid index such as 10.<ul>
+<li>You should receive a warning message.</li>
+<li>Nevertheless you should:<pre><code>  - Check the number of elements using *numberOfNotes*.
+  - List all the elements using, for example, *listNotesForEach*, and verify correct.</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h1>Remove all elements</h1>
+<pre><code>public void removeAll()
+{
+    notes.clear();
+}</code></pre>
+<p>Initializing the Notebook object with the standard test data, test the method by</p>
+<ul>
+<li>Invoke the <em>removeAll</em> method</li>
+<li>Check the number of elements using <em>numberOfNotes</em> which should zero.</li>
+<li>List all the elements using, for example, <em>listNotesForEach</em>, and verify there is none.</li>
+</ul>
+<p>You should generate output similar to that shown in in Figure 1.</p>
+<p><img src="img/removeAll.png" alt="Figure 1: Remove all notes"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Exercises">
+        <h1>Exercises</h1>
+<h2>Exercise 1</h2>
+<p>Write a method <em>listNotesFor</em> to process all the elements in the ArrayList of notes in the Notebook class and print all the notes.</p>
+<p>Test the method by:</p>
+<ul>
+<li>Adding the method to Notebook source code.</li>
+<li>Compiling the source.</li>
+<li>Creating a Notebook object.</li>
+<li>Initializing, using method such as <em>initializeTestData</em>, with sample data.</li>
+<li>Invoking <em>listNotesFor</em> and verifying the correctness of the output.</li>
+</ul>
+<h2>Exercise 2</h2>
+<p>Write a Notebook method <em>public boolean searchWhile(String searchString)</em> similar in effect to that written earlier in the lab but using a <em>while</em> loop to process the array of notes.</p>
+<p>Test the method by:</p>
+<ul>
+<li>Adding the method to Notebook source code.</li>
+<li>Compiling the source.</li>
+<li>Creating a Notebook object.</li>
+<li>Initializing with sample data using a method such as <em>initializeTestData</em>.</li>
+<li>Searching for the presence of a string that exists in the sample data and observing the result.</li>
+<li>Searching for the presence of a string that does not exist in the sample data and observing the result.</li>
+</ul>
+<h2>Exercise 3</h2>
+<p>Write a Notebook method <em>public boolean searchForEach(String searchString)</em> similar in effect to that written earlier in the lab but using a <em>for-each</em> loop to process the array of notes.</p>
+<p>Test the method by:</p>
+<ul>
+<li>Adding the method to Notebook source code.</li>
+<li>Compiling the source.</li>
+<li>Creating a Notebook object.</li>
+<li>Initializing with sample data using a method such as <em>initializeTestData</em>.</li>
+<li>Searching for the presence of a string that exists in the sample data and observing the result.</li>
+<li>Searching for the presence of a string that does not exist in the sample data and observing the result.</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Shop">
+        <h1>Shop project (from lectures)</h1>
+<p>In your workspace folder, create a new project called <em>Shop</em>.  This project will be a menu-driven system that will manage a collection of products for a store.</p>
+<h2>Product class</h2>
+<ul>
+<li>Create a new class called Product.</li>
+<li>Copy this code into your class (remember we wrote this code in a previous lab).  The Javadoc comments will provide some information for you about this class.</li>
+</ul>
+<pre><code class="lang-java">/**
+ * Represents a Product.  Stores the product name, product code,
+ * unitCost and whether the product is in the current product
+ * line or not.
+ *  
+ * @author Siobhan Drohan
+ * @version 1.0 (25th Jan 2017)
+ */
+public class Product
+{
+    //instance fields
+    private String productName;
+    private int productCode;
+    private double unitCost;
+    private boolean inCurrentProductLine;
+
+    /**
+     * Constructor for objects of class Product
+     * 
+     * @param productName Name of the product
+     * @param productCode Code of the product (between 1000 and 9999)
+     * @param unitCost Unit cost of the product (greater than zero)
+     * @param inCurrentProductLine indicates whether the 
+     *        product is in the current product line or not
+     */
+    public Product(String productName, int productCode, 
+                   double unitCost, boolean inCurrentProductLine){
+        this.productName = productName;
+        if ((productCode &gt;= 1000) &amp;&amp; (productCode &lt;= 9999)){
+            this.productCode = productCode;
+        }
+        else{
+            this.productCode = 1;
+        }
+        if (unitCost &gt; 0){
+            this.unitCost = unitCost;
+        }
+        else{
+            this.unitCost = 0;
+        }
+        this.inCurrentProductLine = inCurrentProductLine;
+    }
+
+    //-------
+    //getters
+    //-------
+    /**
+     * Returns the product name for the specified object
+     * 
+     * @return The Product Name 
+     */
+    public String getProductName(){
+        return productName;
+    }
+
+    /**
+     * Returns the unit cost for the specified object
+     * 
+     * @return The Unit Cost 
+     */
+    public double getUnitCost(){
+        return unitCost;
+    }
+
+    /**
+     * Returns the product code for the specified object
+     * 
+     * @return The Product Code 
+     */
+    public int getProductCode() {
+        return productCode;
+    }
+
+    /**
+     * Returns a boolean indicating if the product is in 
+     * the current product line 
+     * 
+     * @return Is the product in the current product line
+     */
+    public boolean isInCurrentProductLine() {
+        return inCurrentProductLine;
+    }
+
+    //-------
+    //setters
+    //-------
+    /**
+     * Updates the Product Code to the value passed as 
+     * a parameter (must be between 1000 and 9999).
+     * 
+     * @param productCode The new Product Code
+     */
+    public void setProductCode(int productCode) {
+        if ((productCode &gt;= 1000) &amp;&amp; (productCode &lt;= 9999)){
+            this.productCode = productCode;
+        }
+        else{
+            System.out.println(&quot;Product code is not between 1000 and 9999.&quot;
+                             + &quot;  You entered: &quot; + productCode);
+        }    
+    }
+
+    /**
+     * Updates the Product Name to the value passed as a parameter 
+     * 
+     * @param productName The new Product Name
+     */
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    /**
+     * Updates the Unit Cost to the value passed as a 
+     * parameter (must be greater than zero).
+     * 
+     * @param unitCost The new unit cost for the product
+     */
+    public void setUnitCost(double unitCost) {
+        if (unitCost &gt; 0){
+            this.unitCost = unitCost;
+        }
+        else{
+            System.out.println(&quot;Unit cost must be greater than zero.&quot;);
+        }
+    }
+
+    /**
+     * Updates the boolean indicating whether the product 
+     * is in the current product line or not.  
+     * 
+     * @param inCurrentProductLine Indicator that determines if 
+     *        the product is in the current product line or not.
+     */
+    public void setInCurrentProductLine(boolean inCurrentProductLine) {
+        this.inCurrentProductLine = inCurrentProductLine;
+    }
+
+    /**
+     * Returns a user-friendly string representation of the Product object
+     * 
+     * @return User-friendly String representing the current Product
+     */
+    public String toString(){
+        return  &quot;Product: &quot; + productName
+              + &quot;(code: &quot; + productCode + &quot;)&quot; 
+              + &quot;. Unit cost: &quot; + unitCost
+              + &quot;.  In current product line: &quot; + inCurrentProductLine;
+
+    }
+
+}</code></pre>
+<ul>
+<li>Test the methods in this class by creating an object of type Product and testing that each method behaves as it should.</li>
+</ul>
+<h2>Store class</h2>
+<p>In the real-world, a store holds many products; we will mimic this one-many relationship in project now.</p>
+<p>In the <em>Shop</em> project, create a new class called <em>Store</em> and add the following to it:</p>
+<ul>
+<li><p>import java.util.ArrayList;</p>
+</li>
+<li><p>Create two private instance fields:</p>
+<ul>
+<li>storeLocation; of type String</li>
+<li>products; an ArrayList of Products</li>
+</ul>
+</li>
+<li><p>Write a constructor for this class that takes one parameter, <em>storeLocation</em>.  This parameter will be used to setup the corresponding instance field.  The <em>products</em> instance field will also be instantiated in this constructor.</p>
+</li>
+<li><p>Write a getter and a setter for both of the instance variables above. </p>
+</li>
+<li><p>Write a <strong>size</strong> method that takes no parameters and returns an int.  The int returned represents the number of products currently stored in the ArrayList <em>products</em>.</p>
+</li>
+<li><p>Write an <strong>add</strong> method that takes one parameter (an Object of type Product) and returns a boolean value.  This method adds the product, passed as a parameter, to the <em>products</em> ArrayList.</p>
+</li>
+<li><p>Write a <strong>listProducts</strong> method that takes no parameter and returns a String containing all products stored in the <em>products</em> ArrayList.  If there are no products in the ArrayList, return a String stating &quot;No products&quot;.  Note:  choose any type of loop you fancy here but you must print the index number with each product. </p>
+</li>
+<li><p>Write a <strong>remove</strong> method that takes one parameter (an int representing the index of the product you want to delete) and has a void return type. This method removes the product, at the specified index, from the <em>products</em> ArrayList.  Ensure that you validate the index in this method i.e. between 0 (inclusive) and size (exclusive).</p>
+</li>
+<li><p>Write a <strong>get</strong> method that takes one parameter (an int representing the index of the product you want to retrieve) and has a return type of Product. This method retrieves the product, at the specified index, from the <em>products</em> ArrayList.  Ensure that you validate the index in this method i.e. between 0 (inclusive) and size (exclusive).</p>
+</li>
+<li><p>Write a <strong>cheapestProduct</strong> method that takes no parameters and has a return type of String.  If there are no products in the ArrayList, return a String stating &quot;No products&quot;.  If there are products in the ArrayList, return the productName that is the cheapest (note: you may need to refer to your lecture notes for the algorithm here).</p>
+</li>
+<li><p>Write a <strong>toString</strong> method that takes no parameters and has a return type of String.  This string should contain the store location as well as a list of all products in the store.</p>
+</li>
+</ul>
+<h2>Test Store Class</h2>
+<ul>
+<li>Create four product objects.  </li>
+<li>Add each product object to the <strong>products</strong> ArrayList.</li>
+<li>Call the <em>size</em> method; it shoud tell you that four products are currently in the ArrayList.</li>
+<li>Call the getter methods and ensure that you are returned the correct data.</li>
+<li>Call the setter method for the <em>storeLocation</em> field and update the location to a String of your choice.</li>
+<li>Call the <em>listProducts</em> method.  The four prodcuts should be printed to the console.</li>
+<li>Call the <em>remove</em> method, passing 1 as a parameter.  Test that the second product was deleted from your ArrayList by listing all the products.  Test that the size of the ArrayList is now three.  Also boundary test the passed index i.e. test with an index less than zero and an index equal to the size of the ArrayList.</li>
+<li>Call the <em>get</em> method, passing 1 as a parameter.  Test that the second product was retrieved from your ArrayList.  Also boundary test the passed index i.e. test with an index less than zero and an index equal to the size of the ArrayList.</li>
+<li>Call the <em>cheapestProduct</em> method and ensure that the name of the cheapest product has been returned. </li>
+<li>Call the <em>toString</em> method and ensure that the name of the store and it&#39;s products are returned. </li>
+</ul>
+<h2>MenuController</h2>
+<p>In the <em>Shop</em> project, create a new class called <em>MenuController</em> and add the following to it:</p>
+<ul>
+<li><p>import java.util.Scanner;</p>
+</li>
+<li><p>Create two private instance fields:</p>
+<ul>
+<li>input; of type Scanner</li>
+<li>store; of type Store</li>
+</ul>
+</li>
+<li><p>Write a constructor for this class that takes no parameters.  The <em>input</em> instance field should be instantiated in this constructor.  The constructor also asks the user to enter the store location and uses this information to instantiate the store instance field.  Also the <em>runMenu</em> method should be invoked from here.</p>
+</li>
+<li><p>Write a private <em>mainMenu</em> method that takes no parameters and prints the menu below to the console.  This method has a return type of int, which is contains the user&#39;s menu choice that they entered on the console.</p>
+</li>
+</ul>
+<p><img src="img/01.png" alt="Figure 1: Menu"></p>
+<ul>
+<li>Write a private <em>runMenu</em> method that takes no parameters and has a void return type.  This method&#39;s responsibility is to repeatedly display the main menu to the user, while also processing their menu choice.   If you need help with this method, please see the figure just below:</li>
+</ul>
+<p><img src="img/02.png" alt="Figure 2: runMenu method"></p>
+<ul>
+<li>Write a private <em>addProduct</em> method that takes no parameters and has a void return type.  This method reads the product information from the user and uses it to construct an object of type product.  This project object is then passed to the store to add to it&#39;s ArrayList of products.</li>
+</ul>
+<h2>Test MenuController Class</h2>
+<ul>
+<li>Start the Shop App by right clicking on the MenuController class and calling its constructor.  </li>
+<li>Enter a shop location (two words at least).</li>
+<li><p>Call each menu option in turn and test different combinations in an effort to locate bugs e.g.</p>
+<ul>
+<li>test all options when no products exist</li>
+<li>try to delete a product that doesn&#39;t exist</li>
+<li>after successfully deleting a product, list the products to make sure it is gone</li>
+<li>and so on....</li>
+</ul>
+</li>
+<li><p>If you find any bugs, return to the code and try to fix them.  Remember, your debugger might come in handy if you have difficult to fix bugs.</p>
+</li>
+</ul>
+<h2>Solution</h2>
+<p>The solution to this exercise is <a href="archives/Shop.zip">here</a>.</p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>

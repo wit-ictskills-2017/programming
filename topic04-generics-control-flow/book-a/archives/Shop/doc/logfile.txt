@@ -1,0 +1,43 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_60\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+C:\dev\BlueJ\lib\bluejcore.jar;C:\dev\BlueJ\lib\junit-4.8.2.jar;C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop
+-d
+C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\dev\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\Store.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\Store.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_60
+Building tree for all the packages and classes...
+Generating C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc\Store.html...
+C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\Store.java:20: warning - @param argument "storeLocation" is not a parameter name.
+Generating C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc\package-frame.html...
+Generating C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc\package-summary.html...
+Generating C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc\allclasses-frame.html...
+Generating C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc\allclasses-noframe.html...
+Generating C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc\index.html...
+Generating C:\Users\sdrohan\Documents\2016-2017\ict-programming-2017\topic04-generics-control-flow\book-a\archives\Shop\doc\stylesheet.css...
+1 warning

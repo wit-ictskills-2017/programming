@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=istoreLocation
+comment0.target=Store(java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Store\r\n\ @param\ storeLocation\ The\ city\ where\ the\ specific\ store\ is\ located\r\n
+comment1.params=
+comment1.target=java.lang.String\ getStoreLocation()
+comment10.params=
+comment10.target=java.lang.String\ cheapestProduct()
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=java.util.ArrayList\ getProducts()
+comment3.params=storeLocation
+comment3.target=void\ setStoreLocation(java.lang.String)
+comment4.params=products
+comment4.target=void\ setProducts(java.util.ArrayList)
+comment5.params=product
+comment5.target=void\ add(Product)
+comment6.params=
+comment6.target=java.lang.String\ listProducts()
+comment7.params=
+comment7.target=int\ size()
+comment8.params=index
+comment8.target=void\ remove(int)
+comment9.params=index
+comment9.target=Product\ get(int)
+numComments=12
