@@ -1,5 +1,0 @@
-#BlueJ class context
-comment0.params=author\ title
-comment0.target=Book(java.lang.String,\ java.lang.String)
-comment0.text=\r\n\ Set\ the\ author\ and\ title\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
-numComments=1
