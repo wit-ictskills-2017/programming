@@ -805,10 +805,6 @@ public class Product
         if ((productCode &gt;= 1000) &amp;&amp; (productCode &lt;= 9999)){
             this.productCode = productCode;
         }
-        else{
-            System.out.println(&quot;Product code is not between 1000 and 9999.&quot;
-                             + &quot;  You entered: &quot; + productCode);
-        }    
     }
 
     /**
@@ -829,9 +825,6 @@ public class Product
     public void setUnitCost(double unitCost) {
         if (unitCost &gt; 0){
             this.unitCost = unitCost;
-        }
-        else{
-            System.out.println(&quot;Unit cost must be greater than zero.&quot;);
         }
     }
 
