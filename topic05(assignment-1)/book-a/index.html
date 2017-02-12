@@ -1,0 +1,529 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      Assignment-1
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Assignment1">
+      Assignment1
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="05">
+      05
+    </a>
+    
+    <a class="item" data-tab="06">
+      06
+    </a>
+    
+    <a class="item" data-tab="07">
+      07
+    </a>
+    
+    <a class="item" data-tab="08">
+      08
+    </a>
+    
+    <a class="item" data-tab="JUnit">
+      JUnit
+    </a>
+    
+    <a class="item" data-tab="Submitting">
+      Submitting
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-a/index.html">
+          Classes-objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-b/index.html">
+          Class-components
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects(solns)/book-solutions/index.html">
+          Class-components-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine/book/index.html">
+          Ticket-Machine
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine(solns)/book-a/index.html">
+          Ticket-Machine-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-a/index.html">
+          Abstraction-modularization[1]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-b/index.html">
+          Abstraction-modularization[2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-c/index.html">
+          Abstraction-modularization[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+          Abstraction-modularization-Solutions-[1-2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+          Abstraction-modularization-Solutions-[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow/book-a/index.html">
+          Generics-Control-flow
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+          Notebook_solutions-[1-3]
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic05(assignment-1)/book-a/index.html">
+          Assignment1
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Assignment1">
+        <h1>Readme</h1>
+<p>Assignment 1: This assignment is based on materials contained in the slide decks and labs in the first 4 topics, namely, <em>Introduction to Java programming language</em>, <em>Object Interaction</em> and <em>Grouping Objects</em>.  In this assignment, we will combine all these topics into a multi-class gym app.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Similar(ish) Project</h1>
+<p>In your previous lab, you worked on a Shop project.  Your assignment will be similar(ish) to this project but will incorporate more concepts and require you to develop your own algorithms to solve some of the requirements given to you.</p>
+<p>The solution to the Shop project can be found <a href="archives/Shop.zip">here</a>.</p>
+<p><img src="img/01.png" alt="Figure 1: Class Diagram for Shop Project"></p>
+<p>The <em>responsibility</em> of the <em>Product</em> class is to manage a single product. </p>
+<p>The <em>responsibility</em> of the <em>Store</em> class is to manage an ArrayList of Products.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>The Assignment</h1>
+<p>You are tasked with developing a <em>GymApp</em>.  </p>
+<p>This <em>GymApp</em> will have three classes:</p>
+<ul>
+<li><em>Member</em>:  The responsibility for this class is to manage a single Member. </li>
+<li><em>Gym</em>:  The responsibility for this class is to manage a collection of members.</li>
+<li><em>MenuController</em>: The responsibility for this class is to manage the menu, including the user input/ouput.</li>
+</ul>
+<p><img src="img/02.png" alt="Figure 1: Class Diagram for GymApp Project"></p>
+<p>The instructions for developing the app and the above classes are on the following tabs. </p>
+<h2>Some key points to remember when coding your assignment</h2>
+<ul>
+<li><p>You <strong>must</strong> use the names given for the Classes and Methods; failure to do so will result in reduced marks.</p>
+</li>
+<li><p>For all variables, methods and classes used, please adhere to the naming standards discussed in class.</p>
+</li>
+<li><p>Use internal, helper methods (i.e. private access methods) where appropriate.  The interface for your class <strong>must</strong> match the interface given in the assignment brief.  Deviating from the interface will result in reduced marks.  Note: the interface here refers to the fields, constructors and methods that are visible outside the class. </p>
+</li>
+<li><p>Your classes should be Javadoc commented in the same way that the assignment brief has them done.</p>
+</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>Member class - overview</h1>
+<p>In your workspace folder, create a new folder called <em>assignments</em>.  Within this folder, create a new folder called <em>assignment 1</em>: </p>
+<p><img src="img/readme01.png" alt="Figure 1: Folder structure"></p>
+<p>Within this directory, create a new Project and call it <em>GymApp</em>.</p>
+<p>Create a new class called <em>Member</em>.  The responsibility for this class is to manage a single Member. </p>
+<p>Reverse engineer the Member class from the JavaDoc screen shots below and those on the next tab.  Note: there is sufficient information in these screen shots to build the class.</p>
+<h2>Class Description</h2>
+<p><img src="img/member01.png" alt="Figure 2: Member Class Description"></p>
+<h2>Constructor</h2>
+<p><img src="img/member02.png" alt="Figure 3: Constructor Summary for the Member Class"></p>
+<p><img src="img/member03.png" alt="Figure 4: Constructor Detail for the Member Class"></p>
+<h2>Method Overview</h2>
+<p><img src="img/member04.png" alt="Figure 5: Method Overview for the Member Class"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>Member class - specific method details</h1>
+<p>Below you will find more information on specific methods of the Member class.</p>
+<h2>Getters for the Member class</h2>
+<p><img src="img/member05.png" alt="Figure 1: Getters for the Member Class">
+<img src="img/member06.png" alt=""></p>
+<h2>Setters for the Member class</h2>
+<p><img src="img/member07.png" alt="Figure 3: Setters for the Member Class, part 1">
+<img src="img/member08.png" alt=""></p>
+<h2>toString() for the Member class</h2>
+<p><img src="img/member09.png" alt="Figure 5: toString() for the Member Class"></p>
+<h2>calculateBMI() for the Member class</h2>
+<p><img src="img/member10.png" alt="Figure 6: calculateBMI() for the Member Class"></p>
+<h2>convertHeightMetresToInches() for the Member class</h2>
+<p><img src="img/member11.png" alt="Figure 7: convertHeightMetresToInches() for the Member Class"></p>
+<h2>convertWeightKGtoPounds() for the Member class</h2>
+<p><img src="img/member12.png" alt="Figure 7: convertWeightKGtoPounds() for the Member Class"></p>
+<h2>determineBMICategory() for the Member class</h2>
+<p><img src="img/member13.png" alt="Figure 8: determineBMICategory() for the Member Class"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="05">
+        <h1>Gym class - overview</h1>
+<p>In your <em>GymApp</em> project, create a new class called <em>Gym</em>.  The responsibility for this class is to manage a collection of Members. </p>
+<p>Reverse engineer the Gym class from the JavaDoc screen shots below and those on the next tab.  Note: there is sufficient information in these screen shots to build the class.</p>
+<h2>Class Description</h2>
+<p><img src="img/gym01.png" alt="Figure 1: Gym Class Description"></p>
+<h2>Constructor</h2>
+<p><img src="img/gym02.png" alt="Figure 2: Constructor Summary for the Gym Class"></p>
+<p><img src="img/gym03.png" alt="Figure 3: Constructor Detail for the Gym Class"></p>
+<h2>Method Overview</h2>
+<p><img src="img/gym04.png" alt="Figure 4: Method Overview for the Gym Class"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="06">
+        <h1>Gym class - specific method details</h1>
+<p>Below you will find more information on specific methods of the Gym class.</p>
+<h2>Getters for the Gym class</h2>
+<p><img src="img/gym05.png" alt="Figure 1: Getters for the Gym Class"></p>
+<h2>Setters for the Gym class</h2>
+<p><img src="img/gym06.png" alt="Figure 2: Setters for the Gym Class"></p>
+<h2>toString() for the Gym class</h2>
+<p><img src="img/gym07.png" alt="Figure 3: toString() for the Gym Class"></p>
+<h2>add(Member member) for the Gym class</h2>
+<p><img src="img/gym08.png" alt="Figure 4: add(Member member) for the Gym Class"></p>
+<h2>listBySpecificBMICategory(String category) for the Gym class</h2>
+<p><img src="img/gym09.png" alt="Figure 5: listBySpecificBMICategory(String category) for the Gym Class"></p>
+<h2>listMemberDetailsImperialAndMetric() for the Gym class</h2>
+<p><img src="img/gym10.png" alt="Figure 6: listMemberDetailsImperialAndMetric() for the Gym Class"></p>
+<h2>listMembers() for the Gym class</h2>
+<p><img src="img/gym11.png" alt="Figure 7: listMembers() for the Gym Class"></p>
+<h2>listMembersWithIdealWeight() for the Gym class</h2>
+<p><img src="img/gym12.png" alt="Figure 8: listMembersWithIdealWeight() for the Gym Class"></p>
+<h2>numberOfMembers() for the Gym class</h2>
+<p><img src="img/gym13.png" alt="Figure 9: numberOfMembers() for the Gym Class"></p>
+<h2>remove(int index) for the Gym class</h2>
+<p><img src="img/gym14.png" alt="Figure 10: remove(int index) for the Gym Class"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="07">
+        <h1>MenuController class - overview</h1>
+<p>In your <em>GymApp</em> project, create a new class called <em>MenuController</em>.  The responsibility for this class is to run the app and it&#39;s associated menu. </p>
+<p>Reverse engineer the MenuController class from the JavaDoc screen shots below and those on the next tab.  Note: there is sufficient information in these screen shots to build the class.</p>
+<h2>Class Description</h2>
+<p><img src="img/menuController01.png" alt="Figure 1: MenuController Class Description"></p>
+<h2>Constructor</h2>
+<p><img src="img/menuController02.png" alt="Figure 2: Constructor Summary for the MenuController Class"></p>
+<p><img src="img/menuController03.png" alt="Figure 3: Constructor Detail for the MemberController Class"></p>
+<p><img src="img/menu01.png" alt="Figure 4: Screen shot of entering gym details (1)"></p>
+<p><img src="img/menu02.png" alt="Figure 5: Screen shot of entering gym details (2)"></p>
+<h2>Method Overview</h2>
+<p>The implementation of the class is hidden (encapsulated).  However, the information and screen shots following tabs will give you sufficient information to complete the class. </p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="08">
+        <h1>MenuController class - menu choices</h1>
+<p>Once the user has entered the gym details, the main menu is displayed</p>
+<p><img src="img/menu03.png" alt="Figure 1: The main menu"></p>
+<p>Below you will find information on each of the menu choices listed in the main menu.</p>
+<h2>Menu Option 1 - Add a member</h2>
+<p><img src="img/menu04.png" alt="Figure 2: Adding a member"></p>
+<h2>Menu Option 2 - List all members</h2>
+<p><img src="img/menu05.png" alt="Figure 3: Listing all members when one member exists"></p>
+<p><img src="img/menu14.png" alt="Figure 4: Listing all members when multiple members exist"></p>
+<p><img src="img/menu09.png" alt="Figure 4: Listing all members when NO members exist"></p>
+<h2>Menu Option 3 - Remove a member (by index)</h2>
+<p><img src="img/menu07.png" alt="Figure 5: Removing a member that doesn&#39;t exist"></p>
+<p><img src="img/menu08.png" alt="Figure 6: Removing a member that exists"></p>
+<h2>Menu Option 4 - Number of members in the gym</h2>
+<p><img src="img/menu06.png" alt="Figure 4: Number of members in the gym"></p>
+<h2>Menu Option 5 - List gym details</h2>
+<p><img src="img/menu10.png" alt="Figure 4: Listing gym details when NO members exist"></p>
+<h2>Menu Option 6 - List members with ideal starting weight</h2>
+<p><img src="img/menu15.png" alt="Figure 1: List members with ideal starting weight"></p>
+<h2>Menu Option 7 - List members with a specific BMI category</h2>
+<p><img src="img/menu16.png" alt="Figure 1: List members with a specific BMI category, when a category exists"></p>
+<p><img src="img/menu17.png" alt="Figure 1: List members with a specific BMI category, when NO category exists"></p>
+<h2>Menu Option 8 - List all members stats imperically and metrically</h2>
+<p><img src="img/menu11.png" alt="Figure 1: List all members stats imperically and metrically"></p>
+<h2>Menu Option 9 - or any invalid menu option</h2>
+<p><img src="img/menu12.png" alt="Figure 1: Invalid menu option entered"></p>
+<h2>Menu Option 0 - Exit</h2>
+<p><img src="img/menu13.png" alt="Figure 1: Exiting system"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="JUnit">
+        <h1>JUnit</h1>
+<p><strong>NOTE: YOU DO NOT HAVE TO DO THIS STEP IF YOU DON&#39;T WANT TO.</strong></p>
+<p>For correcting your assignments, I have written two automated test classes:</p>
+<ul>
+<li><em>MemberTest</em>: This class exhaustively tests the methods in the Member class. </li>
+<li><em>GymTest</em>: This class exhaustively tests the methods in the Gym class.</li>
+</ul>
+<p>I will be running these classes over your submitted assignment and correcting based on the results of the tests.  I am releasing them to you so that, prior to submitting your work, you can pre-correct your assignment and make changes / fix your code based on the output of the tests.</p>
+<h2>Setting up the MemberTest Class</h2>
+<ul>
+<li><p>In your <strong>GymApp</strong>, create a new class called <em>MemberTest</em>, select the <em>Unit Test</em> option and click the OK button.  </p>
+</li>
+<li><p>Delete all of the generated code in your new class and paste <a href="archives/MemberTest.java">this code</a> into it instead.</p>
+</li>
+</ul>
+<h2>Setting up the GymTest Class</h2>
+<ul>
+<li><p>In your <strong>GymApp</strong>, create a new class called <em>GymTest</em>, select the <em>Unit Test</em> option and click the OK button.  </p>
+</li>
+<li><p>Delete all of the generated code in your new class and paste <a href="archives/GymTest.java">this code</a> into it instead.</p>
+</li>
+</ul>
+<h2>Enabling BlueJ to run JUnit Tests</h2>
+<ul>
+<li><p>In BlueJ, you need to turn on the Unit Testing tools.  </p>
+</li>
+<li><p>Select <em>Tools</em> from the menu bar, followed by <em>Preferences...</em>:</p>
+</li>
+</ul>
+<p><img src="img/testing01.png" alt="Figure 1: Selecting the preferences..."></p>
+<ul>
+<li>When the Preferences window appears, select the <em>Interface</em> tab and check the box <em>Show unit testing tools</em> and click the OK button: </li>
+</ul>
+<p><img src="img/testing02.png" alt="Figure 2: Selecting the unit testing tools..."></p>
+<ul>
+<li>The Unit Testing tools should now appear on the left hand side of your BlueJ app.</li>
+</ul>
+<p><img src="img/testing03.png" alt="Figure 3: The Unit testing tools..."></p>
+<h2>Running the Tests</h2>
+<ul>
+<li><p>Now that you have your test class created and enabled the JUnit Testing tools in BlueJ, you are ready to test your code!</p>
+</li>
+<li><p>To do this, click on the <strong>Run Tests</strong> button.  </p>
+</li>
+<li><p>If all of the tests ran successfully, you will end up with output like so (all green ticks for the 19 tests):</p>
+</li>
+</ul>
+<p><img src="img/testing04.png" alt="Figure 4: All tests ran successfully"></p>
+<ul>
+<li>If a test fails, you will end up with a red bar and a red X beside the failing test:</li>
+</ul>
+<p><img src="img/testing05.png" alt="Figure 5: One test failed"></p>
+<ul>
+<li><p>Notice, in the above screen shot, that when we click on the failing test, more details are  about the error in the window below it.  </p>
+</li>
+<li><p>Click on the <strong>Show Source</strong> button.  You will be brought to the line of code that failed in the test class.  Try to figure out why the test failed on this particular line of code and make the changes in your classes to try to fix it.  Note that you should not make any changes in the test class to fix a failing test; the changes should be made in your code.</p>
+</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Submitting">
+        <h1>Submitting your assignment</h1>
+<p>When you are ready to submit your assignment:</p>
+<ul>
+<li><p>Rename your project folder using the naming convention <strong>firstname_surname</strong> e.g. siobhan_drohan.</p>
+</li>
+<li><p>Zip this folder ensuring that it is called  <strong>firstname_surname.zip</strong>.  No WINRARs please!</p>
+</li>
+<li><p>Submit this assignment into the central area for submitting assignments, by Sunday 26th Feb, 5PM sharp.</p>
+</li>
+</ul>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
