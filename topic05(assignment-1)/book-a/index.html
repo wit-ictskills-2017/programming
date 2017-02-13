@@ -130,6 +130,10 @@ h3
       08
     </a>
     
+    <a class="item" data-tab="Truncating">
+      Truncating
+    </a>
+    
     <a class="item" data-tab="JUnit">
       JUnit
     </a>
@@ -307,6 +311,8 @@ h3
 <p><img src="img/member12.png" alt="Figure 7: convertWeightKGtoPounds() for the Member Class"></p>
 <h2>determineBMICategory() for the Member class</h2>
 <p><img src="img/member13.png" alt="Figure 8: determineBMICategory() for the Member Class"></p>
+<h2>isIdealBodyWeight() for the Member class</h2>
+<p><img src="img/member14.png" alt="Figure 9: isIdealBodyWeight() for the Member class"></p>
 
       </div>
      
@@ -395,6 +401,49 @@ h3
 <p><img src="img/menu12.png" alt="Figure 1: Invalid menu option entered"></p>
 <h2>Menu Option 0 - Exit</h2>
 <p><img src="img/menu13.png" alt="Figure 1: Exiting system"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Truncating">
+        <h1>Formatting decimal output</h1>
+<ul>
+<li><p>In the assignment, you were asked to truncate output to two decimal places.</p>
+</li>
+<li><p>Add the following helper method to the Member class:</p>
+</li>
+</ul>
+<pre><code>    private double toTwoDecimalPlaces(double num){
+        return (int) (num *100 ) /100.0; 
+    }</code></pre>
+<ul>
+<li>This method:<ul>
+<li>takes in a parameter (called <em>num</em>) e.g. 45.76899765</li>
+<li>multiplies it by 100 e.g. 4576.899765</li>
+<li>casts it as an int e.g. 4576</li>
+<li>divides it by 100 e..g 45.76</li>
+<li>and returns this value truncated to two decimal places.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Given the following sample code:</li>
+</ul>
+<pre><code class="lang-java">
+    public double calculateSomething(){
+        return ( value / anotherValue );
+    }</code></pre>
+<ul>
+<li>We can use the <strong>toTwoDecimalPlaces</strong> method to truncate the result to two decimal places:</li>
+</ul>
+<pre><code class="lang-java">
+    //When returning the result of a calculation, we want to call our 
+    //new toTwoDecimalPlaces method to truncate the result to two decimal places:
+    public double calculateSomething(){
+        return toTwoDecimalPlaces(  value / anotherValue );
+    }</code></pre>
+<ul>
+<li>Apply this approach to the methods in the Member class whose returned result should be truncated to two decimal places.</li>
+</ul>
 
       </div>
      
