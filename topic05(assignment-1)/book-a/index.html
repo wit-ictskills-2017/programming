@@ -138,6 +138,10 @@ h3
       JUnit
     </a>
     
+    <a class="item" data-tab="Devine">
+      Devine
+    </a>
+    
     <a class="item" data-tab="Submitting">
       Submitting
     </a>
@@ -506,6 +510,30 @@ h3
 <li><p>Click on the <strong>Show Source</strong> button.  You will be brought to the line of code that failed in the test class.  Try to figure out why the test failed on this particular line of code and make the changes in your classes to try to fix it.  Note that you should not make any changes in the test class to fix a failing test; the changes should be made in your code.</p>
 </li>
 </ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Devine">
+        <h1>Devine Method Pseudocode</h1>
+<h2>isIdealBodyWeight() for the Member class</h2>
+<p><img src="img/member14.png" alt="Figure 9: isIdealBodyWeight() for the Member class"></p>
+<h2>Pseudocode</h2>
+<ul>
+<li>Assume that the calculation <strong>only</strong> applies to members of five feet and over.  If a member is exactly five feet or under, their ideal body weight is set to exactly 50 for males and 45.5 for females.</li>
+</ul>
+<pre><code>
+1. Convert the members height from metres to inches.
+
+2. If the members height is less than or equal to five feet (i.e. 60 inches) then
+           2.1 if the member is a male, their ideal body weight is 50
+           2.2 if the member is a male, their ideal body weight is 45.5
+   else 
+           2.3 if the member is male, calculate the ideal body weight based on 50 + 2.3 for every inch over 5 ft.
+        2.4 if the member is female, calculate the ideal body weight based on 45.5 + 2.3 for every inch over 5 ft.
+
+3. Check that ideal body weight (calculated above) is within a +-2 tolerance of the member&#39;s startingWeight.
+    3.1. if within or equal to the tolerance, return true
+    3.2. else return false</code></pre>
 
       </div>
      
