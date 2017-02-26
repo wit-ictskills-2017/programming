@@ -1,0 +1,357 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      6: Persistence - CRUD and XML
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Exception">
+      Exception
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="Solutions">
+      Solutions
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-a/index.html">
+          Classes-objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-b/index.html">
+          Class-components
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects(solns)/book-solutions/index.html">
+          Class-components-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine/book/index.html">
+          Ticket-Machine
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine(solns)/book-a/index.html">
+          Ticket-Machine-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-a/index.html">
+          Abstraction-modularization[1]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-b/index.html">
+          Abstraction-modularization[2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-c/index.html">
+          Abstraction-modularization[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+          Abstraction-modularization-Solutions-[1-2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+          Abstraction-modularization-Solutions-[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow/book-a/index.html">
+          Generics-Control-flow
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+          Notebook_solutions-[1-3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic05(assignment-1)/book-a/index.html">
+          Assignment1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-a/index.html">
+          Eclipse
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-b/index.html">
+          CRUD
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-c/index.html">
+          XML
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic06-persistence/book-d/index.html">
+          Exception
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Exception">
+        <h1>Objectives</h1>
+<p>In this lab, you will implement exception handling in ShopV5.0.  </p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Developing Shop V5.0</h1>
+<p>In this practical, you will create a new project called ShopV5.0 in Eclipse and refactor the code so that exception handling is fully implemented for the user input.</p>
+<h2>Starting ShopV5.0</h2>
+<ul>
+<li><p>Create a new project called ShopV5.0 and copy the three java files and the jar component from ShopV4.0 into it. </p>
+</li>
+<li><p>The solution to the ShopV4.0 exercise <a href="archives/ShopV4.0.zip">is here </a> should you need it.</p>
+</li>
+</ul>
+<h2>Runtime Errors in ShopV5.0</h2>
+<ul>
+<li>Did you notice when you enter a non-number when you were expecting a double, that the following error happens:</li>
+</ul>
+<p><img src="./img/01.png" alt="Run time Exception"> </p>
+<ul>
+<li>This line of code in the MenuController class caused the error:</li>
+</ul>
+<pre><code class="lang-java">double unitCost = input.nextDouble();</code></pre>
+<ul>
+<li>We are going to write code to handle these two errors:</li>
+</ul>
+<p><img src="./img/02.png" alt="Run time errors"> </p>
+<ul>
+<li>Replace this code:</li>
+</ul>
+<p><img src="./img/03.png" alt=""> </p>
+<ul>
+<li>With this:</li>
+</ul>
+<p><img src="./img/04.png" alt=""> </p>
+<ul>
+<li>Test this new code.  Does it work as expected e.g.</li>
+</ul>
+<p><img src="./img/05.png" alt=""> </p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Developing Shop V5.0 (continued)</h1>
+<p>In the previous step, we wrote code to handle the read of the unit cost (double) and the product code (int).</p>
+<p>However, there are other reads of <strong>int</strong> values in the MenuController class that we need to handle.  </p>
+<p><img src="./img/06.png" alt="More int reads"> </p>
+<p>This would require us re-writing the same code in multiple places.  In order, to keep our code DRY, we will write a helper method to validate the int input.</p>
+<h2>Writing a method to validate int input</h2>
+<ul>
+<li>Make the following changes in MenuController i.e. a new helper method and a call to it:</li>
+</ul>
+<p><img src="./img/07.png" alt="Validate int method and a call to it"> </p>
+<ul>
+<li>Make a second call to the new helper method, as shown here:</li>
+</ul>
+<p><img src="./img/08.png" alt="A second call to the helper method"> </p>
+<h2>Writing a method to validate double input</h2>
+<ul>
+<li>Make the following changes in MenuController i.e. another new helper method and a call to it:</li>
+</ul>
+<p><img src="./img/09.png" alt="Validate double method and a call to it"> </p>
+<ul>
+<li>Test this new code.  Does it work as expected for both int and double values?  </li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Solutions">
+        <h1>Solutions</h1>
+<p>The solution to the ShopV5.0 exercise <a href="archives/ShopV5.0.zip">is here</a>.</p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>

@@ -1,0 +1,428 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      6: Persistence - CRUD and XML
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="XML">
+      XML
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="DVDV3.0">
+      DVDV3.0
+    </a>
+    
+    <a class="item" data-tab="Solutions">
+      Solutions
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-a/index.html">
+          Classes-objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-b/index.html">
+          Class-components
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects(solns)/book-solutions/index.html">
+          Class-components-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine/book/index.html">
+          Ticket-Machine
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine(solns)/book-a/index.html">
+          Ticket-Machine-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-a/index.html">
+          Abstraction-modularization[1]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-b/index.html">
+          Abstraction-modularization[2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-c/index.html">
+          Abstraction-modularization[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+          Abstraction-modularization-Solutions-[1-2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+          Abstraction-modularization-Solutions-[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow/book-a/index.html">
+          Generics-Control-flow
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+          Notebook_solutions-[1-3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic05(assignment-1)/book-a/index.html">
+          Assignment1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-a/index.html">
+          Eclipse
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-b/index.html">
+          CRUD
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic06-persistence/book-c/index.html">
+          XML
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-d/index.html">
+          Exception
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="XML">
+        <h1>Objectives</h1>
+<p>In this lab, you will implement persistence into ShopV4.0.  You will also apply your persistence knowledge to another domain i.e. the DVD library you are currently working on.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Developing Shop V4.0</h1>
+<p>In this practical, you will create a new project called ShopV4.0 in Eclipse and refactor the code so that persistence is fully implemented for the prodcuts collection.  This will be the menu you will finally end up with:</p>
+<p><img src="./img/01.png" alt="Menu System for ShopV4.0"> </p>
+<h2>Starting ShopV4.0</h2>
+<ul>
+<li><p>Create a new project called ShopV4.0 and copy the three java files from ShopV3.0 into it. </p>
+</li>
+<li><p>The solution to the ShopV3.0 exercise <a href="archives/ShopV3.0.zip">is here </a> should you need it.</p>
+</li>
+</ul>
+<h2>Adding the XStream component to ShopV4.0</h2>
+<ul>
+<li><p>Download the <a href="archives/xstream-1.4.8.jar">xstream-1.4.8.jar</a> component. </p>
+</li>
+<li><p>In Eclipse Package Explorer, create a new folder &quot;lib“ (select &quot;File-&gt;New-&gt;Folder“)</p>
+</li>
+<li><p>Drag the xstream-1.4.8.jar component into the lib folder (choose the option to copy the file).  </p>
+</li>
+<li><p>Your project structure should now look like this:</p>
+</li>
+</ul>
+<p><img src="./img/xml01.png" alt="Adding a component to the lib folder"> </p>
+<h2>Adding the XStream component to the build path</h2>
+<ul>
+<li><p>Right click on the xstream-1.4.8.jar file and select: &quot;Build Path-&gt;Add to Build Path&quot;.</p>
+</li>
+<li><p>Your project structure should now look like this:</p>
+</li>
+</ul>
+<p><img src="./img/xml02.png" alt="Adding a component to the build path"> </p>
+<h2>Updating the ShopV3.0 Menu for ShopV4.0</h2>
+<ul>
+<li>The menu for ShopV3.0 is:</li>
+</ul>
+<p><img src="./img/02.png" alt="Menu System for ShopV3.0"> </p>
+<ul>
+<li>Make the following changes in ShopV4.0, MenuController class:</li>
+</ul>
+<p><img src="./img/03.png" alt="mainMenu method in ShopV4.0"> </p>
+<ul>
+<li>Also change the switch statement in ShopV4.0, MenuController to reflect these changes:</li>
+</ul>
+<p><img src="./img/04.png" alt="switch statement in ShopV4.0"> </p>
+<h2>Store.java - persistence methods</h2>
+<ul>
+<li>Add this load() method into ShopV4.0, Store class:</li>
+</ul>
+<p><img src="./img/05.png" alt="load() method in Store class"> </p>
+<ul>
+<li>Add this save() method into ShopV4.0, Store class:</li>
+</ul>
+<p><img src="./img/06.png" alt="save() method in Store class"> </p>
+<ul>
+<li>Import the necessary libraries:</li>
+</ul>
+<pre><code class="lang-java">import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.DomDriver;</code></pre>
+<ul>
+<li>Test the new code.  In particular, save some products, exit the app, restart the app and load the products...do your products load successfully?</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="DVDV3.0">
+        <h1>Menu Driven DVD Specification (Phase 3)</h1>
+<ul>
+<li><p>Create a new project in Eclipse, called <em>DVDLibraryV3.0</em>.  </p>
+</li>
+<li><p>Copy the <em>src</em> java code from <em>DVDLibraryV2.0</em> into it.</p>
+</li>
+<li><p>You will now extend the code to allow the user to save and load DVDs (note that the solution to DVD version 2 is in the <em>solutions</em> tab, should you need it). </p>
+</li>
+</ul>
+<h2>Adding the XStream component</h2>
+<ul>
+<li><p>Download the <a href="archives/xstream-1.4.8.jar">xstream-1.4.8.jar</a> component. </p>
+</li>
+<li><p>In Eclipse Package Explorer, create a new folder &quot;lib“ (select &quot;File-&gt;New-&gt;Folder“)</p>
+</li>
+<li><p>Drag the xstream-1.4.8.jar component into the lib folder (choose the option to copy the file).  </p>
+</li>
+</ul>
+<h2>Adding the XStream component to the build path</h2>
+<ul>
+<li>Right click on the xstream-1.4.8.jar file and select: &quot;Build Path-&gt;Add to Build Path&quot;.</li>
+</ul>
+<h2>Updating the Driver class</h2>
+<ul>
+<li>The current menu is:</li>
+</ul>
+<p><img src="./img/dvd01.png" alt="Menu System for DVDV2.0"> </p>
+<ul>
+<li>Make the following changes in the Driver class:</li>
+</ul>
+<p><img src="./img/dvd02.png" alt="mainMenu method"> </p>
+<ul>
+<li>Also change the switch statement in Driver to reflect these changes:</li>
+</ul>
+<p><img src="./img/dvd03.png" alt="switch statement"> </p>
+<h2>Library.java - persistence methods</h2>
+<ul>
+<li>Add this load() method into the Library class:</li>
+</ul>
+<p><img src="./img/dvd04.png" alt="load() method in Library class"> </p>
+<ul>
+<li>Add this save() method into the Library class:</li>
+</ul>
+<p><img src="./img/dvd05.png" alt="save() method in Library class"> </p>
+<ul>
+<li>Import the necessary libraries:</li>
+</ul>
+<pre><code class="lang-java">import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.xml.DomDriver;</code></pre>
+<ul>
+<li>Test the new code.  In particular, save some products, exit the app, restart the app and load the products...do your dvds load successfully?</li>
+</ul>
+<h2>JavaDoc</h2>
+<ul>
+<li>Javadoc your solution</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Solutions">
+        <h1>Solutions</h1>
+<p>The solution to the ShopV4.0 exercise <a href="archives/ShopV4.0.zip">is here</a>.</p>
+<p>The solution to DVD phase 3 <a href="archives/DVDLibraryV3.0.zip">is here</a>.</p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>

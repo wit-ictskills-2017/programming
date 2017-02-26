@@ -1,0 +1,468 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      6: Persistence - CRUD and XML
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="Eclipse">
+      Eclipse
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="ShopV2.0">
+      ShopV2.0
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-a/index.html">
+          Classes-objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-b/index.html">
+          Class-components
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects(solns)/book-solutions/index.html">
+          Class-components-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine/book/index.html">
+          Ticket-Machine
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine(solns)/book-a/index.html">
+          Ticket-Machine-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-a/index.html">
+          Abstraction-modularization[1]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-b/index.html">
+          Abstraction-modularization[2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-c/index.html">
+          Abstraction-modularization[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+          Abstraction-modularization-Solutions-[1-2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+          Abstraction-modularization-Solutions-[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow/book-a/index.html">
+          Generics-Control-flow
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+          Notebook_solutions-[1-3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic05(assignment-1)/book-a/index.html">
+          Assignment1
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic06-persistence/book-a/index.html">
+          Eclipse
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-b/index.html">
+          CRUD
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-c/index.html">
+          XML
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-d/index.html">
+          Exception
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="Eclipse">
+        <h1>Objectives</h1>
+<p>In this lab, you will explore the Eclipse IDE and use the main method as the starting point for your applications.  You will also move the BlueJ Shop project into Eclipse format.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Installing Eclipse</h1>
+<ul>
+<li>The instructions for installing Eclipse on your own laptop are presented here.</li>
+</ul>
+<h2>Downloading Eclipse</h2>
+<ul>
+<li><p>Eclipse can be downloaded from <a href="http://www.eclipse.org/downloads/eclipse-packages/">http://www.eclipse.org/downloads/eclipse-packages/</a>.  It is free.</p>
+</li>
+<li><p>Scroll down and choose the build...Eclipse IDE for Java Developers:</p>
+</li>
+</ul>
+<p><img src="./img/02.PNG" alt="Eclipse IDE for Java Developers"></p>
+<ul>
+<li>Select a mirror of your choice:</li>
+</ul>
+<p><img src="./img/03.PNG" alt="Choose a mirror"></p>
+<ul>
+<li><p>A zip file will start to download.  When this file has downloaded:</p>
+<ul>
+<li><p>Decide where you are going to store your Programming applications on your computer.   It is a good idea to create a folder called <strong>dev</strong> on your <strong>C drive</strong> and store all your applications in there.</p>
+</li>
+<li><p>Unzip the downloaded zip file to your chosen location.  Note: if you don’t have unzipping software, 7-zip is a good choice and can be downloaded from here: <a href="http://www.7-zip.org/">http://www.7-zip.org/</a>.</p>
+</li>
+<li><p>You should now have a folder structure resembling this picture:</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="./img/04.PNG" alt="Eclipse application"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Launching Eclipse</h1>
+<ul>
+<li><p>Navigate to the folder where you installed the Eclipse application. </p>
+</li>
+<li><p>You should see a list of files and folders similiar to the picture below:</p>
+</li>
+</ul>
+<p><img src="./img/05.PNG" alt="The Eclipse Application"></p>
+<ul>
+<li><p>Double click in the <strong>Eclipse</strong> application (highlighted).</p>
+</li>
+<li><p>Eclipse should launch and you will be asked to select the location of your workspace.</p>
+</li>
+</ul>
+<p><img src="./img/06.PNG" alt="Selecting your workspace"></p>
+<ul>
+<li><p>From here on in, you can manage your workspace folders without direction from us.  On your own laptop, choose a location that you find convenient as your Eclipse workspace.  It is important that you keep your workspace and the location where you installed the Eclipse software separate.    </p>
+</li>
+<li><p>Eclipse will now open.  Click x to close the welcome page.  You will have a view similar to this:</p>
+</li>
+</ul>
+<p><img src="./img/07.PNG" alt="Eclipse Application"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>HelloWorld App</h1>
+<ul>
+<li><p>Now that you have successfully launched Eclipse, we will write a basic &quot;Hello World&quot; app to test it.</p>
+</li>
+<li><p>Select the following options to create a new Java Project:</p>
+</li>
+</ul>
+<p><img src="./img/08.PNG" alt="Creating a new Java Project"></p>
+<ul>
+<li>When the <strong>New Java Project</strong> window appear, enter the project name <strong>Hello World</strong> and click the <strong>Finish</strong> button.</li>
+</ul>
+<p><img src="./img/09.PNG" alt="New Java Project Window"></p>
+<ul>
+<li>You should have a directory structure like this:</li>
+</ul>
+<p><img src="./img/10.PNG" alt="HelloWorld directory structure"></p>
+<ul>
+<li>To create a new Java class, right click on the <strong>src</strong> folder and select <strong>New</strong> followed by <strong>Class</strong> from the context menu.</li>
+</ul>
+<p><img src="./img/11.PNG" alt="Creating a new Java Class"></p>
+<ul>
+<li>When the <strong>New Java Class</strong> window appear, enter the class name <strong>HelloWorld</strong> and click the <strong>Finish</strong> button.</li>
+</ul>
+<p><img src="./img/12.PNG" alt="New Java Class Window"></p>
+<ul>
+<li>The following class will be created:</li>
+</ul>
+<p><img src="./img/13.PNG" alt="HelloWorld Class"></p>
+<ul>
+<li>Add a main method to this class that simply prints the text <strong>Hello World</strong> to the console:</li>
+</ul>
+<p><img src="./img/14.PNG" alt="HelloWorld Class with main method"></p>
+<ul>
+<li>To run your Java program right click on the &quot;HelloWorld&quot; class (it contains the main method) and select <strong>Run AS</strong> followed by <strong>Java Application</strong> from the context menu.</li>
+</ul>
+<p><img src="./img/15.PNG" alt="Running the Hello World app"></p>
+<ul>
+<li>The Console window should appear and the text <strong>Hello World</strong> should be displayed.</li>
+</ul>
+<p><img src="./img/16.PNG" alt="Console Window with output"></p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="ShopV2.0">
+        <h1>ShopV2.0</h1>
+<p>In this step, we will convert our BlueJ menu-driven console based app into Eclipse format. </p>
+<ul>
+<li>In Eclipse, create a new Java Project called ShopV2.0.</li>
+</ul>
+<h2>View existing BlueJ Shop Project</h2>
+<ul>
+<li><p>In your file explorer, open the the folder where your existing <strong>BlueJ</strong> Shop project is stored.  If you don&#39;t have a copy of it in your local file system, you can download it from <a href="archives/ShopV2.0.zip">here</a>.</p>
+</li>
+<li><p>Your BlueJ Shop folder structure should look like this: </p>
+</li>
+</ul>
+<p><img src="./img/shop01.png" alt="BlueJ Shop Project"></p>
+<h2>View new Eclipse ShopV2.0 Project</h2>
+<ul>
+<li>In another file explorer, open the the folder where your new <strong>Eclipse</strong> ShopV2.0 project is stored.  The  folder structure should look like this: </li>
+</ul>
+<p><img src="./img/shop02.png" alt="Eclipse ShopV2.0 folder structure"></p>
+<h2>Copy .java files from Bluej project to Eclipse project</h2>
+<ul>
+<li><p>Select the three .java files in your <strong>BlueJ</strong> project (hold down the CTRL key and click on each file in turn).</p>
+</li>
+<li><p>Right click on one of the selected files and choose <strong>copy</strong>.</p>
+</li>
+</ul>
+<p><img src="./img/shop03.png" alt="BlueJ Shop Project - files highlighted"></p>
+<ul>
+<li>Paste these files into the /src folder in your new ShopV2.0 <strong>Eclipse</strong> project.</li>
+</ul>
+<p><img src="./img/shop04.png" alt="Eclipse ShopV2.0 src folder"></p>
+<ul>
+<li>Return to Eclipse and refresh (F5) the project.  It should look like this:</li>
+</ul>
+<p><img src="./img/shop05.png" alt="Eclipse ShopV2.0 Project"></p>
+<h2>Test the App</h2>
+<ul>
+<li>Run the app:</li>
+</ul>
+<p><img src="./img/shop06.png" alt="Eclipse ShopV2.0 Project"></p>
+<ul>
+<li>It will result in an error:</li>
+</ul>
+<p><img src="./img/shop07.png" alt="Eclipse ShopV2.0 Project"></p>
+<h2>Add the main method to MenuController</h2>
+<ul>
+<li>Add the missing <strong>main</strong> method to the <strong>MenuController</strong> class:</li>
+</ul>
+<p><img src="./img/shop08.png" alt="Eclipse ShopV2.0 - Main Method"></p>
+<h2>Test the App Again</h2>
+<ul>
+<li>Run the app again.  You should now see the app started in your console:</li>
+</ul>
+<p><img src="./img/shop09.png" alt="Eclipse ShopV2.0 - Running app"></p>
+<h2>ShopV2.0</h2>
+<ul>
+<li>This version of the Shop project presents the user with the following menu:</li>
+</ul>
+<p><img src="./img/shop10.png" alt="Eclipse ShopV2.0 - Menu"></p>
+<ul>
+<li><p>From the CRUD perspective, in relation to a product, the user can:</p>
+<ul>
+<li>(C)reate i.e. add a product.</li>
+<li>(R)etrieve i.e. list all products and list cheapest product.</li>
+<li>(U)pdate - NOT IMPLEMENTED.</li>
+<li>(D)elete i.e. delete a product.</li>
+</ul>
+</li>
+<li><p>Re-familiarise yourself with the code behind the C, R and D operations.</p>
+</li>
+</ul>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>

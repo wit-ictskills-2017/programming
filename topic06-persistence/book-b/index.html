@@ -1,0 +1,700 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom: thin solid black;
+}
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+      6: Persistence - CRUD and XML
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="CRUD">
+      CRUD
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <a class="item" data-tab="03">
+      03
+    </a>
+    
+    <a class="item" data-tab="04">
+      04
+    </a>
+    
+    <a class="item" data-tab="DVDV1.0">
+      DVDV1.0
+    </a>
+    
+    <a class="item" data-tab="DVDV2.0">
+      DVDV2.0
+    </a>
+    
+    <a class="item" data-tab="Solutions">
+      Solutions
+    </a>
+    
+    <a class="item" href="../../index.html">
+      <i class="home icon"></i>
+    </a>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-a/index.html">
+          Classes-objects
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects/book-b/index.html">
+          Class-components
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic01-classes-objects(solns)/book-solutions/index.html">
+          Class-components-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine/book/index.html">
+          Ticket-Machine
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic02-ticket-machine(solns)/book-a/index.html">
+          Ticket-Machine-Solutions
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-a/index.html">
+          Abstraction-modularization[1]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-b/index.html">
+          Abstraction-modularization[2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization/book-c/index.html">
+          Abstraction-modularization[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+          Abstraction-modularization-Solutions-[1-2]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+          Abstraction-modularization-Solutions-[3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow/book-a/index.html">
+          Generics-Control-flow
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+          Notebook_solutions-[1-3]
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic05(assignment-1)/book-a/index.html">
+          Assignment1
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-a/index.html">
+          Eclipse
+        </a>
+      
+    
+      
+        <a class="active item" href="../../topic06-persistence/book-b/index.html">
+          CRUD
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-c/index.html">
+          XML
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic06-persistence/book-d/index.html">
+          Exception
+        </a>
+      
+    
+  </div>
+  <div class="pusher">
+    <div class="ui basic segment">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="CRUD">
+        <h1>Objectives</h1>
+<p>In this lab, you will implement CRUD into ShopV3.0.  You will also apply your CRUD knowledge to another domain i.e. start to build a DVD library.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Developing Shop V3.0</h1>
+<p>In this practical, you will create a new project called ShopV3.0 in Eclipse and refactor the code so that CRUD is fully implemented for the Product class.  This will be the menu you will finally end up with:</p>
+<p><img src="./img/01.png" alt="Menu System for ShopV3.0"> </p>
+<h2>Starting ShopV3.0</h2>
+<ul>
+<li><p>Create a new project called ShopV3.0.</p>
+</li>
+<li><p>Copy the following classes into the project (these are ShopV2.0 classes):</p>
+<ul>
+<li><p><a href="archives/MenuController.java">MenuController.java</a></p>
+</li>
+<li><p><a href="archives/Store.java">Store.java</a></p>
+</li>
+<li><p><a href="archives/Product.java">Product.java</a></p>
+</li>
+</ul>
+</li>
+<li><p>If you are not familiar with the code in these classes, take time now to review it.</p>
+</li>
+</ul>
+<h2>Updating the ShopV2.0 Menu for ShopV3.0</h2>
+<ul>
+<li>The menu for ShopV2.0 is:</li>
+</ul>
+<p><img src="./img/02.png" alt="Menu System for ShopV2.0"> </p>
+<ul>
+<li>Make the following changes in ShopV3.0, MenuController class:</li>
+</ul>
+<p><img src="./img/03.png" alt="mainMenu method in ShopV3.0"> </p>
+<ul>
+<li>Also change the switch statement in ShopV3.0, MenuController to reflect these changes:</li>
+</ul>
+<p><img src="./img/04.png" alt="switch statement in ShopV3.0"> </p>
+<h2>Writing the updateProduct() method, attempt No.1</h2>
+<ul>
+<li>Add this method into ShopV3.0, MenuController class:</li>
+</ul>
+<p><img src="./img/05.png" alt="updateProduct(), attempt No. 1"> </p>
+<ul>
+<li>Test the new code.  In particular, call the update option when there are no products in the ArrayList.  What happens?</li>
+</ul>
+<h2>Writing the updateProduct() method, attempt No.2</h2>
+<ul>
+<li>Refactor your updateProduct() method to this:</li>
+</ul>
+<p><img src="./img/06.png" alt="updateProduct(), attempt No. 2"> </p>
+<ul>
+<li><p>Test the new code.  In particular:</p>
+<ul>
+<li>Does it work now when there are no product?</li>
+<li>call the update option when there are products in the ArrayList, but enter an invalid index.  What happens?</li>
+</ul>
+</li>
+</ul>
+<h2>Writing the updateProduct() method, attempt No.3</h2>
+<ul>
+<li>Refactor your updateProduct() method to this:</li>
+</ul>
+<p><img src="./img/07.png" alt="updateProduct(), attempt No. 3"> </p>
+<ul>
+<li><p>Test the new code.  In particular:</p>
+<ul>
+<li>Does it work now when there are no product?</li>
+<li>Does it work now when there are products in the ArrayList and we enter an invalid index?</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Run the project (as a Java Application).</p>
+</li>
+<li><p>Test options 1 and 2 to ensure you can add and list products.</p>
+</li>
+<li><p>Test options 3 and 4; they will do nothing and we will add this code in the subsequent steps.</p>
+</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>DRYing out Shop V3.0, first pass!</h1>
+<p>Continue working with ShopV3.0 in Eclipse.  We will now focus on the <strong>Don&#39;t Repeat Yourself</strong> principle and refactor our code so that it is cleaner.</p>
+<h2>Some Repeated Code</h2>
+<ul>
+<li>Did you notice, when writing the updateProduct() method that you re-used a lot of code that was already written in addProduct()?</li>
+</ul>
+<p><img src="./img/08.png" alt="addProduct() - some repeated code"> </p>
+<p><img src="./img/09.png" alt="updateProduct() - some repeated code"> </p>
+<p><img src="./img/10.png" alt="The repeated code..."> </p>
+<h2>Writing a new helper method</h2>
+<ul>
+<li><p>Write a new private, helper method and move this repeated code into it. </p>
+</li>
+<li><p>Your method should look like this and should return a Product object containing all the details the user typed in:</p>
+</li>
+</ul>
+<p><img src="./img/11.png" alt="The repeated code...in a private helper method"> </p>
+<h2>Calling the new helper method</h2>
+<ul>
+<li>Refactor your updateProduct() and addProduct() methods to use the new helper method.</li>
+</ul>
+<p><img src="./img/12.png" alt="addProduct() - using the helper method"> </p>
+<p><img src="./img/13.png" alt="updateProduct() - using the helper method"> </p>
+<ul>
+<li>Already, your MenuController class is looking much neater and easier to read!</li>
+</ul>
+<h2>Test the changes</h2>
+<ul>
+<li>Test the add and update options to ensure that they still work as expected.</li>
+</ul>
+<p><img src="./img/01.png" alt="Figure 1: Menu System for ShopV4.0"> </p>
+<h2>Menu Item 4:  Deleting a product</h2>
+<ul>
+<li>In the Driver class, make the following changes to implement case 4 (deleting a product):</li>
+</ul>
+<p><img src="./img/05.png" alt="Figure 2: Code for case 4"> </p>
+<p><img src="./img/06.png" alt="Figure 3: Code for deleting a Product"> </p>
+<ul>
+<li><p>Run the project (as a Java Application).</p>
+</li>
+<li><p>Add a product using option 1.</p>
+</li>
+<li><p>Test option 4 and try to delete the product you just added.  </p>
+</li>
+<li><p>Did it work?</p>
+</li>
+<li><p>Now try to delete a product that doesn&#39;t exist e.g. enter an index of 6.</p>
+</li>
+<li><p>What happened?  Did your program crash?</p>
+</li>
+</ul>
+<h2>Menu Item 4:  Adding error checking</h2>
+<ul>
+<li>In the Driver class, make the following changes to implement error checking:</li>
+</ul>
+<p><img src="./img/07.png" alt="Figure 4: Error checking when deleting a product"> </p>
+<ul>
+<li><p>Run the project (as a Java Application).</p>
+</li>
+<li><p>Test these three scenarios:</p>
+<ul>
+<li><p>No products exist...try deleting a product.  The message &quot;No products&quot; should be displayed.</p>
+</li>
+<li><p>Create two products...try deleting a product at index 6.  A message similar to &quot;There is no product for this index number&quot; should be displayed.</p>
+</li>
+<li><p>With the two products created...try deleting a product at index 1.  The product is deleted.</p>
+</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="03">
+        <h1>DRYing out Shop V3.0, second pass!</h1>
+<p>We will continue with the DRY principle in ShopV3.0 in Eclipse. </p>
+<h2>Some More Repeated Code</h2>
+<ul>
+<li>Did you notice that we had similar code in two places that listed the products and then asked the user to enter an index number?</li>
+</ul>
+<p><img src="./img/14.png" alt="switch - some repeated code"> </p>
+<p><img src="./img/15.png" alt="updateProduct() - some repeated code"> </p>
+<p><img src="./img/16.png" alt="The repeated code..."> </p>
+<h2>Writing another new helper method</h2>
+<ul>
+<li><p>Write a new private, helper method and move this repeated code into it. </p>
+</li>
+<li><p>Your method should look like this and should return an int representing the index the user selected.  Note that a -1 is returned if there are no items in the ArrayList:</p>
+</li>
+</ul>
+<p><img src="./img/17.png" alt="The repeated code...in a private helper method"> </p>
+<h2>Calling the new helper method</h2>
+<ul>
+<li>Refactor your switch statement and your updateProduct() method to use the new helper method.</li>
+</ul>
+<p><img src="./img/18.png" alt="switch statement - using the helper method"> </p>
+<p><img src="./img/19.png" alt="updateProduct() - using the helper method"> </p>
+<ul>
+<li>The more refactoring you do, the more the MenuController class looks neater and easier to read!</li>
+</ul>
+<h2>Test the changes</h2>
+<ul>
+<li>Test the remove and update options.</li>
+<li>The remove works as expected, but did you notice, when the ArrayList was empty, that the update (incorrectly) output that an invalid index of -1 was entered?</li>
+</ul>
+<p><img src="./img/20.png" alt="updateProduct() - bug!"> </p>
+<ul>
+<li>To fix this, follow these instructions:</li>
+</ul>
+<p><img src="./img/21.png" alt="updateProduct() - bug!"> </p>
+<ul>
+<li>Test the remove and update options again; hopefully this time, all should work as expected.</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="04">
+        <h1>DRYing out Shop V3.0, third pass!</h1>
+<p>We will continue with the DRY principle in ShopV3.0 in Eclipse. </p>
+<h2>Yet More Repeated Code</h2>
+<ul>
+<li>Did you notice that we had similar code in a few places (in more than one class too) to determine if an inputted index was valid?</li>
+</ul>
+<p><img src="./img/22.png" alt="Yet more repeated code"> </p>
+<h2>Writing a new method in Store</h2>
+<ul>
+<li>Write a new <strong>public</strong> method in the Store class and make the following changes in Store:</li>
+</ul>
+<p><img src="./img/23.png" alt="Store class changes"> </p>
+<h2>Calling the new method from MenuController</h2>
+<ul>
+<li>Refactor your updateProduct() method to use the new Store method:</li>
+</ul>
+<p><img src="./img/24.png" alt="updateProduct() - using the new Store method"></p>
+<ul>
+<li>Refactor your getIndex() method to use the new Store method:</li>
+</ul>
+<p><img src="./img/25.png" alt="getIndex() - using the new Store method"></p>
+<h2>Test the changes</h2>
+<ul>
+<li>Test the changes you made to ensure that they still work as expected.</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="DVDV1.0">
+        <h1>Menu Driven DVD Specification (Phase 1)</h1>
+<ul>
+<li><p>Over the next few weeks, we will develop a menu-driven DVDLibrary app (CRUD).  </p>
+</li>
+<li><p>When developing this application, always consider the DRY principle and try to anticipate future changes that may come downstream e.g. you know you are building a CRUD based console driven app, so use your knowledge from the <strong>Shop</strong> app here.</p>
+</li>
+<li><p>Here, you will work on Phase 1 of this application; it presents the user with a simple menu for adding and listing DVD titles.</p>
+</li>
+<li><p>Create a new project in Eclipse called <strong>DVDLibraryV1.0</strong>. </p>
+</li>
+</ul>
+<h2>DVD class</h2>
+<p>Within the current project, create a new class called <strong>DVD</strong>. In this class</p>
+<ul>
+<li><p>Add an instance field, called <strong>title</strong>, that will store the title of the DVD.</p>
+</li>
+<li><p>Add a constructor that takes in the title as a parameter and updates the instance field, <strong>title</strong> (no validation).</p>
+</li>
+<li><p>Add an accessor and a mutator for the <strong>title</strong> field.</p>
+</li>
+<li><p>Add a toString method that formats the object state to a user-friendly string.</p>
+</li>
+</ul>
+<h2>Library class</h2>
+<p>Within the current project, create a new class called <strong>Library</strong>. In this class:</p>
+<ul>
+<li><p>Add an instance field called <strong>dvds</strong> that can hold an ArrayList of DVDs.</p>
+</li>
+<li><p>Add a constructor that instantiates the above ArrayList.</p>
+</li>
+<li><p>Add a method <strong>add()</strong> that accpets a DVD object as a parameter. This method should add the passed DVD object to the <strong>dvds</strong> ArrayList.</p>
+</li>
+<li><p>Add a method listDVDs() that returns a String comprising the index number and the title of each DVD in the dvds ArrayList.  If there are no dvds in the ArrayList, the String &quot;No DVDs&quot; should be returned.</p>
+</li>
+</ul>
+<h2>Driver class</h2>
+<p>Within the current project, create a new class called <strong>Driver</strong>. In this class:</p>
+<ul>
+<li><p>Add an instance field called <strong>library</strong> that is of type <strong>Library</strong>.</p>
+</li>
+<li><p>Add a constructor that instantiates the above <strong>library</strong> field.</p>
+</li>
+<li><p>Create a Scanner object that can be used by all methods in the class.</p>
+</li>
+<li><p>Add a private method called <strong>addDVD()</strong> that has a void return type.  This method is responsible for asking the user to enter a title for the DVD and adding it to the DVD array list.</p>
+</li>
+<li><p>Add a private method <strong>mainMenu()</strong> that has an int return type.  This method should display the name of the menu and the menu options (see Figure 1).  This method should read the menu option that the user entered and return it.</p>
+</li>
+</ul>
+<p><img src="./img/dvd01menu.png" alt="Menu for the DVD Library"> </p>
+<ul>
+<li><p>Add a private method <strong>run()</strong> that has a void return type.  This method is responsible for processing the menu option the user entered and also repeatedly displaying the menu to the user.</p>
+</li>
+<li><p>Then write a main method that will create an instance of itself (i.e. the Driver class) and call the <strong>run</strong> method over this instance (see the code below).</p>
+</li>
+</ul>
+<pre><code>    public static void main (String[] args)
+     {
+         Driver app = new Driver();
+         app.run();
+     }</code></pre>
+<h2>Run and Test</h2>
+<ul>
+<li><p>Run the project (as a Java Application).</p>
+</li>
+<li><p>Test adding a DVD and listing them.  Try listing the DVDs when no DVDs have been entered.</p>
+</li>
+</ul>
+<h2>JavaDoc</h2>
+<ul>
+<li>Javadoc your solution</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="DVDV2.0">
+        <h1>Menu Driven DVD Specification (Phase 2)</h1>
+<ul>
+<li><p>Remember, when developing this application, always consider the DRY principle and try to anticipate future changes that may come downstream e.g. you know you are building a CRUD based console driven app, so use your knowledge from the <strong>Shop</strong> app here.</p>
+</li>
+<li><p>Create a new project in Eclipse, called <em>DVDLibraryV2.0</em>.  </p>
+</li>
+<li><p>Copy the <em>src</em> java code from <em>DVDLibraryV1.0</em> into it.</p>
+</li>
+<li><p>You will now extend the code to allow the user to update and delete DVDs (note that the solution to DVD version 1 is in the <em>solutions</em> tab, should you need it). </p>
+</li>
+</ul>
+<h2>Update a DVD</h2>
+<ul>
+<li><p>In your driver class:</p>
+<ul>
+<li><p>add a third option to the menu:  3) Update a DVD.</p>
+</li>
+<li><p>in the switch statement, add a call to the updateDVD() method.</p>
+</li>
+<li><p>create an updateDVD() method that has no return type.  This method should:</p>
+<ul>
+<li><p>if DVDs exist in the ArrayList, list the DVDs and ask the user which one they would like to edit.  </p>
+</li>
+<li><p>if the user types in a valid index, ask the user to enter a new title for the DVD.  </p>
+</li>
+<li><p>retrieve the DVD at the specified index and update the title using the title mutator. </p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>In your Library class, add an accessor for the dvs ArrayList:</p>
+</li>
+</ul>
+<pre><code>    public ArrayList&lt;DVD&gt; getDVDs()
+    {
+        return dvds;
+    }</code></pre>
+<ul>
+<li><p>Run your code and test this code for the following three scenarios:</p>
+<ul>
+<li><p>No DVDs exist...try updating a DVD. The message &quot;No DVDs&quot; should be displayed.</p>
+</li>
+<li><p>Create two DVDs...try updating a DVD at index 6. A message similar to &quot;There is no DVD for this index number&quot; should be displayed.</p>
+</li>
+<li><p>With the two DVDs created...try updating a DVD at index 1. The DVD should be updated.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Delete a DVD</h2>
+<ul>
+<li><p>In your driver class:</p>
+<ul>
+<li><p>add a fourth option to the menu:  4) Delete a DVD.</p>
+</li>
+<li><p>in the switch statement, add a call to the deleteDVD() method.</p>
+</li>
+<li><p>create an deleteDVD() method that has no return type.  This method should:</p>
+<ul>
+<li><p>if DVDs exist in the ArrayList, list the DVDs and ask the user which one they would like to delete.  </p>
+</li>
+<li><p>if the user types in a valid index, delete the DVD at that index.  </p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Run your code and test this code for the following three scenarios:</p>
+<ul>
+<li><p>No DVDs exist...try deleting a DVD. The message &quot;No DVDs&quot; should be displayed.</p>
+</li>
+<li><p>Create two DVDs...try deleting a DVD at index 6. A message similar to &quot;There is no DVD for this index number&quot; should be displayed.</p>
+</li>
+<li><p>With the two DVDs created...try deleting a DVD at index 1. The DVD should be updated.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>JavaDoc</h2>
+<ul>
+<li>Javadoc your solution</li>
+</ul>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="Solutions">
+        <h1>Solutions</h1>
+<p>The solution to the ShopV2.0 exercise <a href="archives/ShopV2.0.zip">is here</a>.</p>
+<p>The solution to the ShopV3.0 exercise <a href="archives/ShopV3.0.zip">is here</a>.</p>
+<p>The solution to DVD phase 1 <a href="archives/DVDLibraryV1.0.zip">is here</a>.</p>
+<p>The solution to DVD phase 2 <a href="archives/DVDLibraryV2.0.zip">is here</a>.</p>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+  <div class="ui bottom fixed borderless right menu">
+    <div class="ui right tiny menu">
+      <div class="ui mini message segment">
+        John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
+        <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License
+        </a>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function () {
+  $('img').addClass('ui image');
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function (i) {
+    if (($images[i].alt).length > 0) {
+      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.embed').embed();
+
+  $('.ui.menu .item')
+      .tab({
+        history: true,
+        historyType: 'hash',
+      });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+      .sidebar({ context: $('.pushable') })
+      .sidebar('setting', 'transition', 'slide out')
+      .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
