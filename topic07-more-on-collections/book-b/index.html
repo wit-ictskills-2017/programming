@@ -89,17 +89,13 @@ h3
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-      6: Persistence - CRUD and XML
+      7: More on Collections
     </a>
   </header>
   <div class="right tab-menu menu">
     
-    <a class="item" data-tab="Exception">
-      Exception
-    </a>
-    
-    <a class="item" data-tab="Robustness">
-      Robustness
+    <a class="item" data-tab="TechSupport">
+      TechSupport
     </a>
     
     <a class="item" data-tab="01">
@@ -110,8 +106,8 @@ h3
       02
     </a>
     
-    <a class="item" data-tab="Solutions">
-      Solutions
+    <a class="item" data-tab="03">
+      03
     </a>
     
     <a class="item" href="../../index.html">
@@ -220,7 +216,7 @@ h3
       
     
       
-        <a class="active item" href="../../topic06-persistence/book-d/index.html">
+        <a class="item" href="../../topic06-persistence/book-d/index.html">
           Exception
         </a>
       
@@ -232,7 +228,7 @@ h3
       
     
       
-        <a class="item" href="../../topic07-more-on-collections/book-b/index.html">
+        <a class="active item" href="../../topic07-more-on-collections/book-b/index.html">
           TechSupport
         </a>
       
@@ -242,93 +238,104 @@ h3
     <div class="ui basic segment">
       <br>
       
-      <div  class="ui tab segment lab" data-tab="Exception">
-        <h1>Objectives</h1>
-<p>In this lab, you will implement exception handling in ShopV5.0.  </p>
-
-      </div>
-     
-      <div  class="ui tab segment lab" data-tab="Robustness">
+      <div  class="ui tab segment lab" data-tab="TechSupport">
         <h1>Objectives</h1>
 <p>On completion of this lab you should be able to:</p>
 <ul>
-<li><p>Store objects into XML files and retrieve them from XML files (using ShopV4.0 as a starting point).</p>
-</li>
-<li><p>Apply this XML knowledge to another domain i.e. the DVD library.</p>
-</li>
-<li><p>Include Exception handling for invalid user input.</p>
-</li>
+<li>build a small, console-based application using ArrayList, HashMap and HashSet.</li>
+<li>integrate code to tokenize Strings into the above app.</li>
+<li>use the Random class to return random objects from a collection.</li>
 </ul>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="01">
-        <h1>Developing Shop V5.0</h1>
-<p>In this practical, you will create a new project called ShopV5.0 in Eclipse and refactor the code so that exception handling is fully implemented for the user input.</p>
-<h2>Starting ShopV5.0</h2>
+        <h1>Developing Tech Support 2 application</h1>
+<p>In this section, you will:</p>
 <ul>
-<li><p>Create a new project called ShopV5.0 and copy the three java files and the jar component from ShopV4.0 into it. </p>
+<li>download the solution to Tech Support 1 that we covered in lectures. </li>
+<li>familiarise yourself with the functionality and classes in the solution.</li>
+<li>refactor the code so that the system replies with a random response from a list of pre-defined responses.</li>
+</ul>
+<h2>Tech Support 1</h2>
+<ul>
+<li><p>Download and extract the solution to <a href="archives/tech_support_1.zip">Tech Support 1</a>.</p>
 </li>
-<li><p>The solution to the ShopV4.0 exercise <a href="archives/ShopV4.0.zip">is here </a> should you need it.</p>
+<li><p>Import it into Eclipse and familiarise yourself with the code.  The app:</p>
+<ul>
+<li>is a console based system.</li>
+<li>is a textual dialog system i.e. you enter text on the console and the system will provide a response.</li>
+<li>responds with the same String always:  “That sounds interesting.  Tell me more…”</li>
+</ul>
 </li>
 </ul>
-<h2>Runtime Errors in ShopV5.0</h2>
+<h2>Tech Support 2</h2>
 <ul>
-<li>Did you notice when you enter a non-number when you were expecting a double, that the following error happens:</li>
-</ul>
-<p><img src="./img/01.png" alt="Run time Exception"> </p>
+<li><p>Create a new project in Eclipse and call it <strong>Tech Support 2</strong>.</p>
+</li>
+<li><p>Copy the java files from <strong>Tech Support 1</strong> into <strong>Tech Support 2</strong>.</p>
+</li>
+<li><p>Make the necessary changes to this project so that the system provides a random response from a list of pre-defined responses e.g.:</p>
 <ul>
-<li>This line of code in the MenuController class caused the error:</li>
+<li>&quot;That sounds interesting. Tell me more...&quot;</li>
+<li>&quot;I need a bit more information on that.&quot;</li>
+<li>&quot;Have you checked that you do not have a dll conflict?&quot;</li>
+<li>&quot;That is explained in the manual. Have you read the manual?“</li>
+<li>&quot; That&#39;s not a bug, it&#39;s a feature!&quot;</li>
+<li>&quot;Could you elaborate on that?“</li>
+<li>etc.</li>
 </ul>
-<pre><code class="lang-java">double unitCost = input.nextDouble();</code></pre>
+</li>
+</ul>
 <ul>
-<li>We are going to write code to handle these two errors:</li>
+<li><p>Use your lecture notes to support you in this task.</p>
+</li>
+<li><p>Test your completed app to make sure it behaves as expected.</p>
+</li>
 </ul>
-<p><img src="./img/02.png" alt="Run time errors"> </p>
-<ul>
-<li>Replace this code:</li>
-</ul>
-<p><img src="./img/03.png" alt=""> </p>
-<ul>
-<li>With this:</li>
-</ul>
-<p><img src="./img/04.png" alt=""> </p>
-<ul>
-<li>Test this new code.  Does it work as expected e.g.</li>
-</ul>
-<p><img src="./img/05.png" alt=""> </p>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="02">
-        <h1>Developing Shop V5.0 (continued)</h1>
-<p>In the previous step, we wrote code to handle the read of the unit cost (double) and the product code (int).</p>
-<p>However, there are other reads of <strong>int</strong> values in the MenuController class that we need to handle.  </p>
-<p><img src="./img/06.png" alt="More int reads"> </p>
-<p>This would require us re-writing the same code in multiple places.  In order, to keep our code DRY, we will write a helper method to validate the int input.</p>
-<h2>Writing a method to validate int input</h2>
+        <h1>Developing Tech Support 3 application</h1>
+<p>In this section, you will:</p>
 <ul>
-<li>Make the following changes in MenuController i.e. a new helper method and a call to it:</li>
+<li><p>refactor the code from the previous step to have this functionality:</p>
+<ul>
+<li>Based on the user input, the system provides a context-sensitive, generated response from a list of pre-defined responses.  If the system cannot find a suitable generated response, it returns a random one.</li>
 </ul>
-<p><img src="./img/07.png" alt="Validate int method and a call to it"> </p>
-<ul>
-<li>Make a second call to the new helper method, as shown here:</li>
+</li>
 </ul>
-<p><img src="./img/08.png" alt="A second call to the helper method"> </p>
-<h2>Writing a method to validate double input</h2>
+<h2>Tech Support 2</h2>
 <ul>
-<li>Make the following changes in MenuController i.e. another new helper method and a call to it:</li>
+<li>If you are not happy with your solution from the previous step, download and extract this version of <a href="archives/tech_support_2.zip">Tech Support 2</a>.  Then import it into Eclipse and familiarise yourself with the code.  </li>
 </ul>
-<p><img src="./img/09.png" alt="Validate double method and a call to it"> </p>
+<h2>Tech Support 3</h2>
 <ul>
-<li>Test this new code.  Does it work as expected for both int and double values?  </li>
+<li><p>Create a new project in Eclipse and call it <strong>Tech Support 3</strong>.</p>
+</li>
+<li><p>Copy the java files from <strong>Tech Support 2</strong> into <strong>Tech Support 3</strong>.</p>
+</li>
+<li><p>Make the necessary changes to have this functionality:</p>
+<ul>
+<li>Based on the user input, the system provides a context-sensitive, generated response from a list of pre-defined responses.  If the system cannot find a suitable generated response, it returns a random one.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Use your lecture notes to support you in this task.</p>
+</li>
+<li><p>Test your completed app to make sure it behaves as expected.</p>
+</li>
 </ul>
 
       </div>
      
-      <div  class="ui tab segment lab" data-tab="Solutions">
+      <div  class="ui tab segment lab" data-tab="03">
         <h1>Solutions</h1>
-<p>The solution to the ShopV5.0 exercise <a href="archives/ShopV5.0.zip">is here</a>.</p>
+<p>The solution to the Tech Support 1 project <a href="archives/tech_support_1.zip">is here</a>.</p>
+<p>The solution to the Tech Support 2 project <a href="archives/tech_support_2.zip">is here</a>.</p>
+<p>The solution to the Tech Support 3 project <a href="archives/tech_support_3.zip">is here</a>.</p>
 
       </div>
      
