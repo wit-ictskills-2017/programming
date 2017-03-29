@@ -89,13 +89,13 @@ h3
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-      7: More on Collections
+      11: Interfaces
     </a>
   </header>
   <div class="right tab-menu menu">
     
-    <a class="item" data-tab="TechSupport">
-      TechSupport
+    <a class="item" data-tab="Lab-10">
+      Lab-10
     </a>
     
     <a class="item" data-tab="01">
@@ -228,7 +228,7 @@ h3
       
     
       
-        <a class="active item" href="../../topic07-more-on-collections/book-b/index.html">
+        <a class="item" href="../../topic07-more-on-collections/book-b/index.html">
           TechSupport
         </a>
       
@@ -264,7 +264,7 @@ h3
       
     
       
-        <a class="item" href="../../topic11-interfaces/book/index.html">
+        <a class="active item" href="../../topic11-interfaces/book/index.html">
           Lab-10
         </a>
       
@@ -274,94 +274,121 @@ h3
     <div class="ui basic segment">
       <br>
       
-      <div  class="ui tab segment lab" data-tab="TechSupport">
+      <div  class="ui tab segment lab" data-tab="Lab-10">
         <h1>Objectives</h1>
 <p>On completion of this lab you should be able to:</p>
 <ul>
-<li>build a small, console-based application using ArrayList, HashMap and HashSet.</li>
-<li>integrate code to tokenize Strings into the above app.</li>
-<li>use the Random class to return random objects from a collection.</li>
+<li><p>use Interfaces when defining collections.</p>
+</li>
+<li><p>write your own bespoke Interface and implement it.</p>
+</li>
 </ul>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="01">
-        <h1>Developing Tech Support 2 application</h1>
-<p>In this section, you will:</p>
+        <h1>Using Pre-defined Interfaces</h1>
+<p>In this practical, you will use the Collections Framework Interfaces in the Network app.</p>
+<h2>Creating Network-V6</h2>
 <ul>
-<li>download the solution to Tech Support 1 that we covered in lectures. </li>
-<li>familiarise yourself with the functionality and classes in the solution.</li>
-<li>refactor the code so that the system replies with a random response from a list of pre-defined responses.</li>
+<li><p>Create a new project called Network-V6 in Eclipse.</p>
+</li>
+<li><p>Copy the following classes into the project:</p>
+<ul>
+<li><p><a href="archives/Driver.java">Driver.java</a></p>
+</li>
+<li><p><a href="archives/MessagePost.java">MessagePost.java</a></p>
+</li>
+<li><p><a href="archives/NewsFeed.java">NewsFeed.java</a></p>
+</li>
+<li><p><a href="archives/PhotoPost.java">PhotoPost.java</a></p>
+</li>
+<li><p><a href="archives/Post.java">Post.java</a></p>
+</li>
 </ul>
-<h2>Tech Support 1</h2>
-<ul>
-<li><p>Download and extract the solution to <a href="archives/tech_support_1.zip">Tech Support 1</a>.</p>
-</li>
-<li><p>Import it into Eclipse and familiarise yourself with the code.  The app:</p>
-<ul>
-<li>is a console based system.</li>
-<li>is a textual dialog system i.e. you enter text on the console and the system will provide a response.</li>
-<li>responds with the same String always:  “That sounds interesting.  Tell me more…”</li>
-</ul>
 </li>
 </ul>
-<h2>Tech Support 2</h2>
+<h2>Using the List Interface</h2>
 <ul>
-<li><p>Create a new project in Eclipse and call it <strong>Tech Support 2</strong>.</p>
+<li><p>In this section, you may need to refer to your lecture slides for support (i.e. the fourth slide deck).</p>
 </li>
-<li><p>Copy the java files from <strong>Tech Support 1</strong> into <strong>Tech Support 2</strong>.</p>
-</li>
-<li><p>Make the necessary changes to this project so that the system provides a random response from a list of pre-defined responses e.g.:</p>
+<li><p>In Post.java:</p>
 <ul>
-<li>&quot;That sounds interesting. Tell me more...&quot;</li>
-<li>&quot;I need a bit more information on that.&quot;</li>
-<li>&quot;Have you checked that you do not have a dll conflict?&quot;</li>
-<li>&quot;That is explained in the manual. Have you read the manual?“</li>
-<li>&quot; That&#39;s not a bug, it&#39;s a feature!&quot;</li>
-<li>&quot;Could you elaborate on that?“</li>
-<li>etc.</li>
+<li><p>define the <strong>comments</strong> ArrayList to be a List.</p>
+</li>
+<li><p>create a getter and setter for the <strong>comments</strong> field.</p>
+</li>
 </ul>
 </li>
 </ul>
 <ul>
-<li><p>Use your lecture notes to support you in this task.</p>
+<li><p>In NewsFeed.java:</p>
+<ul>
+<li>define the <strong>posts</strong> ArrayList to be a List.</li>
+</ul>
 </li>
-<li><p>Test your completed app to make sure it behaves as expected.</p>
+<li><p>Test your code to make sure your refactoring did not break anything.</p>
 </li>
 </ul>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="02">
-        <h1>Developing Tech Support 3 application</h1>
-<p>In this section, you will:</p>
+        <h1>Implementing INewsFeed</h1>
+<p>In this practical, you will create the INewsFeed interface and implement it in NewsFeed. In this section, you may need to refer to your lecture slides for support (i.e. the fourth slide deck).</p>
+<h2>Creating the New Project</h2>
 <ul>
-<li><p>refactor the code from the previous step to have this functionality:</p>
+<li>In Eclipse, right click on your Network-V6 project and paste it as Network-V7.  Note: the solution to V6 is in the next step if you need it.</li>
+</ul>
+<h2>Creating INewsFeed.java</h2>
 <ul>
-<li>Based on the user input, the system provides a context-sensitive, generated response from a list of pre-defined responses.  If the system cannot find a suitable generated response, it returns a random one.</li>
+<li><p>Within the <strong>src</strong> folder, create a new Interface called <strong>INewsFeed.java</strong>.</p>
+</li>
+<li><p>Add the following methods into the Interface:</p>
+</li>
+</ul>
+<pre><code>    void addPost(Post post);
+    void deletePost(int index);
+    String show();</code></pre>
+<h2>Updating NewsFeed.java</h2>
+<ul>
+<li><p>Implement the INewsFeed interface in the NewsFeed class.</p>
+</li>
+<li><p>You will notice that implementations have already been provided for two of the abstract methods:</p>
+<ul>
+<li>void addPost(Post post);</li>
+<li>String show();</li>
+</ul>
+</li>
+<li><p>You need to provide an implementation for this method:</p>
+<ul>
+<li>void deletePost(int index);</li>
+</ul>
+</li>
+<li><p>The implementation should remove the object stored in the <strong>posts</strong> collection at the specified index.</p>
+</li>
+<li><p>In the implementation of the <strong>show</strong> method, add the index number of the post to the output string.</p>
+</li>
+</ul>
+<h2>Updating Driver.java</h2>
+<ul>
+<li><p>Add an option 4 to the menu.</p>
+</li>
+<li><p>When this option is selected, a new method called <strong>deletePost()</strong> should be called.  This method should:</p>
+<ul>
+<li><p>display all the stored posts</p>
+</li>
+<li><p>ask the user to enter the index number of the post they wish to delete</p>
+</li>
+<li><p>delete the post at the specified index</p>
+</li>
 </ul>
 </li>
 </ul>
-<h2>Tech Support 2</h2>
 <ul>
-<li>If you are not happy with your solution from the previous step, download and extract this version of <a href="archives/tech_support_2.zip">Tech Support 2</a>.  Then import it into Eclipse and familiarise yourself with the code.  </li>
-</ul>
-<h2>Tech Support 3</h2>
-<ul>
-<li><p>Create a new project in Eclipse and call it <strong>Tech Support 3</strong>.</p>
+<li><p>Note: don&#39;t worry about robustness in this lab e.g. exception handling on the input, verifying that the index is valid, etc.  The purpose of this lab is just to introduce you to Interfaces in the simplest form possible.</p>
 </li>
-<li><p>Copy the java files from <strong>Tech Support 2</strong> into <strong>Tech Support 3</strong>.</p>
-</li>
-<li><p>Make the necessary changes to have this functionality:</p>
-<ul>
-<li>Based on the user input, the system provides a context-sensitive, generated response from a list of pre-defined responses.  If the system cannot find a suitable generated response, it returns a random one.</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p>Use your lecture notes to support you in this task.</p>
-</li>
-<li><p>Test your completed app to make sure it behaves as expected.</p>
+<li><p>Test the delete aspect of your code; is all working as expected?</p>
 </li>
 </ul>
 
@@ -369,9 +396,8 @@ h3
      
       <div  class="ui tab segment lab" data-tab="03">
         <h1>Solutions</h1>
-<p>The solution to the Tech Support 1 project <a href="archives/tech_support_1.zip">is here</a>.</p>
-<p>The solution to the Tech Support 2 project <a href="archives/tech_support_2.zip">is here</a>.</p>
-<p>The solution to the Tech Support 3 project <a href="archives/tech_support_3.zip">is here</a>.</p>
+<p>The solution for Network-V6 can be found <a href="archives/Network-V6.zip">here </a>.</p>
+<p>The solution for Network-V7 can be found <a href="archives/Network-V7.zip">here </a>.</p>
 
       </div>
      
