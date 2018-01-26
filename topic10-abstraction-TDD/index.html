@@ -7,16 +7,18 @@
 
      
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +42,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -49,335 +58,630 @@ figcaption
   <body>
     
 
+  
+<header class="ui center aligned middle aligned stackable grid segment">
 
-
-
-
-
-
-  <header class="ui middle aligned center aligned stackable grid segment">
-
-    <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-    <div class="seven wide center aligned column">
-      <h2> 10: Abstraction and Test Driven Development </h2>
-      <p> Single Topic </p>
+  
+    
+  <a class="ui blue left corner label">
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
+  </a>
 
-    
-<div class="two wide column sitemap">
-  <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="../index.html"> <i class="huge home icon"></i> Module </a>
+  
+
+  <div class="two wide column">
+    <i class="huge  icon"></i></a>
   </div>
-</div>
+
+
+  <div class="ui six wide column">
+    <h2> 10: Abstraction and Test Driven Development </h2>
+    <div class="ui tiny blue label">
+      John Fitzgerald (labs), Dr. Siobhan Drohan (lectures)
+    </div>
+  </div>
+
+  <div class="ui two wide column">
+    
+      
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="../index.html"> <i class="huge home icon"></i> <br> Module Home </a>
+    </div>
+  </div>
 
     
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
+  </div>
+
+
+    
+  
+
+
+
+  <div class="three wide column">
+    
+    
+      
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          
+          
+          
+            
+          
+          <div class="popup" data-content="All slide's in module">
+            <a href="../talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              39
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          
+          
+          
+          <div class="popup" data-content="All lab's in module">
+            <a href="../labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              25
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+    
+  </div>
+
+</header>
+
+  
+
+
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <div class="header">
+        <a class="item" href="#">
+          
+        </a>
+      </div>
+      <div class="menu">
+        
+          <a class="item" href="talk-1/lecture_25-abstraction.pdf">
+             Abstraction
+          </a>
+        
+          <a class="item" href="talk-2/lecture_26-TDD-intro.pdf">
+            Test Driven Development (TDD)
+          </a>
+        
+          <a class="item" href="talk-3/lecture_27-junit-example.pdf">
+            JUnit and DVD.java
+          </a>
+        
+          <a class="item" href="talk-4/lecture_28-junit-terminology.pdf">
+            JUnit Terminology
+          </a>
+        
+          <a class="item" href="talk-5/lecture_29-junit-planning-tests.pdf">
+            Planning Testing
+          </a>
+        
+          <a class="item" href="talk-6/lecture_30-junit-dvd-app.pdf">
+            Completing DVD app testing
+          </a>
+        
+          <a class="item" href="/error: missing talk">
+            
+          </a>
+        
+          <a class="item" href="book-a/index.html">
+            Lab-Abstraction
+          </a>
+        
+          <a class="item" href="book-b/index.html">
+            Lab-DVDTesting
+          </a>
+        
+      </div>
+    </div>
+    <div class="pusher">
+      <section class="ui container">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+  
+
+        
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+    Slides
+  
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Abstraction</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-1/lecture_25-abstraction.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-1/lecture_25-abstraction.jpg">
+      </div>
+    
     </a>
-  </div>
-</div>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>We will start implementing abstraction in our inheritance hierarchy for the Network system.</p>
+
+      </div>
+    </div>
+    
 
     
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="../talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+
+    
+
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="../labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
-    </div>
-  </div>
-</div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
 
 
-  </header>
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Test Driven Development (TDD)</div>
 
-
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <div class="header">
-      <a class="item" href="#">
-        10: Abstraction and Test Driven Development
-      </a>
-    </div>
-    <div class="menu">
-      
-        <a class="item" href="talk-1/lecture_25-abstraction.pdf">
-           Abstraction
-        </a>
-      
-        <a class="item" href="talk-2/lecture_26-TDD-intro.pdf">
-          Test Driven Development (TDD)
-        </a>
-      
-        <a class="item" href="talk-3/lecture_27-junit-example.pdf">
-          JUnit and DVD.java
-        </a>
-      
-        <a class="item" href="talk-4/lecture_28-junit-terminology.pdf">
-          JUnit Terminology
-        </a>
-      
-        <a class="item" href="talk-5/lecture_29-junit-planning-tests.pdf">
-          Planning Testing
-        </a>
-      
-        <a class="item" href="talk-6/lecture_30-junit-dvd-app.pdf">
-          Completing DVD app testing
-        </a>
-      
-        <a class="item" href="talk-7/resource_TDD.zip">
-          Testing Largest
-        </a>
-      
-        <a class="item" href="book-a/index.html">
-          Lab-Abstraction
-        </a>
-      
-        <a class="item" href="book-b/index.html">
-          Lab-DVDTesting
-        </a>
-      
-    </div>
   </div>
 
-  <div class="pusher">
-    <div class="ui basic segment">
-      <div class="ui four doubling stackable cards">
-        
-        
-  <a class="ui raised link card" href="talk-1/lecture_25-abstraction.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Abstraction </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-1/lecture_25-abstraction.jpg">
-    </div>
-    <div class="content">
+  <a href=
+  
+    "talk-2/lecture_26-TDD-intro.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-2/lecture_26-TDD-intro.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will start implementing abstraction in our inheritance hierarchy for the Network system.</p>
+        <p>We will introduce the concept of TDD, Unit Testing and the JUnit Framework.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-2/lecture_26-TDD-intro.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Test Driven Development (TDD) </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-2/lecture_26-TDD-intro.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> JUnit and DVD.java</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-3/lecture_27-junit-example.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-3/lecture_27-junit-example.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will introduce the concept of TDD, Unit Testing and the JUnit Framework.</p>
+        <p>We will demonstrate how to use the JUnit Framework to test DVD.java.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-3/lecture_27-junit-example.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> JUnit and DVD.java </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-3/lecture_27-junit-example.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> JUnit Terminology</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-4/lecture_28-junit-terminology.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-4/lecture_28-junit-terminology.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will demonstrate how to use the JUnit Framework to test DVD.java.</p>
+        <p>Having tested DVD.java using the JUnit Framework, we will now cover the terminology used in this process (assertions, annotations and fixtures).</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-4/lecture_28-junit-terminology.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> JUnit Terminology </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-4/lecture_28-junit-terminology.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Planning Testing</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-5/lecture_29-junit-planning-tests.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-5/lecture_29-junit-planning-tests.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Having tested DVD.java using the JUnit Framework, we will now cover the terminology used in this process (assertions, annotations and fixtures).</p>
+        <p>Here we will cover the Four Phase Test and present a more complicated JUnit test.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-5/lecture_29-junit-planning-tests.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Planning Testing </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-5/lecture_29-junit-planning-tests.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Completing DVD app testing</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-6/lecture_30-junit-dvd-app.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-6/lecture_30-junit-dvd-app.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Here we will cover the Four Phase Test and present a more complicated JUnit test.</p>
+        <p>Here we will review the DVDTest.java class and develop JUnit tests for more classes in the DVD app.</p>
 
       </div>
     </div>
     
-  </a>
+
+    
+
+    
+
+    </div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> </div>
+
+  </div>
+
+  <a href=
+  
+    "/error: missing talk" target="_blank">
+  
+
+    
+      <div class="center aligned middle aligned"><i class="massive  icon"></i></div>
+      <br>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+      </div>
+    </section>
+  
 
         
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+  
+    Labs
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
         
-  <a class="ui raised link card" href="talk-6/lecture_30-junit-dvd-app.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Completing DVD app testing </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-6/lecture_30-junit-dvd-app.jpg">
-    </div>
-    <div class="content">
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Lab-Abstraction</div>
+
+  </div>
+
+  <a href=
+  
+    "book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Here we will review the DVDTest.java class and develop JUnit tests for more classes in the DVD app.</p>
+        <p>The objectives of this lab are to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-7/resource_TDD.zip">
-    <div class="content">
-        <div class="right floated meta"> <i class="file large icon"></i></div>
-        <div class="header"> Testing Largest </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-7/resource_TDD.png">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Lab-DVDTesting</div>
+
+  </div>
+
+  <a href=
+  
+    "book-b/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-b/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>This zip file contains the code for testing the Largest.largest(int[] array) method covered in the slides.</p>
+        <p>On completion of this lab you should be able to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-Abstraction </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-a/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The objectives of this lab are to:</p>
-<ul>
-<li>Understand the ideas behind abstraction</li>
-<li>Sucessfully implement abstraction in the Network system.</li>
-</ul>
+    
 
-      </div>
+    
+
     </div>
     
-  </a>
-
+          
         
-        
-  <a class="ui raised link card" href="book-b/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-DVDTesting </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-b/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>On completion of this lab you should be able to:</p>
-<ul>
-<li><p>Write JUnit Test Cases for the DVD app.</p>
-</li>
-<li><p>Run and interpret the results of JUnit test classes.</p>
-</li>
-</ul>
-
       </div>
-    </div>
-    
-  </a>
+    </section>
+  
 
         
+          
+  
 
-      </div>
+        
+          
+  
+
+        
+          
+  
+
+        
+      </section>
     </div>
-   </div>
-</div>
+  </div>
 
 
-    <footer>
+    <!--<footer>-->
 
-    </footer>
+    <!--</footer>-->
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

@@ -7,16 +7,18 @@
 
      
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +42,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -49,718 +58,1330 @@ figcaption
   <body>
     
 
+  
+<header class="ui center aligned middle aligned stackable grid segment">
 
   
-
-
-
-
-
-<header class="ui middle aligned center aligned stackable grid segment">
-
+    
   <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-  <div class="seven wide center aligned column">
-    <h2 class="headder">  Programming Fundamentals (Java)</h2>
-    <p> All Labs in the Course </p>
-  </div>
-
-  
-<div class="two wide column sitemap">
-  <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="index.html"> <i class="huge home icon"></i> Module </a>
-  </div>
-</div>
-
-  
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
-    </a>
-  </div>
-</div>
-
-  
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
+  </a>
+
+  
+
+  <div class="two wide column">
+    <i class="huge  icon"></i></a>
+  </div>
+
+
+  <div class="ui six wide column">
+    <h2>  Programming Fundamentals (Java) </h2>
+    <div class="ui tiny blue label">
+      John Fitzgerald (labs), Dr. Siobhan Drohan (lectures)
     </div>
   </div>
-</div>
 
+  <div class="ui two wide column">
+    
+      
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="index.html"> <i class="huge home icon"></i> <br> Module Home </a>
+    </div>
+  </div>
+
+    
+  </div>
+
+
+    
+  
+
+
+
+  <div class="three wide column">
+    
+      
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          
+          
+          
+            
+          
+          <div class="popup" data-content="All slide's in module">
+            <a href="talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              39
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          
+          
+          
+          <div class="popup" data-content="All lab's in module">
+            <a href="labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              25
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+    
+    
+  </div>
 
 </header>
 
+  
 
 
-<div class="ui bottom attached segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    
-    <a class="item" href="topic01-classes-objects/book-a/index.html">
-      Classes-objects
-    </a>
-    
-    <a class="item" href="topic01-classes-objects/book-b/index.html">
-      Class-components
-    </a>
-    
-    <a class="item" href="topic01-classes-objects(solns)/book-solutions/index.html">
-      Class-components-Solutions
-    </a>
-    
-    <a class="item" href="topic02-ticket-machine/book/index.html">
-      Ticket-Machine
-    </a>
-    
-    <a class="item" href="topic02-ticket-machine(solns)/book-a/index.html">
-      Ticket-Machine-Solutions
-    </a>
-    
-    <a class="item" href="topic03-abstraction-modularization/book-a/index.html">
-      Abstraction-modularization[1]
-    </a>
-    
-    <a class="item" href="topic03-abstraction-modularization/book-b/index.html">
-      Abstraction-modularization[2]
-    </a>
-    
-    <a class="item" href="topic03-abstraction-modularization/book-c/index.html">
-      Abstraction-modularization[3]
-    </a>
-    
-    <a class="item" href="topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
-      Abstraction-modularization-Solutions-[1-2]
-    </a>
-    
-    <a class="item" href="topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
-      Abstraction-modularization-Solutions-[3]
-    </a>
-    
-    <a class="item" href="topic04-generics-control-flow/book-a/index.html">
-      Generics-Control-flow
-    </a>
-    
-    <a class="item" href="topic04-generics-control-flow(solns)/book-solutions-a/index.html">
-      Notebook_solutions-[1-3]
-    </a>
-    
-    <a class="item" href="topic05(assignment-1)/book-a/index.html">
-      Assignment1
-    </a>
-    
-    <a class="item" href="topic06-persistence/book-a/index.html">
-      Eclipse
-    </a>
-    
-    <a class="item" href="topic06-persistence/book-b/index.html">
-      CRUD
-    </a>
-    
-    <a class="item" href="topic06-persistence/book-c/index.html">
-      XML
-    </a>
-    
-    <a class="item" href="topic06-persistence/book-d/index.html">
-      Exception
-    </a>
-    
-    <a class="item" href="topic07-more-on-collections/book-a/index.html">
-      Primitive-Arrays
-    </a>
-    
-    <a class="item" href="topic07-more-on-collections/book-b/index.html">
-      TechSupport
-    </a>
-    
-    <a class="item" href="topic08-inheritance-polymorphism/book-1/index.html">
-      NetworkSystem
-    </a>
-    
-    <a class="item" href="topic08-inheritance-polymorphism/book-2/index.html">
-      ShopV6.0
-    </a>
-    
-    <a class="item" href="topic08-inheritance-polymorphism/book-3/index.html">
-      ShopV7.0
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/book-a/index.html">
-      Lab-Abstraction
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/book-b/index.html">
-      Lab-DVDTesting
-    </a>
-    
-    <a class="item" href="topic11-interfaces/book/index.html">
-      Lab-10
-    </a>
-    
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      
+        
+          <a class="item" href="topic01-classes-objects/book-a/index.html">
+            Classes-objects
+          </a>
+        
+      
+        
+          <a class="item" href="topic01-classes-objects/book-b/index.html">
+            Class-components
+          </a>
+        
+      
+        
+          <a class="item" href="topic01-classes-objects(solns)/book-solutions/index.html">
+            Class-components-Solutions
+          </a>
+        
+      
+        
+          <a class="item" href="topic02-ticket-machine/book/index.html">
+            Ticket-Machine
+          </a>
+        
+      
+        
+          <a class="item" href="topic02-ticket-machine(solns)/book-a/index.html">
+            Ticket-Machine-Solutions
+          </a>
+        
+      
+        
+          <a class="item" href="topic03-abstraction-modularization/book-a/index.html">
+            Abstraction-modularization[1]
+          </a>
+        
+      
+        
+          <a class="item" href="topic03-abstraction-modularization/book-b/index.html">
+            Abstraction-modularization[2]
+          </a>
+        
+      
+        
+          <a class="item" href="topic03-abstraction-modularization/book-c/index.html">
+            Abstraction-modularization[3]
+          </a>
+        
+      
+        
+          <a class="item" href="topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+            Abstraction-modularization-Solutions-[1-2]
+          </a>
+        
+      
+        
+          <a class="item" href="topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+            Abstraction-modularization-Solutions-[3]
+          </a>
+        
+      
+        
+          <a class="item" href="topic04-generics-control-flow/book-a/index.html">
+            Generics-Control-flow
+          </a>
+        
+      
+        
+          <a class="item" href="topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+            Notebook_solutions-[1-3]
+          </a>
+        
+      
+        
+          <a class="item" href="topic05(assignment-1)/book-a/index.html">
+            Assignment1
+          </a>
+        
+      
+        
+          <a class="item" href="topic06-persistence/book-a/index.html">
+            Eclipse
+          </a>
+        
+      
+        
+          <a class="item" href="topic06-persistence/book-b/index.html">
+            CRUD
+          </a>
+        
+      
+        
+          <a class="item" href="topic06-persistence/book-c/index.html">
+            XML
+          </a>
+        
+      
+        
+          <a class="item" href="topic06-persistence/book-d/index.html">
+            Exception
+          </a>
+        
+      
+        
+          <a class="item" href="topic07-more-on-collections/book-a/index.html">
+            Primitive-Arrays
+          </a>
+        
+      
+        
+          <a class="item" href="topic07-more-on-collections/book-b/index.html">
+            TechSupport
+          </a>
+        
+      
+        
+          <a class="item" href="topic08-inheritance-polymorphism/book-1/index.html">
+            NetworkSystem
+          </a>
+        
+      
+        
+          <a class="item" href="topic08-inheritance-polymorphism/book-2/index.html">
+            ShopV6.0
+          </a>
+        
+      
+        
+          <a class="item" href="topic08-inheritance-polymorphism/book-3/index.html">
+            ShopV7.0
+          </a>
+        
+      
+        
+          <a class="item" href="topic10-abstraction-TDD/book-a/index.html">
+            Lab-Abstraction
+          </a>
+        
+      
+        
+          <a class="item" href="topic10-abstraction-TDD/book-b/index.html">
+            Lab-DVDTesting
+          </a>
+        
+      
+        
+          <a class="item" href="topic11-interfaces/book/index.html">
+            Lab-10
+          </a>
+        
+      
+    </div>
+    <div class="pusher">
+      <div class="ui container">
+        <div class="ui basic segment">
+          <div class="ui centered four doubling stackable cards">
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Classes-objects</div>
+
   </div>
-  <div class="pusher">
-    <div class="ui basic segment">
-      <div class="ui four doubling stackable cards">
-        
-        
-  <a class="ui raised link card" href="topic01-classes-objects/book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Classes-objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic01-classes-objects/book-a/img/main.png">
-    </div>
-    <div class="content">
+
+  <a href=
+  
+    "topic01-classes-objects/book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic01-classes-objects/book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Introduction to the Java programming language, beginning with the concepts of classes and objects and instruction in the use of a key tool used throughout the course, namely the BlueJ Integrated Development Environment (IDE).</p>
+        <p>Introduction to the Java programming language, beginning with the concepts of classes and objects and instruction in the use of a key tool used throughout the course, namely the BlueJ Integrated Development Environment (IDE).</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic01-classes-objects/book-b/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Class-components </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic01-classes-objects/book-b/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Class-components</div>
+
+  </div>
+
+  <a href=
+  
+    "topic01-classes-objects/book-b/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic01-classes-objects/book-b/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Here you will be introduced to Java source code and acquire practice in the use of methods and parameter passing. The state of an object will be explored. You will write code to solve simple problems related to geometric shapes such as a circle and right circular cone, for example calculating the area and perimeter of the circle and the volume of the cone.</p>
+        <p>Here you will be introduced to Java source code and acquire practice in the use of methods and parameter passing. The state of an object will be explored. You will write code to solve simple problems related to geometric shapes such as a circle and right circular cone, for example calculating the area and perimeter of the circle and the volume of the cone.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic01-classes-objects(solns)/book-solutions/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Class-components-Solutions </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic01-classes-objects(solns)/book-solutions/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Class-components-Solutions</div>
+
+  </div>
+
+  <a href=
+  
+    "topic01-classes-objects(solns)/book-solutions/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic01-classes-objects(solns)/book-solutions/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>This lab contains sample solutions to the exercise set.</p>
+        <p>This lab contains sample solutions to the exercise set.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic02-ticket-machine/book/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Ticket-Machine </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic02-ticket-machine/book/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Ticket-Machine</div>
+
+  </div>
+
+  <a href=
+  
+    "topic02-ticket-machine/book/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic02-ticket-machine/book/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>In this lab we shall build a very basic virtual ticket machine and in doing so gain further experience with some of the elements of classes such as fields, constructors and methods. We shall conduct a rudimentary analysis of the ticket machine class and implement some design improvements.</p>
+        <p>In this lab we shall build a very basic virtual ticket machine and in doing so gain further experience with some of the elements of classes such as fields, constructors and methods. We shall conduct a rudimentary analysis of the ticket machine class and implement some design improvements.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic02-ticket-machine(solns)/book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Ticket-Machine-Solutions </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic02-ticket-machine(solns)/book-a/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Ticket-Machine-Solutions</div>
+
+  </div>
+
+  <a href=
+  
+    "topic02-ticket-machine(solns)/book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic02-ticket-machine(solns)/book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Solutions to the exercise set are provided here.</p>
+        <p>Solutions to the exercise set are provided here.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic03-abstraction-modularization/book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Abstraction-modularization[1] </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic03-abstraction-modularization/book-a/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Abstraction-modularization[1]</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization/book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization/book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Use a set of objects from the <em>shapes</em> project to manually create a house object. Use existing Square, Circle and Triangle classes. Manually assemble component set to create and display initial design. Develop a new class Rectangle by refactoring Square class. Further refactor Circle and Triangle classes.</p>
+        <p>Use a set of objects from the <em>shapes</em> project to manually create a house object. Use existing Square, Circle and Triangle classes. Manually assemble component set to create and display initial design. Develop a new class Rectangle by refactoring Square class. Further refactor Circle and Triangle classes.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic03-abstraction-modularization/book-b/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Abstraction-modularization[2] </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic03-abstraction-modularization/book-b/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Abstraction-modularization[2]</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization/book-b/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization/book-b/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p> Develop a new class Tree using Rectangle and Triangle classes. Develop a new class Picture containing House, Circle (sun) and Tree fields.</p>
+        <p>Develop a new class Tree using Rectangle and Triangle classes. Develop a new class Picture containing House, Circle (sun) and Tree fields.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic03-abstraction-modularization/book-c/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Abstraction-modularization[3] </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic03-abstraction-modularization/book-c/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Abstraction-modularization[3]</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization/book-c/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization/book-c/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Based on BlueJ ClockDisplay progressively develop NumberDisplay class to display a pair of digits to represent hours and minutes using the existing BlueJ class Clock to drive the ClockDisplay.</p>
+        <p>Based on BlueJ ClockDisplay progressively develop NumberDisplay class to display a pair of digits to represent hours and minutes using the existing BlueJ class Clock to drive the ClockDisplay.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Abstraction-modularization-Solutions-[1-2] </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic03-abstraction-modularization(solns)/book-solutions-ab/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Abstraction-modularization-Solutions-[1-2]</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization(solns)/book-solutions-ab/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>These are the solutions to the exercises set in the lab relating to shapes.</p>
+        <p>These are the solutions to the exercises set in the lab relating to shapes.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Abstraction-modularization-Solutions-[3] </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic03-abstraction-modularization(solns)/book-solutions-c/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Abstraction-modularization-Solutions-[3]</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization(solns)/book-solutions-c/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>These are the solutions to the exercises relating to the BlueJ ClockDisplay and NumberDisplay classes.</p>
+        <p>These are the solutions to the exercises relating to the BlueJ ClockDisplay and NumberDisplay classes.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic04-generics-control-flow/book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Generics-Control-flow </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic04-generics-control-flow/book-a/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Generics-Control-flow</div>
+
+  </div>
+
+  <a href=
+  
+    "topic04-generics-control-flow/book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic04-generics-control-flow/book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Use BlueJ Notebook class to gain basic experience with the ArrayList collection class. Explore some of its methods by generating and manipulating test data. Gain experience in looping using <em>for</em>, <em>enhanced for</em>, <em>while</em>, <em>do-while</em> and <em>iterators</em>.</p>
+        <p>Use BlueJ Notebook class to gain basic experience with the ArrayList collection class. Explore some of its methods by generating and manipulating test data. Gain experience in looping using <em>for</em>, <em>enhanced for</em>, <em>while</em>, <em>do-while</em> and <em>iterators</em>.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic04-generics-control-flow(solns)/book-solutions-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Notebook_solutions-[1-3] </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic04-generics-control-flow(solns)/book-solutions-a/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Notebook_solutions-[1-3]</div>
+
+  </div>
+
+  <a href=
+  
+    "topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic04-generics-control-flow(solns)/book-solutions-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>These are the solutions to the exercises set in the session <em>Grouping Objects</em> and relating to </p>
-<ul>
-<li>BlueJ Notebook class</li>
-</ul>
+        <p>These are the solutions to the exercises set in the session <em>Grouping Objects</em> and relating to </p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic05(assignment-1)/book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Assignment1 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic05(assignment-1)/book-a/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Assignment1</div>
+
+  </div>
+
+  <a href=
+  
+    "topic05(assignment-1)/book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic05(assignment-1)/book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Assignment 1: This assignment is based on materials contained in the slide decks and labs in the first 4 topics, namely, <em>Introduction to Java programming language</em>, <em>Object Interaction</em> and <em>Grouping Objects</em>.  In this assignment, we will combine all these topics into a multi-class gym app.</p>
+        <p>Assignment 1: This assignment is based on materials contained in the slide decks and labs in the first 4 topics, namely, <em>Introduction to Java programming language</em>, <em>Object Interaction</em> and <em>Grouping Objects</em>.  In this assignment, we will combine all these topics into a multi-class gym app.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic06-persistence/book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Eclipse </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic06-persistence/book-a/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Eclipse</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>In this lab, you will explore the Eclipse IDE and use the main method as the starting point for your applications.  You will also move the BlueJ Shop project into Eclipse format.</p>
+        <p>In this lab, you will explore the Eclipse IDE and use the main method as the starting point for your applications.  You will also move the BlueJ Shop project into Eclipse format.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic06-persistence/book-b/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> CRUD </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic06-persistence/book-b/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> CRUD</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/book-b/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/book-b/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>In this lab, you will implement CRUD into ShopV3.0.  You will also apply your CRUD knowledge to another domain i.e. start to build a DVD library.</p>
+        <p>In this lab, you will implement CRUD into ShopV3.0.  You will also apply your CRUD knowledge to another domain i.e. start to build a DVD library.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic06-persistence/book-c/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> XML </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic06-persistence/book-c/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> XML</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/book-c/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/book-c/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>On completion of this lab you should be able to:</p>
-<ul>
-<li><p>Store objects into XML files and retrieve them from XML files (using ShopV4.0 as a starting point).</p>
-</li>
-<li><p>Apply this XML knowledge to another domain i.e. the DVD library.</p>
-</li>
-<li><p>Include Exception handling for invalid user input.</p>
-</li>
-</ul>
+        <p>On completion of this lab you should be able to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic06-persistence/book-d/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Exception </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic06-persistence/book-d/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Exception</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/book-d/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/book-d/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>In this lab, you will implement exception handling in ShopV5.0.  </p>
+        <p>In this lab, you will implement exception handling in ShopV5.0.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic07-more-on-collections/book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Primitive-Arrays </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic07-more-on-collections/book-a/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Primitive-Arrays</div>
+
+  </div>
+
+  <a href=
+  
+    "topic07-more-on-collections/book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic07-more-on-collections/book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>In this lab, you will become more familiar with primitive arrays, particularly using counter-controlled loops with them.</p>
+        <p>In this lab, you will become more familiar with primitive arrays, particularly using counter-controlled loops with them.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic07-more-on-collections/book-b/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> TechSupport </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic07-more-on-collections/book-b/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> TechSupport</div>
+
+  </div>
+
+  <a href=
+  
+    "topic07-more-on-collections/book-b/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic07-more-on-collections/book-b/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>On completion of this lab you should be able to:</p>
-<ul>
-<li>build a small, console-based application using ArrayList, HashMap and HashSet.</li>
-<li>integrate code to tokenize Strings into the above app.</li>
-<li>use the Random class to return random objects from a collection.</li>
-</ul>
+        <p>On completion of this lab you should be able to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic08-inheritance-polymorphism/book-1/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> NetworkSystem </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/book-1/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> NetworkSystem</div>
+
+  </div>
+
+  <a href=
+  
+    "topic08-inheritance-polymorphism/book-1/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/book-1/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>The objectives of this lab are to implement both inheritance and polymorphism in the Network system.</p>
+        <p>The objectives of this lab are to implement both inheritance and polymorphism in the Network system.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic08-inheritance-polymorphism/book-2/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> ShopV6.0 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/book-2/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> ShopV6.0</div>
+
+  </div>
+
+  <a href=
+  
+    "topic08-inheritance-polymorphism/book-2/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/book-2/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>The objectives of this lab are to use a package structure for the Shop app and also to write re-usable utilies.  We will also experiment with Wrapper classes and parsing.</p>
+        <p>The objectives of this lab are to use a package structure for the Shop app and also to write re-usable utilies.  We will also experiment with Wrapper classes and parsing.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic08-inheritance-polymorphism/book-3/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> ShopV7.0 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/book-3/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> ShopV7.0</div>
+
+  </div>
+
+  <a href=
+  
+    "topic08-inheritance-polymorphism/book-3/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/book-3/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>The objectives of this lab are to implement an inheritance hierarchy into our Shop project.</p>
+        <p>The objectives of this lab are to implement an inheritance hierarchy into our Shop project.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-Abstraction </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/book-a/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Lab-Abstraction</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>The objectives of this lab are to:</p>
-<ul>
-<li>Understand the ideas behind abstraction</li>
-<li>Sucessfully implement abstraction in the Network system.</li>
-</ul>
+        <p>The objectives of this lab are to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/book-b/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-DVDTesting </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/book-b/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Lab-DVDTesting</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/book-b/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/book-b/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>On completion of this lab you should be able to:</p>
-<ul>
-<li><p>Write JUnit Test Cases for the DVD app.</p>
-</li>
-<li><p>Run and interpret the results of JUnit test classes.</p>
-</li>
-</ul>
+        <p>On completion of this lab you should be able to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic11-interfaces/book/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Lab-10 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic11-interfaces/book/img/main.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Lab-10</div>
+
+  </div>
+
+  <a href=
+  
+    "topic11-interfaces/book/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic11-interfaces/book/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>On completion of this lab you should be able to:</p>
-<ul>
-<li><p>use Interfaces when defining collections.</p>
-</li>
-<li><p>write your own bespoke Interface and implement it.</p>
-</li>
-</ul>
+        <p>On completion of this lab you should be able to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
+    
+
+    
+
+    </div>
+    
+              
+            
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-    <footer>
+    <!--<footer>-->
 
-    </footer>
+    <!--</footer>-->
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

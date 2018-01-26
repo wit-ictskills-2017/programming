@@ -7,16 +7,18 @@
 
      
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +42,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -49,1032 +58,1982 @@ figcaption
   <body>
     
 
+  
+<header class="ui center aligned middle aligned stackable grid segment">
 
   
-
-
-
-
-
-<header class="ui middle aligned center aligned stackable grid segment">
-
+    
   <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-  <div class="seven wide center aligned column">
-    <h2 class="headder">  Programming Fundamentals (Java)</h2>
-    <p> All Slides in the Course </p>
-  </div>
-
-  
-<div class="two wide column sitemap">
-  <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="index.html"> <i class="huge home icon"></i> Module </a>
-  </div>
-</div>
-
-  
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
-    </a>
-  </div>
-</div>
-
-  
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
+  </a>
+
+  
+
+  <div class="two wide column">
+    <i class="huge  icon"></i></a>
+  </div>
+
+
+  <div class="ui six wide column">
+    <h2>  Programming Fundamentals (Java) </h2>
+    <div class="ui tiny blue label">
+      John Fitzgerald (labs), Dr. Siobhan Drohan (lectures)
     </div>
   </div>
-</div>
 
+  <div class="ui two wide column">
+    
+      
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="index.html"> <i class="huge home icon"></i> <br> Module Home </a>
+    </div>
+  </div>
+
+    
+  </div>
+
+
+    
+  
+
+
+
+  <div class="three wide column">
+    
+      
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          
+          
+          
+            
+          
+          <div class="popup" data-content="All slide's in module">
+            <a href="talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              39
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          
+          
+          
+          <div class="popup" data-content="All lab's in module">
+            <a href="labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              25
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+    
+    
+  </div>
 
 </header>
 
+  
 
 
-<div class="ui bottom attached segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    
-    <a class="item" href="topic01-classes-objects/talk-a/lecture_01.pdf">
-      Overview
-    </a>
-    
-    <a class="item" href="topic01-classes-objects/talk-b/lecture_02.pdf">
-      Classes and objects
-    </a>
-    
-    <a class="item" href="topic01-classes-objects/talk-c/lecture_03.pdf">
-      Deeper with classes and objects
-    </a>
-    
-    <a class="item" href="topic02-ticket-machine/talk-a/lecture_03.pdf">
-      Understanding class definitions
-    </a>
-    
-    <a class="item" href="topic02-ticket-machine/talk-b/lecture_04.pdf">
-      Ticket machine
-    </a>
-    
-    <a class="item" href="topic03-abstraction-modularization/talk-a/lecture_05.pdf">
-      Abstraction & modularization
-    </a>
-    
-    <a class="item" href="topic03-abstraction-modularization/talk-b/lecture_06.pdf">
-      Strings and their methods
-    </a>
-    
-    <a class="item" href="topic03-abstraction-modularization/talk-c/lecture_07.pdf">
-      Miscellaneous Items
-    </a>
-    
-    <a class="item" href="topic04-generics-control-flow/talk-a/lecture_08.pdf">
-      Collections classes and control flow
-    </a>
-    
-    <a class="item" href="topic04-generics-control-flow/talk-b/lecture_09.pdf">
-      Menu Driven Systems
-    </a>
-    
-    <a class="item" href="topic05(assignment-1)/talk-a/lecture_10.pdf">
-      Test Fixtures
-    </a>
-    
-    <a class="item" href="topic05(assignment-1)/talk-b/lecture_11.pdf">
-      Checkstyle
-    </a>
-    
-    <a class="item" href="topic05(assignment-1-solution)/talk-1/GymAppSolution.zip">
-      Assignment-1 Solution
-    </a>
-    
-    <a class="item" href="topic06-persistence/talk-1/lecture_12.pdf">
-      Eclipse
-    </a>
-    
-    <a class="item" href="topic06-persistence/talk-2/lecture_13.pdf">
-      CRUD Process
-    </a>
-    
-    <a class="item" href="topic06-persistence/talk-3/lecture_14.pdf">
-      Introduction to XML
-    </a>
-    
-    <a class="item" href="topic06-persistence/talk-4/lecture_15.pdf">
-      Exception Handling
-    </a>
-    
-    <a class="item" href="topic07-more-on-collections/talk-1/lecture_16.pdf">
-      Primitive Arrays
-    </a>
-    
-    <a class="item" href="topic07-more-on-collections/talk-2/resource_01.zip">
-      Primitive Array - Code on Slide Decks
-    </a>
-    
-    <a class="item" href="topic07-more-on-collections/talk-3/lecture_17-tech-support-V1.pdf">
-      Tech Support System V1
-    </a>
-    
-    <a class="item" href="topic07-more-on-collections/talk-4/lecture_18--tech-support-V2.pdf">
-      Tech Support System V2
-    </a>
-    
-    <a class="item" href="topic07-more-on-collections/talk-5/lecture-19-tech-support-V3.pdf">
-      Tech Support System V3
-    </a>
-    
-    <a class="item" href="topic08-inheritance-polymorphism/talk-1/lecture_20.pdf">
-       Inheritance
-    </a>
-    
-    <a class="item" href="topic08-inheritance-polymorphism/talk-2/lecture_21.pdf">
-       Exploring Polymorphism
-    </a>
-    
-    <a class="item" href="topic08-inheritance-polymorphism/talk-3/lecture_22.pdf">
-       Packages, Utilities and Parsing
-    </a>
-    
-    <a class="item" href="topic09(assignment-2)/talk-1/lecture_23_pbl.pdf">
-      Problem-based Learning
-    </a>
-    
-    <a class="item" href="topic09(assignment-2)/talk-2/lecture_24-hare-and-tortoise.pdf">
-      Assignment 1
-    </a>
-    
-    <a class="item" href="topic09(assignment-2)/talk-3/d-resources.zip">
-      PBL Resources
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/talk-1/lecture_25-abstraction.pdf">
-       Abstraction
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/talk-2/lecture_26-TDD-intro.pdf">
-      Test Driven Development (TDD)
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/talk-3/lecture_27-junit-example.pdf">
-      JUnit and DVD.java
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/talk-4/lecture_28-junit-terminology.pdf">
-      JUnit Terminology
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/talk-5/lecture_29-junit-planning-tests.pdf">
-      Planning Testing
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/talk-6/lecture_30-junit-dvd-app.pdf">
-      Completing DVD app testing
-    </a>
-    
-    <a class="item" href="topic10-abstraction-TDD/talk-7/resource_TDD.zip">
-      Testing Largest
-    </a>
-    
-    <a class="item" href="topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .pdf">
-      Abstraction Recap
-    </a>
-    
-    <a class="item" href="topic11-interfaces/talk-2/b-prog-fund-2- deadly-diamond-of-death .pdf">
-      Deadly Diamond of Death
-    </a>
-    
-    <a class="item" href="topic11-interfaces/talk-3/c-prog-fund-2-intro-to-interfaces.pdf">
-      Introduction to Interfaces
-    </a>
-    
-    <a class="item" href="topic11-interfaces/talk-4/d-prog-fund-2-more-on-interfaces.pdf">
-      More on Interfaces
-    </a>
-    
-    <a class="item" href="topic12(assignment-3)/talk-1/Assginment_3.pdf">
-       Assignment 3
-    </a>
-    
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      
+        
+          <a class="item" href="topic01-classes-objects/talk-a/lecture_01.pdf">
+            Overview
+          </a>
+        
+      
+        
+          <a class="item" href="topic01-classes-objects/talk-b/lecture_02.pdf">
+            Classes and objects
+          </a>
+        
+      
+        
+          <a class="item" href="topic01-classes-objects/talk-c/lecture_03.pdf">
+            Deeper with classes and objects
+          </a>
+        
+      
+        
+          <a class="item" href="topic02-ticket-machine/talk-a/lecture_03.pdf">
+            Understanding class definitions
+          </a>
+        
+      
+        
+          <a class="item" href="topic02-ticket-machine/talk-b/lecture_04.pdf">
+            Ticket machine
+          </a>
+        
+      
+        
+          <a class="item" href="topic03-abstraction-modularization/talk-a/lecture_05.pdf">
+            Abstraction & modularization
+          </a>
+        
+      
+        
+          <a class="item" href="topic03-abstraction-modularization/talk-b/lecture_06.pdf">
+            Strings and their methods
+          </a>
+        
+      
+        
+          <a class="item" href="topic03-abstraction-modularization/talk-c/lecture_07.pdf">
+            Miscellaneous Items
+          </a>
+        
+      
+        
+          <a class="item" href="topic04-generics-control-flow/talk-a/lecture_08.pdf">
+            Collections classes and control flow
+          </a>
+        
+      
+        
+          <a class="item" href="topic04-generics-control-flow/talk-b/lecture_09.pdf">
+            Menu Driven Systems
+          </a>
+        
+      
+        
+          <a class="item" href="topic05(assignment-1)/talk-a/lecture_10.pdf">
+            Test Fixtures
+          </a>
+        
+      
+        
+          <a class="item" href="topic05(assignment-1)/talk-b/lecture_11.pdf">
+            Checkstyle
+          </a>
+        
+      
+        
+          <a class="item" href="topic06-persistence/talk-1/lecture_12.pdf">
+            Eclipse
+          </a>
+        
+      
+        
+          <a class="item" href="topic06-persistence/talk-2/lecture_13.pdf">
+            CRUD Process
+          </a>
+        
+      
+        
+          <a class="item" href="topic06-persistence/talk-3/lecture_14.pdf">
+            Introduction to XML
+          </a>
+        
+      
+        
+          <a class="item" href="topic06-persistence/talk-4/lecture_15.pdf">
+            Exception Handling
+          </a>
+        
+      
+        
+          <a class="item" href="topic07-more-on-collections/talk-1/lecture_16.pdf">
+            Primitive Arrays
+          </a>
+        
+      
+        
+          <a class="item" href="//error: missing talk">
+            
+          </a>
+        
+      
+        
+          <a class="item" href="topic07-more-on-collections/talk-3/lecture_17-tech-support-V1.pdf">
+            Tech Support System V1
+          </a>
+        
+      
+        
+          <a class="item" href="topic07-more-on-collections/talk-4/lecture_18--tech-support-V2.pdf">
+            Tech Support System V2
+          </a>
+        
+      
+        
+          <a class="item" href="topic07-more-on-collections/talk-5/lecture-19-tech-support-V3.pdf">
+            Tech Support System V3
+          </a>
+        
+      
+        
+          <a class="item" href="topic08-inheritance-polymorphism/talk-1/lecture_20.pdf">
+             Inheritance
+          </a>
+        
+      
+        
+          <a class="item" href="topic08-inheritance-polymorphism/talk-2/lecture_21.pdf">
+             Exploring Polymorphism
+          </a>
+        
+      
+        
+          <a class="item" href="topic08-inheritance-polymorphism/talk-3/lecture_22.pdf">
+             Packages, Utilities and Parsing
+          </a>
+        
+      
+        
+          <a class="item" href="topic09(assignment-2)/talk-1/lecture_23_pbl.pdf">
+            Problem-based Learning
+          </a>
+        
+      
+        
+          <a class="item" href="topic09(assignment-2)/talk-2/lecture_24-hare-and-tortoise.pdf">
+            Assignment 1
+          </a>
+        
+      
+        
+          <a class="item" href="//error: missing talk">
+            
+          </a>
+        
+      
+        
+          <a class="item" href="topic10-abstraction-TDD/talk-1/lecture_25-abstraction.pdf">
+             Abstraction
+          </a>
+        
+      
+        
+          <a class="item" href="topic10-abstraction-TDD/talk-2/lecture_26-TDD-intro.pdf">
+            Test Driven Development (TDD)
+          </a>
+        
+      
+        
+          <a class="item" href="topic10-abstraction-TDD/talk-3/lecture_27-junit-example.pdf">
+            JUnit and DVD.java
+          </a>
+        
+      
+        
+          <a class="item" href="topic10-abstraction-TDD/talk-4/lecture_28-junit-terminology.pdf">
+            JUnit Terminology
+          </a>
+        
+      
+        
+          <a class="item" href="topic10-abstraction-TDD/talk-5/lecture_29-junit-planning-tests.pdf">
+            Planning Testing
+          </a>
+        
+      
+        
+          <a class="item" href="topic10-abstraction-TDD/talk-6/lecture_30-junit-dvd-app.pdf">
+            Completing DVD app testing
+          </a>
+        
+      
+        
+          <a class="item" href="//error: missing talk">
+            
+          </a>
+        
+      
+        
+          <a class="item" href="topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .pdf">
+            Abstraction Recap
+          </a>
+        
+      
+        
+          <a class="item" href="topic11-interfaces/talk-2/b-prog-fund-2- deadly-diamond-of-death .pdf">
+            Deadly Diamond of Death
+          </a>
+        
+      
+        
+          <a class="item" href="topic11-interfaces/talk-3/c-prog-fund-2-intro-to-interfaces.pdf">
+            Introduction to Interfaces
+          </a>
+        
+      
+        
+          <a class="item" href="topic11-interfaces/talk-4/d-prog-fund-2-more-on-interfaces.pdf">
+            More on Interfaces
+          </a>
+        
+      
+        
+          <a class="item" href="topic12(assignment-3)/talk-1/Assginment_3.pdf">
+             Assignment 3
+          </a>
+        
+      
+    </div>
+    <div class="pusher">
+      <div class="ui container">
+        <div class="ui basic segment">
+          <div class="ui centered four doubling stackable cards">
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Overview</div>
+
   </div>
-  <div class="pusher">
-    <div class="ui basic segment">
-      <div class="ui four doubling stackable cards">
-        
-        
-  <a class="ui raised link card" href="topic01-classes-objects/talk-a/lecture_01.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Overview </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic01-classes-objects/talk-a/lecture_01.png">
-    </div>
-    <div class="content">
+
+  <a href=
+  
+    "topic01-classes-objects/talk-a/lecture_01.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic01-classes-objects/talk-a/lecture_01.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Brief overview of course content with an introduction to BlueJ (IDE), Java, Pseudocode and Algorithms</p>
+        <p>Brief overview of course content with an introduction to BlueJ (IDE), Java, Pseudocode and Algorithms</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic01-classes-objects/talk-b/lecture_02.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Classes and objects </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic01-classes-objects/talk-b/lecture_02.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Classes and objects</div>
+
+  </div>
+
+  <a href=
+  
+    "topic01-classes-objects/talk-b/lecture_02.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic01-classes-objects/talk-b/lecture_02.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We introduce classes, objects, methods, parameters, variables, data types, files in java and the JVM</p>
+        <p>We introduce classes, objects, methods, parameters, variables, data types, files in java and the JVM</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic01-classes-objects/talk-c/lecture_03.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Deeper with classes and objects </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic01-classes-objects/talk-c/lecture_03.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Deeper with classes and objects</div>
+
+  </div>
+
+  <a href=
+  
+    "topic01-classes-objects/talk-c/lecture_03.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic01-classes-objects/talk-c/lecture_03.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We continue our exploration of classes and objects and introduce method signatures, return types, class naming conventions and access modifiers</p>
+        <p>We continue our exploration of classes and objects and introduce method signatures, return types, class naming conventions and access modifiers</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic02-ticket-machine/talk-a/lecture_03.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Understanding class definitions </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic02-ticket-machine/talk-a/lecture_03.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Understanding class definitions</div>
+
+  </div>
+
+  <a href=
+  
+    "topic02-ticket-machine/talk-a/lecture_03.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic02-ticket-machine/talk-a/lecture_03.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>In this presentation we continue exploring elements of classes and the Java language including how source code is written and presented.  We also introduce <em>conditional statements</em>, which offer choices between different actions as the program executes.</p>
+        <p>In this presentation we continue exploring elements of classes and the Java language including how source code is written and presented.  We also introduce <em>conditional statements</em>, which offer choices between different actions as the program executes.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic02-ticket-machine/talk-b/lecture_04.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Ticket machine </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic02-ticket-machine/talk-b/lecture_04.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Ticket machine</div>
+
+  </div>
+
+  <a href=
+  
+    "topic02-ticket-machine/talk-b/lecture_04.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic02-ticket-machine/talk-b/lecture_04.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We examine some of the components of the ticket machine program.  We look at some further elements of the Java language such as <em>local variables</em> and <em>scope</em>, <em>operators</em>, <em>parameters</em> and <em>comments</em>.</p>
+        <p>We examine some of the components of the ticket machine program.  We look at some further elements of the Java language such as <em>local variables</em> and <em>scope</em>, <em>operators</em>, <em>parameters</em> and <em>comments</em>.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic03-abstraction-modularization/talk-a/lecture_05.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Abstraction & modularization </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic03-abstraction-modularization/talk-a/lecture_05.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Abstraction & modularization</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization/talk-a/lecture_05.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization/talk-a/lecture_05.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Abstraction means ignoring details for the moment and concentrating on the problem at a higher level. Modularization comprises subdividing the problem into manageable parts each of which interacts in well-defined ways into the overall project.</p>
+        <p>Abstraction means ignoring details for the moment and concentrating on the problem at a higher level. Modularization comprises subdividing the problem into manageable parts each of which interacts in well-defined ways into the overall project.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic03-abstraction-modularization/talk-b/lecture_06.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Strings and their methods </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic03-abstraction-modularization/talk-b/lecture_06.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Strings and their methods</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization/talk-b/lecture_06.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization/talk-b/lecture_06.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Here we focus on the String class and investigate, through its methods, the types of operations we can do on a String.</p>
+        <p>Here we focus on the String class and investigate, through its methods, the types of operations we can do on a String.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic03-abstraction-modularization/talk-c/lecture_07.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Miscellaneous Items </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic03-abstraction-modularization/talk-c/lecture_07.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Miscellaneous Items</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization/talk-c/lecture_07.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization/talk-c/lecture_07.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Here we will cover some miscellaneous items such as static variables, static methods, Javadoc comments, debugger and compound assignment statements.</p>
+        <p>Here we will cover some miscellaneous items such as static variables, static methods, Javadoc comments, debugger and compound assignment statements.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic04-generics-control-flow/talk-a/lecture_08.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Collections classes and control flow </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic04-generics-control-flow/talk-a/lecture_08.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Collections classes and control flow</div>
+
+  </div>
+
+  <a href=
+  
+    "topic04-generics-control-flow/talk-a/lecture_08.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic04-generics-control-flow/talk-a/lecture_08.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We now introduce collection classes and control flow techniques to traverse such collections. Specifically we examine the ArrayList class and how to use the class to manage and manipulate data.
-ArrayList objects may store user-specified data types which are designated as parameters when the ArrayList variable is declared. ArrayList is an example of what is referred to as a <em>generic</em> class.</p>
+        <p>We now introduce collection classes and control flow techniques to traverse such collections. Specifically we examine the ArrayList class and how to use the class to manage and manipulate data.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic04-generics-control-flow/talk-b/lecture_09.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Menu Driven Systems </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic04-generics-control-flow/talk-b/lecture_09.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Menu Driven Systems</div>
+
+  </div>
+
+  <a href=
+  
+    "topic04-generics-control-flow/talk-b/lecture_09.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic04-generics-control-flow/talk-b/lecture_09.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will look at adding a menu to the Shop project that we explored in labs.  New concepts include sentinel-based loops, switch statements and the Scanner class.</p>
+        <p>We will look at adding a menu to the Shop project that we explored in labs.  New concepts include sentinel-based loops, switch statements and the Scanner class.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic05(assignment-1)/talk-a/lecture_10.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Test Fixtures </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic05(assignment-1)/talk-a/lecture_10.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Test Fixtures</div>
+
+  </div>
+
+  <a href=
+  
+    "topic05(assignment-1)/talk-a/lecture_10.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic05(assignment-1)/talk-a/lecture_10.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will look at speeding up the testing of our Shop app by using JUnit Test Fixtures.</p>
+        <p>We will look at speeding up the testing of our Shop app by using JUnit Test Fixtures.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic05(assignment-1)/talk-b/lecture_11.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Checkstyle </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic05(assignment-1)/talk-b/lecture_11.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Checkstyle</div>
+
+  </div>
+
+  <a href=
+  
+    "topic05(assignment-1)/talk-b/lecture_11.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic05(assignment-1)/talk-b/lecture_11.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will learn how to incorporate the CheckStyle functionality into BlueJ.  This will help us to write code that compiles 100% to Java&#39;s coding standards. </p>
+        <p>We will learn how to incorporate the CheckStyle functionality into BlueJ.  This will help us to write code that compiles 100% to Java&#39;s coding standards.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic05(assignment-1-solution)/talk-1/GymAppSolution.zip">
-    <div class="content">
-        <div class="right floated meta"> <i class="file large icon"></i></div>
-        <div class="header"> Assignment-1 Solution </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic05(assignment-1-solution)/talk-1/GymAppSolution.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Eclipse</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/talk-1/lecture_12.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/talk-1/lecture_12.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>This is a sample solution for Assignment 1, the Gym App.</p>
+        <p>Begin exploring the Eclipse Integrated Development Environment (IDE).  We will also look at the Java Virtual Machine (JVM) and the main method.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic06-persistence/talk-1/lecture_12.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Eclipse </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic06-persistence/talk-1/lecture_12.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> CRUD Process</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/talk-2/lecture_13.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/talk-2/lecture_13.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Begin exploring the Eclipse Integrated Development Environment (IDE).  We will also look at the Java Virtual Machine (JVM) and the main method.</p>
+        <p>We will introduce you to the Create, Read, Update and Delete (CRUD) Process.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic06-persistence/talk-2/lecture_13.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> CRUD Process </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic06-persistence/talk-2/lecture_13.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Introduction to XML</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/talk-3/lecture_14.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/talk-3/lecture_14.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will introduce you to the Create, Read, Update and Delete (CRUD) Process.</p>
+        <p>We will introduce you to XML and show you how to serialize objects from Java to an XML file and read them back into your Java program.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic06-persistence/talk-3/lecture_14.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Introduction to XML </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic06-persistence/talk-3/lecture_14.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Exception Handling</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/talk-4/lecture_15.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/talk-4/lecture_15.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will introduce you to XML and show you how to serialize objects from Java to an XML file and read them back into your Java program.</p>
+        <p>We will show you, by using try and catch blocks, how to stop your program from crashing when invalid user input is entered.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic06-persistence/talk-4/lecture_15.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Exception Handling </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic06-persistence/talk-4/lecture_15.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Primitive Arrays</div>
+
+  </div>
+
+  <a href=
+  
+    "topic07-more-on-collections/talk-1/lecture_16.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-1/lecture_16.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will show you, by using try and catch blocks, how to stop your program from crashing when invalid user input is entered.</p>
+        <p>We explore the concept of primitive arrays and iterating over its elements using for, for-each and specific types of while loops.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic07-more-on-collections/talk-1/lecture_16.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Primitive Arrays </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-1/lecture_16.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> </div>
+
+  </div>
+
+  <a href=
+  
+    "undefined//error: missing talk" target="_blank">
+  
+
+    
+      <div class="center aligned middle aligned"><i class="massive  icon"></i></div>
+      <br>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We explore the concept of primitive arrays and iterating over its elements using for, for-each and specific types of while loops.</p>
+        
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Tech Support System V1</div>
+
+  </div>
+
+  <a href=
+  
+    "topic07-more-on-collections/talk-3/lecture_17-tech-support-V1.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-3/lecture_17-tech-support-V1.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>We will start developing a simple console-based tech support system that will always respond with the phrase &quot;That sounds interesting. Tell me more...&quot;.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic07-more-on-collections/talk-2/resource_01.zip">
-    <div class="content">
-        <div class="right floated meta"> <i class="file large icon"></i></div>
-        <div class="header"> Primitive Array - Code on Slide Decks </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-2/resource_01.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Tech Support System V2</div>
+
+  </div>
+
+  <a href=
+  
+    "topic07-more-on-collections/talk-4/lecture_18--tech-support-V2.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-4/lecture_18--tech-support-V2.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>This zip file contains the primitive array code contained in the slide decks this week</p>
+        <p>We will continue developing the simple console-based tech support system.  However, in this version, we will have more meaningful, randomised responses for the user.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic07-more-on-collections/talk-3/lecture_17-tech-support-V1.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Tech Support System V1 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-3/lecture_17-tech-support-V1.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Tech Support System V3</div>
+
+  </div>
+
+  <a href=
+  
+    "topic07-more-on-collections/talk-5/lecture-19-tech-support-V3.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-5/lecture-19-tech-support-V3.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will start developing a simple console-based tech support system that will always respond with the phrase &quot;That sounds interesting. Tell me more...&quot;.</p>
+        <p>We will continue evolving the simple console-based tech support system.  However, in this version, we will reply to the user with a context sensitive response, based on their input.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic07-more-on-collections/talk-4/lecture_18--tech-support-V2.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Tech Support System V2 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-4/lecture_18--tech-support-V2.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Inheritance</div>
+
+  </div>
+
+  <a href=
+  
+    "topic08-inheritance-polymorphism/talk-1/lecture_20.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/talk-1/lecture_20.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will continue developing the simple console-based tech support system.  However, in this version, we will have more meaningful, randomised responses for the user.</p>
+        <p>We will start investigating inheritance which is one of the key principles in Object Oriented programming.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic07-more-on-collections/talk-5/lecture-19-tech-support-V3.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Tech Support System V3 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic07-more-on-collections/talk-5/lecture-19-tech-support-V3.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Exploring Polymorphism</div>
+
+  </div>
+
+  <a href=
+  
+    "topic08-inheritance-polymorphism/talk-2/lecture_21.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/talk-2/lecture_21.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will continue evolving the simple console-based tech support system.  However, in this version, we will reply to the user with a context sensitive response, based on their input.</p>
+        <p>We will continue looking at inheritance and cover polymorphism, overriding and dynamic method lookup.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic08-inheritance-polymorphism/talk-1/lecture_20.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Inheritance </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/talk-1/lecture_20.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Packages, Utilities and Parsing</div>
+
+  </div>
+
+  <a href=
+  
+    "topic08-inheritance-polymorphism/talk-3/lecture_22.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/talk-3/lecture_22.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will start investigating inheritance which is one of the key principles in Object Oriented programming. </p>
+        <p>We will look at structuring our apps using packages and re-usable utilities. We will also look at using Wrapper classes to parse String input as a specific type.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic08-inheritance-polymorphism/talk-2/lecture_21.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Exploring Polymorphism </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/talk-2/lecture_21.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Problem-based Learning</div>
+
+  </div>
+
+  <a href=
+  
+    "topic09(assignment-2)/talk-1/lecture_23_pbl.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic09(assignment-2)/talk-1/lecture_23_pbl.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will continue looking at inheritance and cover polymorphism, overriding and dynamic method lookup. </p>
+        <p>We will introduce a different approach to learning, called Problem-based Learning (PBL).</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic08-inheritance-polymorphism/talk-3/lecture_22.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Packages, Utilities and Parsing </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/talk-3/lecture_22.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Assignment 1</div>
+
+  </div>
+
+  <a href=
+  
+    "topic09(assignment-2)/talk-2/lecture_24-hare-and-tortoise.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic09(assignment-2)/talk-2/lecture_24-hare-and-tortoise.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will look at structuring our apps using packages and re-usable utilities. We will also look at using Wrapper classes to parse String input as a specific type.</p>
+        <p>We will introduce the board game, Hare and Tortoise, that you will build for your assignment.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic09(assignment-2)/talk-1/lecture_23_pbl.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Problem-based Learning </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic09(assignment-2)/talk-1/lecture_23_pbl.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> </div>
+
+  </div>
+
+  <a href=
+  
+    "undefined//error: missing talk" target="_blank">
+  
+
+    
+      <div class="center aligned middle aligned"><i class="massive  icon"></i></div>
+      <br>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will introduce a different approach to learning, called Problem-based Learning (PBL).</p>
+        
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Abstraction</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/talk-1/lecture_25-abstraction.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-1/lecture_25-abstraction.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>We will start implementing abstraction in our inheritance hierarchy for the Network system.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic09(assignment-2)/talk-2/lecture_24-hare-and-tortoise.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Assignment 1 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic09(assignment-2)/talk-2/lecture_24-hare-and-tortoise.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Test Driven Development (TDD)</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/talk-2/lecture_26-TDD-intro.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-2/lecture_26-TDD-intro.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will introduce the board game, Hare and Tortoise, that you will build for your assignment.</p>
+        <p>We will introduce the concept of TDD, Unit Testing and the JUnit Framework.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic09(assignment-2)/talk-3/d-resources.zip">
-    <div class="content">
-        <div class="right floated meta"> <i class="file large icon"></i></div>
-        <div class="header"> PBL Resources </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic09(assignment-2)/talk-3/d-resources.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> JUnit and DVD.java</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/talk-3/lecture_27-junit-example.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-3/lecture_27-junit-example.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>These are the resources for the PBL project i.e. Teams, Weekly Timesheet and Self/Peer Review Criteria.</p>
+        <p>We will demonstrate how to use the JUnit Framework to test DVD.java.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/talk-1/lecture_25-abstraction.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Abstraction </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-1/lecture_25-abstraction.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> JUnit Terminology</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/talk-4/lecture_28-junit-terminology.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-4/lecture_28-junit-terminology.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will start implementing abstraction in our inheritance hierarchy for the Network system.</p>
+        <p>Having tested DVD.java using the JUnit Framework, we will now cover the terminology used in this process (assertions, annotations and fixtures).</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/talk-2/lecture_26-TDD-intro.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Test Driven Development (TDD) </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-2/lecture_26-TDD-intro.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Planning Testing</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/talk-5/lecture_29-junit-planning-tests.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-5/lecture_29-junit-planning-tests.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will introduce the concept of TDD, Unit Testing and the JUnit Framework.</p>
+        <p>Here we will cover the Four Phase Test and present a more complicated JUnit test.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/talk-3/lecture_27-junit-example.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> JUnit and DVD.java </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-3/lecture_27-junit-example.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Completing DVD app testing</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/talk-6/lecture_30-junit-dvd-app.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-6/lecture_30-junit-dvd-app.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will demonstrate how to use the JUnit Framework to test DVD.java.</p>
+        <p>Here we will review the DVDTest.java class and develop JUnit tests for more classes in the DVD app.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/talk-4/lecture_28-junit-terminology.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> JUnit Terminology </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-4/lecture_28-junit-terminology.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> </div>
+
+  </div>
+
+  <a href=
+  
+    "undefined//error: missing talk" target="_blank">
+  
+
+    
+      <div class="center aligned middle aligned"><i class="massive  icon"></i></div>
+      <br>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Having tested DVD.java using the JUnit Framework, we will now cover the terminology used in this process (assertions, annotations and fixtures).</p>
+        
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Abstraction Recap</div>
+
+  </div>
+
+  <a href=
+  
+    "topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>We will do a recap of abstract classes and methods.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/talk-5/lecture_29-junit-planning-tests.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Planning Testing </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-5/lecture_29-junit-planning-tests.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Deadly Diamond of Death</div>
+
+  </div>
+
+  <a href=
+  
+    "topic11-interfaces/talk-2/b-prog-fund-2- deadly-diamond-of-death .pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic11-interfaces/talk-2/b-prog-fund-2- deadly-diamond-of-death .jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Here we will cover the Four Phase Test and present a more complicated JUnit test.</p>
+        <p>By examining the Deadly Diamond of Death, we will reason why Java does not allow Multiple Inheritance.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/talk-6/lecture_30-junit-dvd-app.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Completing DVD app testing </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-6/lecture_30-junit-dvd-app.jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Introduction to Interfaces</div>
+
+  </div>
+
+  <a href=
+  
+    "topic11-interfaces/talk-3/c-prog-fund-2-intro-to-interfaces.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic11-interfaces/talk-3/c-prog-fund-2-intro-to-interfaces.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Here we will review the DVDTest.java class and develop JUnit tests for more classes in the DVD app.</p>
+        <p>We will introduce the concept of Interfaces, discuss their syntax and provide a simple example.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic10-abstraction-TDD/talk-7/resource_TDD.zip">
-    <div class="content">
-        <div class="right floated meta"> <i class="file large icon"></i></div>
-        <div class="header"> Testing Largest </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-7/resource_TDD.png">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> More on Interfaces</div>
+
+  </div>
+
+  <a href=
+  
+    "topic11-interfaces/talk-4/d-prog-fund-2-more-on-interfaces.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic11-interfaces/talk-4/d-prog-fund-2-more-on-interfaces.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>This zip file contains the code for testing the Largest.largest(int[] array) method covered in the slides.</p>
+        <p>We will delve deeper into Interfaces by using predefined Interfaces in our programs and also writing our own Interfaces.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Abstraction Recap </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .jpg">
-    </div>
-    <div class="content">
+    
+              
+            
+              
+                
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Assignment 3</div>
+
+  </div>
+
+  <a href=
+  
+    "topic12(assignment-3)/talk-1/Assginment_3.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic12(assignment-3)/talk-1/Assginment_3.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will do a recap of abstract classes and methods.</p>
+        <p>The specification for Assignment 3 (worth 40% of your grade for this semester).</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="topic11-interfaces/talk-2/b-prog-fund-2- deadly-diamond-of-death .pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Deadly Diamond of Death </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic11-interfaces/talk-2/b-prog-fund-2- deadly-diamond-of-death .jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>By examining the Deadly Diamond of Death, we will reason why Java does not allow Multiple Inheritance.</p>
+    
 
-      </div>
+    
+
     </div>
     
-  </a>
-
-        
-        
-  <a class="ui raised link card" href="topic11-interfaces/talk-3/c-prog-fund-2-intro-to-interfaces.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Introduction to Interfaces </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic11-interfaces/talk-3/c-prog-fund-2-intro-to-interfaces.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>We will introduce the concept of Interfaces, discuss their syntax and provide a simple example.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-        
-        
-  <a class="ui raised link card" href="topic11-interfaces/talk-4/d-prog-fund-2-more-on-interfaces.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> More on Interfaces </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic11-interfaces/talk-4/d-prog-fund-2-more-on-interfaces.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>We will delve deeper into Interfaces by using predefined Interfaces in our programs and also writing our own Interfaces.</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-        
-        
-  <a class="ui raised link card" href="topic12(assignment-3)/talk-1/Assginment_3.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Assignment 3 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="topic12(assignment-3)/talk-1/Assginment_3.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The specification for Assignment 3 (worth 40% of your grade for this semester).</p>
-
-      </div>
-    </div>
-    
-  </a>
-
-        
+              
+            
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-    <footer>
+    <!--<footer>-->
 
-    </footer>
+    <!--</footer>-->
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

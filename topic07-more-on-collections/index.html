@@ -7,16 +7,18 @@
 
      
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +42,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -49,284 +58,536 @@ figcaption
   <body>
     
 
+  
+<header class="ui center aligned middle aligned stackable grid segment">
 
-
-
-
-
-
-  <header class="ui middle aligned center aligned stackable grid segment">
-
-    <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-    <div class="seven wide center aligned column">
-      <h2> 7: More on Collections </h2>
-      <p> Single Topic </p>
+  
+    
+  <a class="ui blue left corner label">
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
+  </a>
 
-    
-<div class="two wide column sitemap">
-  <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="../index.html"> <i class="huge home icon"></i> Module </a>
+  
+
+  <div class="two wide column">
+    <i class="huge  icon"></i></a>
   </div>
-</div>
+
+
+  <div class="ui six wide column">
+    <h2> 7: More on Collections </h2>
+    <div class="ui tiny blue label">
+      John Fitzgerald (labs), Dr. Siobhan Drohan (lectures)
+    </div>
+  </div>
+
+  <div class="ui two wide column">
+    
+      
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="../index.html"> <i class="huge home icon"></i> <br> Module Home </a>
+    </div>
+  </div>
 
     
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
+  </div>
+
+
+    
+  
+
+
+
+  <div class="three wide column">
+    
+    
+      
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          
+          
+          
+            
+          
+          <div class="popup" data-content="All slide's in module">
+            <a href="../talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              39
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          
+          
+          
+          <div class="popup" data-content="All lab's in module">
+            <a href="../labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              25
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+    
+  </div>
+
+</header>
+
+  
+
+
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <div class="header">
+        <a class="item" href="#">
+          
+        </a>
+      </div>
+      <div class="menu">
+        
+          <a class="item" href="talk-1/lecture_16.pdf">
+            Primitive Arrays
+          </a>
+        
+          <a class="item" href="/error: missing talk">
+            
+          </a>
+        
+          <a class="item" href="talk-3/lecture_17-tech-support-V1.pdf">
+            Tech Support System V1
+          </a>
+        
+          <a class="item" href="talk-4/lecture_18--tech-support-V2.pdf">
+            Tech Support System V2
+          </a>
+        
+          <a class="item" href="talk-5/lecture-19-tech-support-V3.pdf">
+            Tech Support System V3
+          </a>
+        
+          <a class="item" href="book-a/index.html">
+            Primitive-Arrays
+          </a>
+        
+          <a class="item" href="book-b/index.html">
+            TechSupport
+          </a>
+        
+      </div>
+    </div>
+    <div class="pusher">
+      <section class="ui container">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+  
+
+        
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+    Slides
+  
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Primitive Arrays</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-1/lecture_16.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-1/lecture_16.png">
+      </div>
+    
     </a>
-  </div>
-</div>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>We explore the concept of primitive arrays and iterating over its elements using for, for-each and specific types of while loops.</p>
+
+      </div>
+    </div>
+    
 
     
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="../talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+
+    
+
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="../labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
-    </div>
-  </div>
-</div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
 
 
-  </header>
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> </div>
 
-
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <div class="header">
-      <a class="item" href="#">
-        7: More on Collections
-      </a>
-    </div>
-    <div class="menu">
-      
-        <a class="item" href="talk-1/lecture_16.pdf">
-          Primitive Arrays
-        </a>
-      
-        <a class="item" href="talk-2/resource_01.zip">
-          Primitive Array - Code on Slide Decks
-        </a>
-      
-        <a class="item" href="talk-3/lecture_17-tech-support-V1.pdf">
-          Tech Support System V1
-        </a>
-      
-        <a class="item" href="talk-4/lecture_18--tech-support-V2.pdf">
-          Tech Support System V2
-        </a>
-      
-        <a class="item" href="talk-5/lecture-19-tech-support-V3.pdf">
-          Tech Support System V3
-        </a>
-      
-        <a class="item" href="book-a/index.html">
-          Primitive-Arrays
-        </a>
-      
-        <a class="item" href="book-b/index.html">
-          TechSupport
-        </a>
-      
-    </div>
   </div>
 
-  <div class="pusher">
-    <div class="ui basic segment">
-      <div class="ui four doubling stackable cards">
-        
-        
-  <a class="ui raised link card" href="talk-1/lecture_16.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Primitive Arrays </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-1/lecture_16.png">
-    </div>
-    <div class="content">
+  <a href=
+  
+    "/error: missing talk" target="_blank">
+  
+
+    
+      <div class="center aligned middle aligned"><i class="massive  icon"></i></div>
+      <br>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We explore the concept of primitive arrays and iterating over its elements using for, for-each and specific types of while loops.</p>
+        
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Tech Support System V1</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-3/lecture_17-tech-support-V1.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-3/lecture_17-tech-support-V1.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>We will start developing a simple console-based tech support system that will always respond with the phrase &quot;That sounds interesting. Tell me more...&quot;.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-2/resource_01.zip">
-    <div class="content">
-        <div class="right floated meta"> <i class="file large icon"></i></div>
-        <div class="header"> Primitive Array - Code on Slide Decks </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-2/resource_01.png">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Tech Support System V2</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-4/lecture_18--tech-support-V2.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-4/lecture_18--tech-support-V2.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>This zip file contains the primitive array code contained in the slide decks this week</p>
+        <p>We will continue developing the simple console-based tech support system.  However, in this version, we will have more meaningful, randomised responses for the user.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-3/lecture_17-tech-support-V1.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Tech Support System V1 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-3/lecture_17-tech-support-V1.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Tech Support System V3</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-5/lecture-19-tech-support-V3.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-5/lecture-19-tech-support-V3.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will start developing a simple console-based tech support system that will always respond with the phrase &quot;That sounds interesting. Tell me more...&quot;.</p>
+        <p>We will continue evolving the simple console-based tech support system.  However, in this version, we will reply to the user with a context sensitive response, based on their input.</p>
 
       </div>
     </div>
     
-  </a>
+
+    
+
+    
+
+    </div>
+    
+          
+        
+      </div>
+    </section>
+  
 
         
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+  
+    Labs
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
         
-  <a class="ui raised link card" href="talk-4/lecture_18--tech-support-V2.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Tech Support System V2 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-4/lecture_18--tech-support-V2.jpg">
-    </div>
-    <div class="content">
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Primitive-Arrays</div>
+
+  </div>
+
+  <a href=
+  
+    "book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will continue developing the simple console-based tech support system.  However, in this version, we will have more meaningful, randomised responses for the user.</p>
+        <p>In this lab, you will become more familiar with primitive arrays, particularly using counter-controlled loops with them.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-5/lecture-19-tech-support-V3.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Tech Support System V3 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-5/lecture-19-tech-support-V3.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> TechSupport</div>
+
+  </div>
+
+  <a href=
+  
+    "book-b/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-b/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will continue evolving the simple console-based tech support system.  However, in this version, we will reply to the user with a context sensitive response, based on their input.</p>
+        <p>On completion of this lab you should be able to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Primitive-Arrays </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-a/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>In this lab, you will become more familiar with primitive arrays, particularly using counter-controlled loops with them.</p>
+    
 
-      </div>
+    
+
     </div>
     
-  </a>
-
+          
         
-        
-  <a class="ui raised link card" href="book-b/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> TechSupport </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-b/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>On completion of this lab you should be able to:</p>
-<ul>
-<li>build a small, console-based application using ArrayList, HashMap and HashSet.</li>
-<li>integrate code to tokenize Strings into the above app.</li>
-<li>use the Random class to return random objects from a collection.</li>
-</ul>
-
       </div>
-    </div>
-    
-  </a>
+    </section>
+  
 
         
+          
+  
 
-      </div>
+        
+          
+  
+
+        
+          
+  
+
+        
+      </section>
     </div>
-   </div>
-</div>
+  </div>
 
 
-    <footer>
+    <!--<footer>-->
 
-    </footer>
+    <!--</footer>-->
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

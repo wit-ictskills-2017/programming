@@ -7,16 +7,18 @@
 
      
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +42,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -49,900 +58,1231 @@ figcaption
   <body>
     
 
+  
+<header class="ui center aligned middle aligned stackable grid segment">
 
-
-
-
-
-
-
-<header class="ui middle aligned center aligned stackable grid segment">
-
+  
+    
   <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-  <div class="seven wide center aligned column">
-    <h2 class="headder">  Programming Fundamentals (Java)</h2>
-    <p> Top Level Topics </p>
-  </div>
-
-
-  
-
-  
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
-    </a>
-  </div>
-</div>
-
-
-  
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
+  </a>
+
+  
+
+  <div class="two wide column">
+    <i class="huge  icon"></i></a>
+  </div>
+
+
+  <div class="ui six wide column">
+    <h2>  Programming Fundamentals (Java) </h2>
+    <div class="ui tiny blue label">
+      John Fitzgerald (labs), Dr. Siobhan Drohan (lectures)
     </div>
   </div>
-</div>
+
+  <div class="ui two wide column">
+    
+  </div>
 
 
+    
+  
+
+
+
+  <div class="three wide column">
+    
+      
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          
+          
+          
+            
+          
+          <div class="popup" data-content="All slide's in module">
+            <a href="talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              39
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          
+          
+          
+          <div class="popup" data-content="All lab's in module">
+            <a href="labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              25
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+    
+    
+  </div>
 
 </header>
 
+  
 
-<div class="ui segment pushable">
-  <div class="ui inverted inline vertical sidebar menu">
-    
-    <div class="header">
-      <a class="item" href="topic01-classes-objects/index.html">
-        1: Introduction to Java programming language
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic01-classes-objects/talk-a/lecture_01.pdf">
-          Overview</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic01-classes-objects/talk-b/lecture_02.pdf">
-          Classes and objects</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic01-classes-objects/talk-c/lecture_03.pdf">
-          Deeper with classes and objects</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic01-classes-objects/book-a/index.html">
-          Classes-objects</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic01-classes-objects/book-b/index.html">
-          Class-components</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic01-classes-objects(solns)/index.html">
-        1: Introduction to Java programming language
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic01-classes-objects(solns)/book-solutions/index.html">
-          Class-components-Solutions</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic02-ticket-machine/index.html">
-        2: Analysis & refactoring class
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic02-ticket-machine/talk-a/lecture_03.pdf">
-          Understanding class definitions</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic02-ticket-machine/talk-b/lecture_04.pdf">
-          Ticket machine</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic02-ticket-machine/book/index.html">
-          Ticket-Machine</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic02-ticket-machine(solns)/index.html">
-        2: Analysis & refactoring class
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic02-ticket-machine(solns)/book-a/index.html">
-          Ticket-Machine-Solutions</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic03-abstraction-modularization/index.html">
-        3: Object Interaction
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic03-abstraction-modularization/talk-a/lecture_05.pdf">
-          Abstraction & modularization</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic03-abstraction-modularization/talk-b/lecture_06.pdf">
-          Strings and their methods</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic03-abstraction-modularization/talk-c/lecture_07.pdf">
-          Miscellaneous Items</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic03-abstraction-modularization/book-a/index.html">
-          Abstraction-modularization[1]</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic03-abstraction-modularization/book-b/index.html">
-          Abstraction-modularization[2]</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic03-abstraction-modularization/book-c/index.html">
-          Abstraction-modularization[3]</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic03-abstraction-modularization(solns)/index.html">
-        3.1: Object Interaction (Solutions)
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
-          Abstraction-modularization-Solutions-[1-2]</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
-          Abstraction-modularization-Solutions-[3]</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic04-generics-control-flow/index.html">
-        4: Grouping Objects
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic04-generics-control-flow/talk-a/lecture_08.pdf">
-          Collections classes and control flow</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic04-generics-control-flow/talk-b/lecture_09.pdf">
-          Menu Driven Systems</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic04-generics-control-flow/book-a/index.html">
-          Generics-Control-flow</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic04-generics-control-flow(solns)/index.html">
-        4.1: Grouping Objects (Solutions)
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic04-generics-control-flow(solns)/book-solutions-a/index.html">
-          Notebook_solutions-[1-3]</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic05(assignment-1)/index.html">
-        5: Assignment-1
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic05(assignment-1)/talk-a/lecture_10.pdf">
-          Test Fixtures</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic05(assignment-1)/talk-b/lecture_11.pdf">
-          Checkstyle</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic05(assignment-1)/book-a/index.html">
-          Assignment1</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic05(assignment-1-solution)/index.html">
-        Assignment-1 (Solution)
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic05(assignment-1-solution)/talk-1/GymAppSolution.zip">
-          Assignment-1 Solution</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic06-persistence/index.html">
-        6: Persistence - CRUD and XML
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic06-persistence/talk-1/lecture_12.pdf">
-          Eclipse</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic06-persistence/talk-2/lecture_13.pdf">
-          CRUD Process</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic06-persistence/talk-3/lecture_14.pdf">
-          Introduction to XML</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic06-persistence/talk-4/lecture_15.pdf">
-          Exception Handling</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic06-persistence/book-a/index.html">
-          Eclipse</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic06-persistence/book-b/index.html">
-          CRUD</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic06-persistence/book-c/index.html">
-          XML</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic06-persistence/book-d/index.html">
-          Exception</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic07-more-on-collections/index.html">
-        7: More on Collections
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic07-more-on-collections/talk-1/lecture_16.pdf">
-          Primitive Arrays</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic07-more-on-collections/talk-2/resource_01.zip">
-          Primitive Array - Code on Slide Decks</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic07-more-on-collections/talk-3/lecture_17-tech-support-V1.pdf">
-          Tech Support System V1</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic07-more-on-collections/talk-4/lecture_18--tech-support-V2.pdf">
-          Tech Support System V2</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic07-more-on-collections/talk-5/lecture-19-tech-support-V3.pdf">
-          Tech Support System V3</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic07-more-on-collections/book-a/index.html">
-          Primitive-Arrays</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic07-more-on-collections/book-b/index.html">
-          TechSupport</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic08-inheritance-polymorphism/index.html">
-        8: Inheritance and Polymorphism
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic08-inheritance-polymorphism/talk-1/lecture_20.pdf">
-           Inheritance</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic08-inheritance-polymorphism/talk-2/lecture_21.pdf">
-           Exploring Polymorphism</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic08-inheritance-polymorphism/talk-3/lecture_22.pdf">
-           Packages, Utilities and Parsing</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic08-inheritance-polymorphism/book-1/index.html">
-          NetworkSystem</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic08-inheritance-polymorphism/book-2/index.html">
-          ShopV6.0</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic08-inheritance-polymorphism/book-3/index.html">
-          ShopV7.0</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic09(assignment-2)/index.html">
-        9: Assignment-2
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic09(assignment-2)/talk-1/lecture_23_pbl.pdf">
-          Problem-based Learning</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic09(assignment-2)/talk-2/lecture_24-hare-and-tortoise.pdf">
-          Assignment 1</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic09(assignment-2)/talk-3/d-resources.zip">
-          PBL Resources</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic10-abstraction-TDD/index.html">
-        10: Abstraction and Test Driven Development
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/talk-1/lecture_25-abstraction.pdf">
-           Abstraction</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/talk-2/lecture_26-TDD-intro.pdf">
-          Test Driven Development (TDD)</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/talk-3/lecture_27-junit-example.pdf">
-          JUnit and DVD.java</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/talk-4/lecture_28-junit-terminology.pdf">
-          JUnit Terminology</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/talk-5/lecture_29-junit-planning-tests.pdf">
-          Planning Testing</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/talk-6/lecture_30-junit-dvd-app.pdf">
-          Completing DVD app testing</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/talk-7/resource_TDD.zip">
-          Testing Largest</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/book-a/index.html">
-          Lab-Abstraction</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic10-abstraction-TDD/book-b/index.html">
-          Lab-DVDTesting</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic11-interfaces/index.html">
-        11: Interfaces
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .pdf">
-          Abstraction Recap</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic11-interfaces/talk-2/b-prog-fund-2- deadly-diamond-of-death .pdf">
-          Deadly Diamond of Death</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic11-interfaces/talk-3/c-prog-fund-2-intro-to-interfaces.pdf">
-          Introduction to Interfaces</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic11-interfaces/talk-4/d-prog-fund-2-more-on-interfaces.pdf">
-          More on Interfaces</a>
-      </div>
-      
-      <div class="menu">
-        <a class="item" href="topic11-interfaces/book/index.html">
-          Lab-10</a>
-      </div>
-      
-    </div>
-    
-    <div class="header">
-      <a class="item" href="topic12(assignment-3)/index.html">
-        12: Assignment-3
-      </a>
-    </div>
-    <div class="menu">
-      
-      <div class="menu">
-        <a class="item" href="topic12(assignment-3)/talk-1/Assginment_3.pdf">
-           Assignment 3</a>
-      </div>
+
+
+  <div class="ui pushable">
+    <div class="ui inverted inline vertical sidebar menu">
+      
+        <div class="header">
+          <a class="item" href="topic01-classes-objects/index.html">
+            1: Introduction to Java programming language
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic01-classes-objects/talk-a/lecture_01.pdf">
+                Overview</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic01-classes-objects/talk-b/lecture_02.pdf">
+                Classes and objects</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic01-classes-objects/talk-c/lecture_03.pdf">
+                Deeper with classes and objects</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic01-classes-objects/book-a/index.html">
+                Classes-objects</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic01-classes-objects/book-b/index.html">
+                Class-components</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic01-classes-objects(solns)/index.html">
+            1: Introduction to Java programming language
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic01-classes-objects(solns)/book-solutions/index.html">
+                Class-components-Solutions</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic02-ticket-machine/index.html">
+            2: Analysis & refactoring class
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic02-ticket-machine/talk-a/lecture_03.pdf">
+                Understanding class definitions</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic02-ticket-machine/talk-b/lecture_04.pdf">
+                Ticket machine</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic02-ticket-machine/book/index.html">
+                Ticket-Machine</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic02-ticket-machine(solns)/index.html">
+            2: Analysis & refactoring class
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic02-ticket-machine(solns)/book-a/index.html">
+                Ticket-Machine-Solutions</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic03-abstraction-modularization/index.html">
+            3: Object Interaction
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic03-abstraction-modularization/talk-a/lecture_05.pdf">
+                Abstraction & modularization</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic03-abstraction-modularization/talk-b/lecture_06.pdf">
+                Strings and their methods</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic03-abstraction-modularization/talk-c/lecture_07.pdf">
+                Miscellaneous Items</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic03-abstraction-modularization/book-a/index.html">
+                Abstraction-modularization[1]</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic03-abstraction-modularization/book-b/index.html">
+                Abstraction-modularization[2]</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic03-abstraction-modularization/book-c/index.html">
+                Abstraction-modularization[3]</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic03-abstraction-modularization(solns)/index.html">
+            3.1: Object Interaction (Solutions)
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic03-abstraction-modularization(solns)/book-solutions-ab/index.html">
+                Abstraction-modularization-Solutions-[1-2]</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic03-abstraction-modularization(solns)/book-solutions-c/index.html">
+                Abstraction-modularization-Solutions-[3]</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic04-generics-control-flow/index.html">
+            4: Grouping Objects
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic04-generics-control-flow/talk-a/lecture_08.pdf">
+                Collections classes and control flow</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic04-generics-control-flow/talk-b/lecture_09.pdf">
+                Menu Driven Systems</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic04-generics-control-flow/book-a/index.html">
+                Generics-Control-flow</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic04-generics-control-flow(solns)/index.html">
+            4.1: Grouping Objects (Solutions)
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic04-generics-control-flow(solns)/book-solutions-a/index.html">
+                Notebook_solutions-[1-3]</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic05(assignment-1)/index.html">
+            5: Assignment-1
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic05(assignment-1)/talk-a/lecture_10.pdf">
+                Test Fixtures</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic05(assignment-1)/talk-b/lecture_11.pdf">
+                Checkstyle</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic05(assignment-1)/book-a/index.html">
+                Assignment1</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic06-persistence/index.html">
+            6: Persistence - CRUD and XML
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic06-persistence/talk-1/lecture_12.pdf">
+                Eclipse</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic06-persistence/talk-2/lecture_13.pdf">
+                CRUD Process</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic06-persistence/talk-3/lecture_14.pdf">
+                Introduction to XML</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic06-persistence/talk-4/lecture_15.pdf">
+                Exception Handling</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic06-persistence/book-a/index.html">
+                Eclipse</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic06-persistence/book-b/index.html">
+                CRUD</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic06-persistence/book-c/index.html">
+                XML</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic06-persistence/book-d/index.html">
+                Exception</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic07-more-on-collections/index.html">
+            7: More on Collections
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic07-more-on-collections/talk-1/lecture_16.pdf">
+                Primitive Arrays</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic07-more-on-collections//error: missing talk">
+                </a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic07-more-on-collections/talk-3/lecture_17-tech-support-V1.pdf">
+                Tech Support System V1</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic07-more-on-collections/talk-4/lecture_18--tech-support-V2.pdf">
+                Tech Support System V2</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic07-more-on-collections/talk-5/lecture-19-tech-support-V3.pdf">
+                Tech Support System V3</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic07-more-on-collections/book-a/index.html">
+                Primitive-Arrays</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic07-more-on-collections/book-b/index.html">
+                TechSupport</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic08-inheritance-polymorphism/index.html">
+            8: Inheritance and Polymorphism
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic08-inheritance-polymorphism/talk-1/lecture_20.pdf">
+                 Inheritance</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic08-inheritance-polymorphism/talk-2/lecture_21.pdf">
+                 Exploring Polymorphism</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic08-inheritance-polymorphism/talk-3/lecture_22.pdf">
+                 Packages, Utilities and Parsing</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic08-inheritance-polymorphism/book-1/index.html">
+                NetworkSystem</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic08-inheritance-polymorphism/book-2/index.html">
+                ShopV6.0</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic08-inheritance-polymorphism/book-3/index.html">
+                ShopV7.0</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic09(assignment-2)/index.html">
+            9: Assignment-2
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic09(assignment-2)/talk-1/lecture_23_pbl.pdf">
+                Problem-based Learning</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic09(assignment-2)/talk-2/lecture_24-hare-and-tortoise.pdf">
+                Assignment 1</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic09(assignment-2)//error: missing talk">
+                </a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic10-abstraction-TDD/index.html">
+            10: Abstraction and Test Driven Development
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD/talk-1/lecture_25-abstraction.pdf">
+                 Abstraction</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD/talk-2/lecture_26-TDD-intro.pdf">
+                Test Driven Development (TDD)</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD/talk-3/lecture_27-junit-example.pdf">
+                JUnit and DVD.java</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD/talk-4/lecture_28-junit-terminology.pdf">
+                JUnit Terminology</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD/talk-5/lecture_29-junit-planning-tests.pdf">
+                Planning Testing</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD/talk-6/lecture_30-junit-dvd-app.pdf">
+                Completing DVD app testing</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD//error: missing talk">
+                </a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD/book-a/index.html">
+                Lab-Abstraction</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic10-abstraction-TDD/book-b/index.html">
+                Lab-DVDTesting</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic11-interfaces/index.html">
+            11: Interfaces
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .pdf">
+                Abstraction Recap</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic11-interfaces/talk-2/b-prog-fund-2- deadly-diamond-of-death .pdf">
+                Deadly Diamond of Death</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic11-interfaces/talk-3/c-prog-fund-2-intro-to-interfaces.pdf">
+                Introduction to Interfaces</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic11-interfaces/talk-4/d-prog-fund-2-more-on-interfaces.pdf">
+                More on Interfaces</a>
+            </div>
+          
+            <div class="menu">
+              <a class="item" href="topic11-interfaces/book/index.html">
+                Lab-10</a>
+            </div>
+          
+        </div>
+      
+        <div class="header">
+          <a class="item" href="topic12(assignment-3)/index.html">
+            12: Assignment-3
+          </a>
+        </div>
+        <div class="menu">
+          
+            <div class="menu">
+              <a class="item" href="topic12(assignment-3)/talk-1/Assginment_3.pdf">
+                 Assignment 3</a>
+            </div>
+          
+        </div>
       
     </div>
-    
+    <div class="pusher">
+      <div class="ui raised stackable segment container">
+        <div class="ui blue left ribbon large label"> Topics</div>
+        <div class="ui centered four doubling stackable cards">
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 1: Introduction to Java programming language</div>
+
   </div>
-  <div class="pusher">
-    <div class="ui basic segment">
-      <div class="ui four doubling stackable cards">
-        
-          
-  <a class="ui raised link card" href="./topic01-classes-objects/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 1: Introduction to Java programming language </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic01-classes-objects/topic.png">
-    </div>
-    <div class="content">
+
+  <a href=
+  
+    "topic01-classes-objects/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic01-classes-objects/topic.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         
+        
       </div>
     </div>
     
-  </a>
 
-        
-          
-  <a class="ui raised link card" href="./topic01-classes-objects(solns)/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 1: Introduction to Java programming language </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic01-classes-objects(solns)/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Sample solutions are provided here to the exercises set in the introductory lab.</p>
+    
 
-      </div>
+    
+
     </div>
     
-  </a>
-
-        
           
-  <a class="ui raised link card" href="./topic02-ticket-machine/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 2: Analysis & refactoring class </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic02-ticket-machine/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         
-      </div>
-    </div>
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 1: Introduction to Java programming language</div>
+
+  </div>
+
+  <a href=
+  
+    "topic01-classes-objects(solns)/index.html">
+  
+
     
-  </a>
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic01-classes-objects(solns)/topic.png">
+      </div>
+    
+    </a>
 
-        
-          
-  <a class="ui raised link card" href="./topic02-ticket-machine(solns)/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 2: Analysis & refactoring class </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic02-ticket-machine(solns)/topic.png">
-    </div>
-    <div class="content">
+    <div class="center aligned content">
       <div class="description">
-         <p>Sample solutions are provided here to the exercises set in this lab.</p>
+        <p>Sample solutions are provided here to the exercises set in the introductory lab.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-          
-  <a class="ui raised link card" href="./topic03-abstraction-modularization/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 3: Object Interaction </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic03-abstraction-modularization/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         
-      </div>
+    
+
+    
+
     </div>
     
-  </a>
-
-        
           
-  <a class="ui raised link card" href="./topic03-abstraction-modularization(solns)/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 3.1: Object Interaction (Solutions) </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic03-abstraction-modularization(solns)/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>Sample solutions are provided here to the exercises set in the lab relating to shapes, the ClockDisplay and NumberDisplay classes.</p>
+            
 
-      </div>
-    </div>
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 2: Analysis & refactoring class</div>
+
+  </div>
+
+  <a href=
+  
+    "topic02-ticket-machine/index.html">
+  
+
     
-  </a>
-
-        
-          
-  <a class="ui raised link card" href="./topic04-generics-control-flow/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 4: Grouping Objects </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic04-generics-control-flow/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic02-ticket-machine/topic.png">
       </div>
-    </div>
     
-  </a>
+    </a>
 
-        
-          
-  <a class="ui raised link card" href="./topic04-generics-control-flow(solns)/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 4.1: Grouping Objects (Solutions) </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic04-generics-control-flow(solns)/topic.png">
-    </div>
-    <div class="content">
+    <div class="center aligned content">
       <div class="description">
-         <p>Sample solutions are provided here to the exercises set in the session <em>Grouping Objects</em>. The exercises relate to the BlueJ Notebook class and control flow.  They also provide an opportunity to acquire some experience in the use of collections and iterators.</p>
+        <h1>2: Analysis &amp; refactoring class</h1>
 
       </div>
     </div>
     
-  </a>
 
-        
+    
+
+    
+
+    </div>
+    
           
-  <a class="ui raised link card" href="./topic05(assignment-1)/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 5: Assignment-1 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic05(assignment-1)/topic.png">
-    </div>
-    <div class="content">
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 2: Analysis & refactoring class</div>
+
+  </div>
+
+  <a href=
+  
+    "topic02-ticket-machine(solns)/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic02-ticket-machine(solns)/topic.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>This assignment is based on materials contained in the slide decks and labs in the first 4 topics, namely, <em>Introduction to Java programming language</em>, <em>Analysis &amp; refactoring class</em>, <em>Object Interaction</em> and <em>Grouping Objects</em>.</p>
+        <p>Sample solutions are provided here to the exercises set in this lab.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
+    
+
+    
+
+    </div>
+    
           
-  <a class="ui raised link card" href="./topic05(assignment-1-solution)/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> Assignment-1 (Solution) </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic05(assignment-1-solution)/topic.png">
-    </div>
-    <div class="content">
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 3: Object Interaction</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization/topic.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>This is a sample solution for Assignment 1, the Gym App.</p>
+        
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 3.1: Object Interaction (Solutions)</div>
+
+  </div>
+
+  <a href=
+  
+    "topic03-abstraction-modularization(solns)/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic03-abstraction-modularization(solns)/topic.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>Sample solutions are provided here to the exercises set in the lab relating to shapes, the ClockDisplay and NumberDisplay classes.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
+    
+
+    
+
+    </div>
+    
           
-  <a class="ui raised link card" href="./topic06-persistence/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 6: Persistence - CRUD and XML </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic06-persistence/topic.jpg">
-    </div>
-    <div class="content">
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 4: Grouping Objects</div>
+
+  </div>
+
+  <a href=
+  
+    "topic04-generics-control-flow/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic04-generics-control-flow/topic.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         
+        
       </div>
     </div>
     
-  </a>
 
-        
-          
-  <a class="ui raised link card" href="./topic07-more-on-collections/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 7: More on Collections </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic07-more-on-collections/topic.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         
-      </div>
+    
+
+    
+
     </div>
     
-  </a>
-
-        
           
-  <a class="ui raised link card" href="./topic08-inheritance-polymorphism/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 8: Inheritance and Polymorphism </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic08-inheritance-polymorphism/topic.jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         
-      </div>
-    </div>
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 4.1: Grouping Objects (Solutions)</div>
+
+  </div>
+
+  <a href=
+  
+    "topic04-generics-control-flow(solns)/index.html">
+  
+
     
-  </a>
-
-        
-          
-  <a class="ui raised link card" href="./topic09(assignment-2)/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 9: Assignment-2 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic09(assignment-2)/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>You team&#39;s task is to build the Hare &amp; Tortoise Board Game in Java.</p>
-
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic04-generics-control-flow(solns)/topic.png">
       </div>
-    </div>
     
-  </a>
+    </a>
 
-        
-          
-  <a class="ui raised link card" href="./topic10-abstraction-TDD/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 10: Abstraction and Test Driven Development </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic10-abstraction-TDD/talk-1/lecture_25-abstraction.jpg">
-    </div>
-    <div class="content">
+    <div class="center aligned content">
       <div class="description">
-         
-      </div>
-    </div>
-    
-  </a>
-
-        
-          
-  <a class="ui raised link card" href="./topic11-interfaces/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 11: Interfaces </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .jpg">
-    </div>
-    <div class="content">
-      <div class="description">
-         
-      </div>
-    </div>
-    
-  </a>
-
-        
-          
-  <a class="ui raised link card" href="./topic12(assignment-3)/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="sitemap large icon"></i></div>
-        <div class="header"> 12: Assignment-3 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="./topic12(assignment-3)/topic.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>This assignment is based on the GymApp that we coded for Assignment 1.  You will be enhancing it to add an inheritance hierarchy, abstraction and polymorphic behaviour. </p>
+        <p>Sample solutions are provided here to the exercises set in the session <em>Grouping Objects</em>. The exercises relate to the BlueJ Notebook class and control flow.  They also provide an opportunity to acquire some experience in the use of collections and iterators.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 5: Assignment-1</div>
+
+  </div>
+
+  <a href=
+  
+    "topic05(assignment-1)/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic05(assignment-1)/topic.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>This assignment is based on materials contained in the slide decks and labs in the first 4 topics, namely, <em>Introduction to Java programming language</em>, <em>Analysis &amp; refactoring class</em>, <em>Object Interaction</em> and <em>Grouping Objects</em>.</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 6: Persistence - CRUD and XML</div>
+
+  </div>
+
+  <a href=
+  
+    "topic06-persistence/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic06-persistence/topic.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <h1>6: Persistence - CRUD and XML</h1>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 7: More on Collections</div>
+
+  </div>
+
+  <a href=
+  
+    "topic07-more-on-collections/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic07-more-on-collections/topic.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <h1>7: More on Collections</h1>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 8: Inheritance and Polymorphism</div>
+
+  </div>
+
+  <a href=
+  
+    "topic08-inheritance-polymorphism/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic08-inheritance-polymorphism/topic.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <h1>8: Inheritance and Polymorphism</h1>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 9: Assignment-2</div>
+
+  </div>
+
+  <a href=
+  
+    "topic09(assignment-2)/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic09(assignment-2)/topic.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>You team&#39;s task is to build the Hare &amp; Tortoise Board Game in Java.</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 10: Abstraction and Test Driven Development</div>
+
+  </div>
+
+  <a href=
+  
+    "topic10-abstraction-TDD/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic10-abstraction-TDD/talk-1/lecture_25-abstraction.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <h1>10: Abstraction and Test Driven Development</h1>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 11: Interfaces</div>
+
+  </div>
+
+  <a href=
+  
+    "topic11-interfaces/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic11-interfaces/talk-1/a-prog-fund-2-abstraction-recap .jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <h1>11: Interfaces</h1>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  sitemap 
+    icon"></i></div>
+    <div class="header"> 12: Assignment-3</div>
+
+  </div>
+
+  <a href=
+  
+    "topic12(assignment-3)/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="topic12(assignment-3)/topic.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>This assignment is based on the GymApp that we coded for Assignment 1.  You will be enhancing it to add an inheritance hierarchy, abstraction and polymorphic behaviour.</p>
+
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    </div>
+    
+          
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-    <footer>
+    <!--<footer>-->
 
-    </footer>
+    <!--</footer>-->
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

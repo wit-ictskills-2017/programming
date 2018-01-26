@@ -7,16 +7,18 @@
 
      
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +42,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -49,310 +58,585 @@ figcaption
   <body>
     
 
+  
+<header class="ui center aligned middle aligned stackable grid segment">
 
-
-
-
-
-
-  <header class="ui middle aligned center aligned stackable grid segment">
-
-    <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-    <div class="seven wide center aligned column">
-      <h2> 6: Persistence - CRUD and XML </h2>
-      <p> Single Topic </p>
+  
+    
+  <a class="ui blue left corner label">
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
+  </a>
 
-    
-<div class="two wide column sitemap">
-  <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="../index.html"> <i class="huge home icon"></i> Module </a>
+  
+
+  <div class="two wide column">
+    <i class="huge  icon"></i></a>
   </div>
-</div>
+
+
+  <div class="ui six wide column">
+    <h2> 6: Persistence - CRUD and XML </h2>
+    <div class="ui tiny blue label">
+      John Fitzgerald (labs), Dr. Siobhan Drohan (lectures)
+    </div>
+  </div>
+
+  <div class="ui two wide column">
+    
+      
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="../index.html"> <i class="huge home icon"></i> <br> Module Home </a>
+    </div>
+  </div>
 
     
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
+  </div>
+
+
+    
+  
+
+
+
+  <div class="three wide column">
+    
+    
+      
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          
+          
+          
+            
+          
+          <div class="popup" data-content="All slide's in module">
+            <a href="../talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              39
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          
+          
+          
+          <div class="popup" data-content="All lab's in module">
+            <a href="../labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              25
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+    
+  </div>
+
+</header>
+
+  
+
+
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <div class="header">
+        <a class="item" href="#">
+          
+        </a>
+      </div>
+      <div class="menu">
+        
+          <a class="item" href="talk-1/lecture_12.pdf">
+            Eclipse
+          </a>
+        
+          <a class="item" href="talk-2/lecture_13.pdf">
+            CRUD Process
+          </a>
+        
+          <a class="item" href="talk-3/lecture_14.pdf">
+            Introduction to XML
+          </a>
+        
+          <a class="item" href="talk-4/lecture_15.pdf">
+            Exception Handling
+          </a>
+        
+          <a class="item" href="book-a/index.html">
+            Eclipse
+          </a>
+        
+          <a class="item" href="book-b/index.html">
+            CRUD
+          </a>
+        
+          <a class="item" href="book-c/index.html">
+            XML
+          </a>
+        
+          <a class="item" href="book-d/index.html">
+            Exception
+          </a>
+        
+      </div>
+    </div>
+    <div class="pusher">
+      <section class="ui container">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+  
+
+        
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+    Slides
+  
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Eclipse</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-1/lecture_12.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-1/lecture_12.png">
+      </div>
+    
     </a>
-  </div>
-</div>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>Begin exploring the Eclipse Integrated Development Environment (IDE).  We will also look at the Java Virtual Machine (JVM) and the main method.</p>
+
+      </div>
+    </div>
+    
 
     
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="../talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+
+    
+
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="../labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
-    </div>
-  </div>
-</div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
 
 
-  </header>
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> CRUD Process</div>
 
-
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <div class="header">
-      <a class="item" href="#">
-        6: Persistence - CRUD and XML
-      </a>
-    </div>
-    <div class="menu">
-      
-        <a class="item" href="talk-1/lecture_12.pdf">
-          Eclipse
-        </a>
-      
-        <a class="item" href="talk-2/lecture_13.pdf">
-          CRUD Process
-        </a>
-      
-        <a class="item" href="talk-3/lecture_14.pdf">
-          Introduction to XML
-        </a>
-      
-        <a class="item" href="talk-4/lecture_15.pdf">
-          Exception Handling
-        </a>
-      
-        <a class="item" href="book-a/index.html">
-          Eclipse
-        </a>
-      
-        <a class="item" href="book-b/index.html">
-          CRUD
-        </a>
-      
-        <a class="item" href="book-c/index.html">
-          XML
-        </a>
-      
-        <a class="item" href="book-d/index.html">
-          Exception
-        </a>
-      
-    </div>
   </div>
 
-  <div class="pusher">
-    <div class="ui basic segment">
-      <div class="ui four doubling stackable cards">
-        
-        
-  <a class="ui raised link card" href="talk-1/lecture_12.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Eclipse </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-1/lecture_12.png">
-    </div>
-    <div class="content">
+  <a href=
+  
+    "talk-2/lecture_13.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-2/lecture_13.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>Begin exploring the Eclipse Integrated Development Environment (IDE).  We will also look at the Java Virtual Machine (JVM) and the main method.</p>
+        <p>We will introduce you to the Create, Read, Update and Delete (CRUD) Process.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-2/lecture_13.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> CRUD Process </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-2/lecture_13.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Introduction to XML</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-3/lecture_14.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-3/lecture_14.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will introduce you to the Create, Read, Update and Delete (CRUD) Process.</p>
+        <p>We will introduce you to XML and show you how to serialize objects from Java to an XML file and read them back into your Java program.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-3/lecture_14.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Introduction to XML </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-3/lecture_14.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header"> Exception Handling</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-4/lecture_15.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-4/lecture_15.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will introduce you to XML and show you how to serialize objects from Java to an XML file and read them back into your Java program.</p>
+        <p>We will show you, by using try and catch blocks, how to stop your program from crashing when invalid user input is entered.</p>
 
       </div>
     </div>
     
-  </a>
+
+    
+
+    
+
+    </div>
+    
+          
+        
+      </div>
+    </section>
+  
 
         
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+  
+    Labs
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
         
-  <a class="ui raised link card" href="talk-4/lecture_15.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header"> Exception Handling </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-4/lecture_15.jpg">
-    </div>
-    <div class="content">
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Eclipse</div>
+
+  </div>
+
+  <a href=
+  
+    "book-a/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-a/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will show you, by using try and catch blocks, how to stop your program from crashing when invalid user input is entered.</p>
+        <p>In this lab, you will explore the Eclipse IDE and use the main method as the starting point for your applications.  You will also move the BlueJ Shop project into Eclipse format.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-a/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Eclipse </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-a/img/main.png">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> CRUD</div>
+
+  </div>
+
+  <a href=
+  
+    "book-b/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-b/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>In this lab, you will explore the Eclipse IDE and use the main method as the starting point for your applications.  You will also move the BlueJ Shop project into Eclipse format.</p>
+        <p>In this lab, you will implement CRUD into ShopV3.0.  You will also apply your CRUD knowledge to another domain i.e. start to build a DVD library.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-b/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> CRUD </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-b/img/main.png">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> XML</div>
+
+  </div>
+
+  <a href=
+  
+    "book-c/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-c/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>In this lab, you will implement CRUD into ShopV3.0.  You will also apply your CRUD knowledge to another domain i.e. start to build a DVD library.</p>
+        <p>On completion of this lab you should be able to:</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-c/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> XML </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-c/img/main.png">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> Exception</div>
+
+  </div>
+
+  <a href=
+  
+    "book-d/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-d/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>On completion of this lab you should be able to:</p>
-<ul>
-<li><p>Store objects into XML files and retrieve them from XML files (using ShopV4.0 as a starting point).</p>
-</li>
-<li><p>Apply this XML knowledge to another domain i.e. the DVD library.</p>
-</li>
-<li><p>Include Exception handling for invalid user input.</p>
-</li>
-</ul>
+        <p>In this lab, you will implement exception handling in ShopV5.0.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-d/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> Exception </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-d/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>In this lab, you will implement exception handling in ShopV5.0.  </p>
+    
 
-      </div>
+    
+
     </div>
     
-  </a>
+          
+        
+      </div>
+    </section>
+  
 
         
+          
+  
 
-      </div>
+        
+          
+  
+
+        
+          
+  
+
+        
+      </section>
     </div>
-   </div>
-</div>
+  </div>
 
 
-    <footer>
+    <!--<footer>-->
 
-    </footer>
+    <!--</footer>-->
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>

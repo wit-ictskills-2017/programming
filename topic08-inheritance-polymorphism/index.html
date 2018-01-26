@@ -7,16 +7,18 @@
 
      
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" type="text/css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/solarized-light.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
 
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/languages/java.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
      <script>hljs.initHighlightingOnLoad();</script>
 
      
@@ -40,6 +42,13 @@ figcaption
   align-items: center;
 }
 
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
 
 
      </style>
@@ -49,256 +58,491 @@ figcaption
   <body>
     
 
+  
+<header class="ui center aligned middle aligned stackable grid segment">
 
-
-
-
-
-
-  <header class="ui middle aligned center aligned stackable grid segment">
-
-    <a class="ui blue left corner label">
-  <div id="showTOC" class="popup" data-content="Reveal TOC">
-    <i id="toc" class="sitemap big  icon"></i>
-  </div>
-</a>
-
-    <div class="seven wide center aligned column">
-      <h2> 8: Inheritance and Polymorphism </h2>
-      <p> Single Topic </p>
+  
+    
+  <a class="ui blue left corner label">
+    <div id="showTOC" class="popup" data-content="Reveal TOC">
+      <i id="toc" class="sitemap big  icon"></i>
     </div>
+  </a>
 
-    
-<div class="two wide column sitemap">
-  <div class="popup" data-content="To the top level Topics for this Module...">
-    <a href="../index.html"> <i class="huge home icon"></i> Module </a>
+  
+
+  <div class="two wide column">
+    <i class="huge  icon"></i></a>
   </div>
-</div>
+
+
+  <div class="ui six wide column">
+    <h2> 8: Inheritance and Polymorphism </h2>
+    <div class="ui tiny blue label">
+      John Fitzgerald (labs), Dr. Siobhan Drohan (lectures)
+    </div>
+  </div>
+
+  <div class="ui two wide column">
+    
+      
+  <div class="two wide column sitemap">
+    <div class="popup" data-content="To the top level Topics for this Module...">
+      <a href="../index.html"> <i class="huge home icon"></i> <br> Module Home </a>
+    </div>
+  </div>
 
     
-<div class="four wide column">
-  <div class="ui center aligned mini message segment">
-    John Fitzgerald (labs), Dr. Siobhan Drohan (lectures).
-    <a  href="http://creativecommons.org/licenses/by-nc/4.0/" title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
-        target="_blank">Creative Commons License
+  </div>
+
+
+    
+  
+
+
+
+  <div class="three wide column">
+    
+    
+      
+  <div class="ui equal width center aligned grid segment">
+    
+      
+        <div class="column">
+          
+          
+          
+            
+          
+          <div class="popup" data-content="All slide's in module">
+            <a href="../talkwall.html"> <i class="big object group icon"></i> </a>
+            <div class="ui blue mini circular label">
+              39
+            </div>
+          </div>
+        </div>
+      
+    
+      
+        <div class="column">
+          
+          
+          
+          <div class="popup" data-content="All lab's in module">
+            <a href="../labwall.html"> <i class="big lab icon"></i> </a>
+            <div class="ui blue mini circular label">
+              25
+            </div>
+          </div>
+        </div>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+
+    
+  </div>
+
+</header>
+
+  
+
+
+
+  <div class="ui pushable">
+    <div class="ui inverted labeled icon left inline vertical sidebar menu">
+      <div class="header">
+        <a class="item" href="#">
+          
+        </a>
+      </div>
+      <div class="menu">
+        
+          <a class="item" href="talk-1/lecture_20.pdf">
+             Inheritance
+          </a>
+        
+          <a class="item" href="talk-2/lecture_21.pdf">
+             Exploring Polymorphism
+          </a>
+        
+          <a class="item" href="talk-3/lecture_22.pdf">
+             Packages, Utilities and Parsing
+          </a>
+        
+          <a class="item" href="book-1/index.html">
+            NetworkSystem
+          </a>
+        
+          <a class="item" href="book-2/index.html">
+            ShopV6.0
+          </a>
+        
+          <a class="item" href="book-3/index.html">
+            ShopV7.0
+          </a>
+        
+      </div>
+    </div>
+    <div class="pusher">
+      <section class="ui container">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+          
+  
+
+        
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+    Slides
+  
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Inheritance</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-1/lecture_20.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-1/lecture_20.jpg">
+      </div>
+    
     </a>
-  </div>
-</div>
+
+    <div class="center aligned content">
+      <div class="description">
+        <p>We will start investigating inheritance which is one of the key principles in Object Oriented programming.</p>
+
+      </div>
+    </div>
+    
 
     
-<div class="ui two wide right aligned column">
-  <div class="ui left aligned middle aligned very basic grid">
-    <div class="row">
-      <div class="popup" data-content="All Slides in Course">
-        <a href="../talkwall.html"> <i class="large film icon"></i> All Slides </a>
-      </div>
+
+    
+
     </div>
-    <div class="row">
-      <div class="popup" data-content="All Labs in Course">
-        <a href="../labwall.html"> <i class="large lab icon"></i> All Labs </a>
-      </div>
-    </div>
-  </div>
-</div>
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
 
 
-  </header>
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Exploring Polymorphism</div>
 
-
-<div class="ui segment pushable">
-  <div class="ui inverted labeled icon left inline vertical sidebar menu">
-    <div class="header">
-      <a class="item" href="#">
-        8: Inheritance and Polymorphism
-      </a>
-    </div>
-    <div class="menu">
-      
-        <a class="item" href="talk-1/lecture_20.pdf">
-           Inheritance
-        </a>
-      
-        <a class="item" href="talk-2/lecture_21.pdf">
-           Exploring Polymorphism
-        </a>
-      
-        <a class="item" href="talk-3/lecture_22.pdf">
-           Packages, Utilities and Parsing
-        </a>
-      
-        <a class="item" href="book-1/index.html">
-          NetworkSystem
-        </a>
-      
-        <a class="item" href="book-2/index.html">
-          ShopV6.0
-        </a>
-      
-        <a class="item" href="book-3/index.html">
-          ShopV7.0
-        </a>
-      
-    </div>
   </div>
 
-  <div class="pusher">
-    <div class="ui basic segment">
-      <div class="ui four doubling stackable cards">
-        
-        
-  <a class="ui raised link card" href="talk-1/lecture_20.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Inheritance </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-1/lecture_20.jpg">
-    </div>
-    <div class="content">
+  <a href=
+  
+    "talk-2/lecture_21.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-2/lecture_21.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will start investigating inheritance which is one of the key principles in Object Oriented programming. </p>
+        <p>We will continue looking at inheritance and cover polymorphism, overriding and dynamic method lookup.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="talk-2/lecture_21.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Exploring Polymorphism </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-2/lecture_21.jpg">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  object group 
+    icon"></i></div>
+    <div class="header">  Packages, Utilities and Parsing</div>
+
+  </div>
+
+  <a href=
+  
+    "talk-3/lecture_22.pdf" target="_blank">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="talk-3/lecture_22.jpg">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will continue looking at inheritance and cover polymorphism, overriding and dynamic method lookup. </p>
+        <p>We will look at structuring our apps using packages and re-usable utilities. We will also look at using Wrapper classes to parse String input as a specific type.</p>
 
       </div>
     </div>
     
-  </a>
+
+    
+
+    
+
+    </div>
+    
+          
+        
+      </div>
+    </section>
+  
 
         
+          
+  
+    <section class="ui raised stackable segment">
+      <div class="ui blue left ribbon large label"> 
+  
+  
+    Labs
+  
+  
+ </div>
+      <div class="ui centered four doubling stackable cards">
         
-  <a class="ui raised link card" href="talk-3/lecture_22.pdf">
-    <div class="content">
-        <div class="right floated meta"> <i class="film large icon"></i></div>
-        <div class="header">  Packages, Utilities and Parsing </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="talk-3/lecture_22.jpg">
-    </div>
-    <div class="content">
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> NetworkSystem</div>
+
+  </div>
+
+  <a href=
+  
+    "book-1/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-1/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>We will look at structuring our apps using packages and re-usable utilities. We will also look at using Wrapper classes to parse String input as a specific type.</p>
+        <p>The objectives of this lab are to implement both inheritance and polymorphism in the Network system.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-1/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> NetworkSystem </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-1/img/main.png">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> ShopV6.0</div>
+
+  </div>
+
+  <a href=
+  
+    "book-2/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-2/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>The objectives of this lab are to implement both inheritance and polymorphism in the Network system.</p>
+        <p>The objectives of this lab are to use a package structure for the Shop app and also to write re-usable utilies.  We will also experiment with Wrapper classes and parsing.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-2/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> ShopV6.0 </div>
+    
+
+    
+
     </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-2/img/main.png">
-    </div>
-    <div class="content">
+    
+          
+        
+          
+            
+
+<div class="ui  raised link  card">
+
+
+  <div class="center aligned content">
+    <div class="right floated meta"><i class="huge  lab 
+    icon"></i></div>
+    <div class="header"> ShopV7.0</div>
+
+  </div>
+
+  <a href=
+  
+    "book-3/index.html">
+  
+
+    
+      <div class="image">
+        <img class="ui bordered rounded image" src="book-3/img/main.png">
+      </div>
+    
+    </a>
+
+    <div class="center aligned content">
       <div class="description">
-         <p>The objectives of this lab are to use a package structure for the Shop app and also to write re-usable utilies.  We will also experiment with Wrapper classes and parsing.</p>
+        <p>The objectives of this lab are to implement an inheritance hierarchy into our Shop project.</p>
 
       </div>
     </div>
     
-  </a>
 
-        
-        
-  <a class="ui raised link card" href="book-3/index.html">
-    <div class="content">
-        <div class="right floated meta"> <i class="lab large icon"></i></div>
-        <div class="header"> ShopV7.0 </div>
-    </div>
-    <div class="image">
-      <img class="ui bordered rounded image" src="book-3/img/main.png">
-    </div>
-    <div class="content">
-      <div class="description">
-         <p>The objectives of this lab are to implement an inheritance hierarchy into our Shop project.</p>
+    
 
-      </div>
+    
+
     </div>
     
-  </a>
+          
+        
+      </div>
+    </section>
+  
 
         
+          
+  
 
-      </div>
+        
+          
+  
+
+        
+          
+  
+
+        
+      </section>
     </div>
-   </div>
-</div>
+  </div>
 
 
-    <footer>
+    <!--<footer>-->
 
-    </footer>
+    <!--</footer>-->
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
   $('img').addClass('ui image');
+
   $('.ui.embed').embed();
 
   const $images = $('.lab img');
-  jQuery.each($images, function (i) {
-    if (($images[i].alt).length > 0) {
-      const divImg = $(document.createElement('div')).addClass('ui basic segment');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('ui blue ribbon label');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
       $(divLabel).insertBefore($images[i]);
     }
   });
 
-  $('.ui.embed').embed();
-
-  $('.ui.menu .item')
-      .tab({
-        history: true,
-        historyType: 'hash',
-      });
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
 
   $('.popup').popup();
 
   $('.ui.sidebar')
-      .sidebar({ context: $('.pushable') })
-      .sidebar('setting', 'transition', 'slide out')
-      .sidebar('attach events', '#toc');
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
     </script>
